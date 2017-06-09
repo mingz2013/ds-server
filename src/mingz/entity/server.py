@@ -5,7 +5,7 @@ Created on 09/06/2017
 @author: zhaojm
 '''
 
-from twisted.internet import protocol
+from twisted.internet import protocol, reactor
 
 
 class Echo(protocol.Protocol):
@@ -18,5 +18,5 @@ class EchoFactory(protocol.Factory):
         return Echo()
 
 
-endpoint = TCP4ServerEndpoint(reactor, 8007)
-endpoint.listen(QOTDFactory())
+echo = EchoFactory()
+reactor.listenTCP(8888, echo)
