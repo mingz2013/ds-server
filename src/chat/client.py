@@ -5,10 +5,8 @@ Created on 10/06/2017
 @author: zhaojm
 '''
 
-from sys import stdout
-from twisted.internet import reactor
 import stackless
-
+from twisted.internet import reactor
 from twisted.internet.protocol import Protocol, ClientFactory
 
 
@@ -26,9 +24,9 @@ class ChatClient(Protocol):
 
 
 class ChatClientFactory(ClientFactory):
-
     def buildProtocol(self, addr):
         return ChatClient()
+
 
 reactor.connectTCP('localhost', 8888, ChatClientFactory())
 
