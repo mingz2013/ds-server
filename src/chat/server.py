@@ -10,6 +10,10 @@ from twisted.internet import protocol, reactor
 
 
 class ChatServer(protocol.Protocol):
+    def connectionMade(self):
+        print "made"
+        pass
+
     def dataReceived(self, data):
         stackless.tasklet(self.on_message)(data)
         reactor.callLater(0, stackless.schedule)
