@@ -8,11 +8,17 @@ Created on 10/06/2017
 from sys import stdout
 
 from twisted.internet.protocol import Protocol, ClientFactory
+from twisted.internet import reactor
 
 
 class Echo(Protocol):
+    def connectionMade(self):
+        self.transport.write('hello')
+
     def dataReceived(self, data):
-        stdout.write(data)
+        print '.....'
+        print data
+        # stdout.write(data)
 
 
 class EchoClientFactory(ClientFactory):
@@ -28,3 +34,7 @@ class EchoClientFactory(ClientFactory):
 
     def clientConnectionFailed(self, connector, reason):
         print('Connection failed. Reason:', reason)
+
+
+reactor.connectTCP('localhost', 8888, EchoClientFactory())
+reactor.run()
