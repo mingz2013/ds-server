@@ -29,11 +29,7 @@ class EchoClientFactory(ClientFactory):
         print('Connected.')
         return Echo()
 
-    def clientConnectionLost(self, connector, reason):
-        print('Lost connection.  Reason:', reason)
 
-    def clientConnectionFailed(self, connector, reason):
-        print('Connection failed. Reason:', reason)
 
 
 reactor.connectTCP('localhost', 8888, EchoClientFactory())

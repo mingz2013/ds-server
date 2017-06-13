@@ -5,18 +5,30 @@ Created on 10/06/2017
 @author: zhaojm
 '''
 
+import stackless
 from twisted.internet import protocol, reactor
 
 
-class Echo(protocol.Protocol):
+class ChatServer(protocol.Protocol):
     def dataReceived(self, data):
+        stackless.tasklet(self.on_message)(data)
+        reactor.callLater(0, stackless.schedule)
+
+    def on_message(self, data):
+        print "on message..."
+        print data
         self.transport.write(data)
+        print 'after write'
 
 
-class EchoFactory(protocol.Factory):
+class ChatFactory(protocol.Factory):
     def buildProtocol(self, addr):
-        return Echo()
+        return ChatServer()
 
 
-echo = EchoFactory()
-reactor.listenTCP(8888, echo)
+chat = ChatFactory()
+reactor.listenTCP(8888, chat)
+
+stackless.tasklet(reactor.run)()
+reactor.callLater(0, stackless.schedule)
+stackless.run()
