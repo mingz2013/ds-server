@@ -29,8 +29,5 @@ class EchoClientFactory(ClientFactory):
         print('Connected.')
         return Echo()
 
-
-
-
 reactor.connectTCP('localhost', 8888, EchoClientFactory())
 reactor.run()
