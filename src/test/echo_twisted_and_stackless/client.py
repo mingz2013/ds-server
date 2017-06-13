@@ -8,11 +8,11 @@ Created on 10/06/2017
 import stackless
 from twisted.internet import reactor
 from twisted.internet.protocol import Protocol, ClientFactory
+
 from channel import chan_command_and_client
 
 
 class ChatClient(Protocol):
-
     def connectionMade(self):
         stackless.tasklet(self.on_message_from_chan)()
         reactor.callLater(0, stackless.schedule)
@@ -40,6 +40,3 @@ class ChatClient(Protocol):
 class ChatClientFactory(ClientFactory):
     def buildProtocol(self, addr):
         return ChatClient()
-
-
-

@@ -5,8 +5,6 @@ Created on 13/06/2017
 @author: zhaojm
 '''
 
-from sys import stdin
-
 import stackless
 
 

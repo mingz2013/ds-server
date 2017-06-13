@@ -5,10 +5,8 @@ Created on 10/06/2017
 @author: zhaojm
 '''
 
-from sys import stdout
-
-from twisted.internet.protocol import Protocol, ClientFactory
 from twisted.internet import reactor
+from twisted.internet.protocol import Protocol, ClientFactory
 
 
 class Echo(Protocol):
@@ -28,6 +26,7 @@ class EchoClientFactory(ClientFactory):
     def buildProtocol(self, addr):
         print('Connected.')
         return Echo()
+
 
 reactor.connectTCP('localhost', 8888, EchoClientFactory())
 reactor.run()
