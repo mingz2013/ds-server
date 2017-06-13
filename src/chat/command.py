@@ -5,16 +5,19 @@ Created on 13/06/2017
 @author: zhaojm
 '''
 
+from os import linesep
+
 import stackless
-from twisted.internet import stdio, reactor
+from twisted.internet import reactor
 from twisted.protocols import basic
+
 from channel import chan_command_and_client
 from client import ChatClientFactory
 
 
 class CommandProtocol(basic.LineReceiver):
-    # from os import linesep as delimiter
-    from os import linesep as delimiter
+    delimiter = linesep
+
     def connectionMade(self):
         stackless.tasklet(self.on_message_from_chan)()
         reactor.callLater(0, stackless.schedule)

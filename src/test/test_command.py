@@ -5,14 +5,16 @@ Created on 13/06/2017
 @author: zhaojm
 '''
 
+from os import linesep
+
 import stackless
 from twisted.internet import stdio, reactor
 from twisted.protocols import basic
 
 
 class CommandProtocol(basic.LineReceiver):
-    # from os import linesep as delimiter   这一句不能丢
-    from os import linesep as delimiter
+    delimiter = linesep
+
     def connectionMade(self):
         self.transport.write('>>> ')
 
