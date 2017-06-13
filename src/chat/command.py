@@ -25,16 +25,18 @@ class CommandProtocol(basic.LineReceiver):
         self.transport.write('>>> ')
 
     def lineReceived(self, line):
-        print "command linereceived"
+        # print "command linereceived"
         stackless.tasklet(self.on_message)(line)
         reactor.callLater(0, stackless.schedule)
 
     def on_message(self, line):
-        print "on message"
+        # print "on message"
         chan_command_and_client.send(line)
 
     def on_message_from_chan(self):
-        print "on message from chan"
+        # print "on message from chan"
         line = chan_command_and_client.receive()
         self.sendLine('Echo:' + line + '\n')
         self.transport.write('>>> ')
+        stackless.tasklet(self.on_message_from_chan)()
+        reactor.callLater(0, stackless.schedule)
