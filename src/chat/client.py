@@ -7,7 +7,7 @@ Created on 10/06/2017
 
 from sys import stdout
 from twisted.internet import reactor
-
+import stackless
 
 from twisted.internet.protocol import Protocol, ClientFactory
 
@@ -15,18 +15,23 @@ from twisted.internet.protocol import Protocol, ClientFactory
 class ChatClient(Protocol):
     def connectionMade(self):
         self.transport.write('123')
-        self.transport.write('456')
 
     def dataReceived(self, data):
-        print data
+        stackless.tasklet(self.on_message)(data)
+        reactor.callLater(0, stackless.schedule)
+
+    def on_message(self, data):
+        self.transport.write(data)
+        pass
 
 
 class ChatClientFactory(ClientFactory):
 
     def buildProtocol(self, addr):
-        print('Connected.')
         return ChatClient()
 
-
 reactor.connectTCP('localhost', 8888, ChatClientFactory())
-reactor.run()
+
+stackless.tasklet(reactor.run)()
+reactor.callLater(0, stackless.schedule)
+stackless.run()
