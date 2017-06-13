@@ -20,7 +20,6 @@ class CommandProtocol(basic.LineReceiver):
         reactor.callLater(0, stackless.schedule)
         reactor.connectTCP('localhost', 8888, ChatClientFactory())
         self.transport.write('>>> ')
-        # reactor.callLater(0, stackless.schedule)
 
     def lineReceived(self, line):
         print "command linereceived"
@@ -29,13 +28,10 @@ class CommandProtocol(basic.LineReceiver):
 
     def on_message(self, line):
         print "on message"
-        # self.sendLine(line)
         chan_command_and_client.send(line)
-        # reactor.callLater(0, stackless.schedule)
 
     def on_message_from_chan(self):
         print "on message from chan"
         line = chan_command_and_client.receive()
         self.sendLine('Echo:' + line + '\n')
         self.transport.write('>>> ')
-        # reactor.callLater(0, stackless.schedule)

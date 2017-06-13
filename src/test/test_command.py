@@ -17,15 +17,16 @@ class CommandProtocol(basic.LineReceiver):
         self.transport.write('>>> ')
 
     def lineReceived(self, line):
+        stackless.tasklet(self.on_message)(line)
+        reactor.callLater(0, stackless.schedule)
+
+    def on_message(self, line):
         self.sendLine(line)
         self.transport.write('>>> ')
 
-        # def on_message(self, line):
-        #     self.sendLine(line)
-
 
 stdio.StandardIO(CommandProtocol())
-reactor.run()
-# stackless.tasklet(reactor.run)()
-# reactor.callLater(0, stackless.schedule)
-# stackless.run()
+# reactor.run()
+stackless.tasklet(reactor.run)()
+reactor.callLater(0, stackless.schedule)
+stackless.run()
