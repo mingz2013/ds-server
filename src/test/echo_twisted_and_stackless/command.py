@@ -9,13 +9,13 @@ from os import linesep
 
 import stackless
 from twisted.internet import reactor
-from twisted.protocols import basic
+from twisted.protocols.basic import LineReceiver
 
 from channel import chan_client_to_command, chan_command_to_client
 from client import ChatClientFactory
 
 
-class CommandProtocol(basic.LineReceiver):
+class CommandProtocol(LineReceiver):
     delimiter = linesep
 
     def connectionMade(self):
@@ -30,10 +30,11 @@ class CommandProtocol(basic.LineReceiver):
 
     def on_message(self, line):
         chan_command_to_client.send(line)
+        self.transport.write('>>> ')
 
     def on_message_from_chan(self):
         line = chan_client_to_command.receive()
-        self.sendLine('Echo:' + line + '\n')
+        self.sendLine('Echo:' + line)
         self.transport.write('>>> ')
         stackless.tasklet(self.on_message_from_chan)()
         reactor.callLater(0, stackless.schedule)
