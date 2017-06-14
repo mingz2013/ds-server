@@ -4,13 +4,16 @@ Created on 13/06/2017
 
 @author: zhaojm
 '''
-import stackless
-from twisted.internet import stdio, reactor
+from twisted.internet import stdio
 
-from command_protocol import CommandProtocol
 
-stdio.StandardIO(CommandProtocol())
+def init_client():
+    from command_protocol import CommandProtocol
+    stdio.StandardIO(CommandProtocol())
 
-stackless.tasklet(reactor.run)()
-reactor.callLater(0, stackless.schedule)
-stackless.run()
+
+if __name__ == '__main__':
+    init_client()
+    from run import start_reactor
+
+    start_reactor()

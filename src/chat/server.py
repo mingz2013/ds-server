@@ -4,13 +4,17 @@ Created on 14/06/2017
 
 @author: zhaojm
 '''
-import stackless
-from twisted.internet import protocol, reactor
 
-from chat_server_protocol import ChatServerFactory
+from twisted.internet import reactor
 
-reactor.listenTCP(8888, ChatServerFactory())
 
-stackless.tasklet(reactor.run)()
-reactor.callLater(0, stackless.schedule)
-stackless.run()
+def init_server():
+    from chat_server_protocol import ChatServerFactory
+    reactor.listenTCP(8888, ChatServerFactory())
+
+
+if __name__ == '__main__':
+    init_server()
+    from run import start_reactor
+
+    start_reactor()
