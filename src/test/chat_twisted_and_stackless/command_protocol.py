@@ -10,16 +10,18 @@ from os import linesep
 import stackless
 from twisted.internet import reactor
 from twisted.protocols.basic import LineReceiver
-
+from twisted.internet.protocol import ClientFactory
 from channel import chan_client_to_command, chan_command_to_client
-from chat_client_protocol import ChatClientFactory
+from chat_client_protocol import ChatClientProtocol
 
 
 class CommandProtocol(LineReceiver):
     delimiter = linesep
 
     def _connect_to_server(self):
-        reactor.connectTCP('localhost', 8888, ChatClientFactory())
+        f = ClientFactory()
+        f.protocol = ChatClientProtocol
+        reactor.connectTCP('localhost', 8888, f)
 
     def connectionMade(self):
         stackless.tasklet(self.on_message_from_client)()

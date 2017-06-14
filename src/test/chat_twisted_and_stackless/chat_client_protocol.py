@@ -7,7 +7,7 @@ Created on 10/06/2017
 
 import stackless
 from twisted.internet import reactor
-from twisted.internet.protocol import ClientFactory
+
 from twisted.protocols.basic import LineReceiver
 
 from channel import chan_client_to_command, chan_command_to_client
@@ -32,6 +32,3 @@ class ChatClientProtocol(LineReceiver):
         reactor.callLater(0, stackless.schedule)
 
 
-class ChatClientFactory(ClientFactory):
-    def buildProtocol(self, addr):
-        return ChatClientProtocol()
