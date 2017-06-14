@@ -7,33 +7,28 @@ Created on 10/06/2017
 
 import stackless
 from twisted.internet import reactor
-from twisted.internet.protocol import Protocol, ClientFactory
+from twisted.internet.protocol import ClientFactory
+from twisted.protocols.basic import LineReceiver
 
-from channel import chan_command_and_client
+from channel import chan_client_to_command, chan_command_to_client
 
 
-class ChatClientProtocol(Protocol):
+class ChatClientProtocol(LineReceiver):
     def connectionMade(self):
-        stackless.tasklet(self.on_message_from_chan)()
-        reactor.callLater(0, stackless.schedule)
-        chan_command_and_client.send("connet success")
-
-    def dataReceived(self, data):
-        # print "client data received", data
-        stackless.tasklet(self.on_message)(data)
+        stackless.tasklet(self.on_message_from_command)()
         reactor.callLater(0, stackless.schedule)
 
-    def on_message(self, data):
-        # print "client on message", data
-        chan_command_and_client.send(data)
-        # reactor.callLater(0, stackless.schedule)
+    def lineReceived(self, line):
+        stackless.tasklet(self.on_message)(line)
+        reactor.callLater(0, stackless.schedule)
 
-    def on_message_from_chan(self):
-        # print "on message from chan in client"
-        line = chan_command_and_client.receive()
-        # print "on message from chan in client"
-        self.transport.write(line)
-        stackless.tasklet(self.on_message_from_chan)()
+    def on_message(self, message):
+        chan_client_to_command.send(message)
+
+    def on_message_from_command(self):
+        line = chan_command_to_client.receive()
+        self.sendLine(line)
+        stackless.tasklet(self.on_message_from_command)()
         reactor.callLater(0, stackless.schedule)
 
 

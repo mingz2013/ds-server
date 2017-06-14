@@ -6,4 +6,5 @@ Created on 13/06/2017
 '''
 import stackless
 
-chan_command_and_client = stackless.channel()
+chan_command_to_client = stackless.channel()
+chan_client_to_command = stackless.channel()
