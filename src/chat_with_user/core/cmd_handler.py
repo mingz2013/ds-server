@@ -40,8 +40,6 @@ class CmdHandler(LineReceiver):
         pass
 
 
-
-
     def on_message_from_client(self):
         line = chan_client_to_command.receive()
         self.sendLine(line)
