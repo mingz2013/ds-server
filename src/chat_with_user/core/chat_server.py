@@ -17,7 +17,7 @@ class ChatServer(LineReceiver):
         self.chat = chat
 
     def connectionMade(self):
-        self.sendLine("What's your name?")
+        pass
 
     def connectionLost(self, reason=connectionDone):
         pass
@@ -35,5 +35,4 @@ class ChatServerFactory(Factory):
         self.chat = chat
 
     def buildProtocol(self, addr):
-        # print "build protocol"
         return ChatServer(self.chat)
