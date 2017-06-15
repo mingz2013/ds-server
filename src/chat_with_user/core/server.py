@@ -9,7 +9,7 @@ from twisted.internet import reactor
 
 
 def init_server():
-    from chat_server_protocol import ChatServerFactory
+    from chat_server import ChatServerFactory
     reactor.listenTCP(8888, ChatServerFactory())
 
 

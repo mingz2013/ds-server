@@ -12,32 +12,35 @@ from twisted.internet import reactor
 from twisted.protocols.basic import LineReceiver
 from twisted.internet.protocol import ClientFactory
 from channel import chan_client_to_command, chan_command_to_client
-from chat_client_protocol import ChatClientProtocol
+from chat_client import ChatClient
 
 
-class CommandProtocol(LineReceiver):
+class CmdHandler(LineReceiver):
     delimiter = linesep
 
     def _connect_to_server(self):
+        stackless.tasklet(self.on_message_from_client)()
+        reactor.callLater(0, stackless.schedule)
         f = ClientFactory()
-        f.protocol = ChatClientProtocol
+        f.protocol = ChatClient
         reactor.connectTCP('localhost', 8888, f)
 
     def connectionMade(self):
-        stackless.tasklet(self.on_message_from_client)()
-        reactor.callLater(0, stackless.schedule)
         self._connect_to_server()
         self.transport.write('>>> ')
 
     def lineReceived(self, line):
         # print "command line received"
-        stackless.tasklet(self.on_message)(line)
+        stackless.tasklet(self.parse_cmd)(line)
         reactor.callLater(0, stackless.schedule)
 
-    def on_message(self, line):
-        # print "command on message"
+    def parse_cmd(self, line):
         chan_command_to_client.send(line)
         self.transport.write('>>> ')
+        pass
+
+
+
 
     def on_message_from_client(self):
         line = chan_client_to_command.receive()
@@ -45,3 +48,4 @@ class CommandProtocol(LineReceiver):
         self.transport.write('>>> ')
         stackless.tasklet(self.on_message_from_client)()
         reactor.callLater(0, stackless.schedule)
+

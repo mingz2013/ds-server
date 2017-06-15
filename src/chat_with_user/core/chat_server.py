@@ -12,7 +12,7 @@ from twisted.internet.protocol import connectionDone
 from twisted.protocols.basic import LineReceiver
 
 
-class ChatServerProtocol(LineReceiver):
+class ChatServer(LineReceiver):
     def __init__(self, users):
         self.users = users
         self.name = None
@@ -57,4 +57,4 @@ class ChatServerFactory(Factory):
 
     def buildProtocol(self, addr):
         # print "build protocol"
-        return ChatServerProtocol(self.users)
+        return ChatServer(self.users)

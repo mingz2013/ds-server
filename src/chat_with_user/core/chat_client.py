@@ -13,20 +13,26 @@ from twisted.protocols.basic import LineReceiver
 from channel import chan_client_to_command, chan_command_to_client
 
 
-class ChatClientProtocol(LineReceiver):
+class ChatClient(LineReceiver):
     def connectionMade(self):
         stackless.tasklet(self.on_message_from_command)()
         reactor.callLater(0, stackless.schedule)
 
     def lineReceived(self, line):
-        stackless.tasklet(self.on_message)(line)
+        stackless.tasklet(self.parse_msg)(line)
         reactor.callLater(0, stackless.schedule)
+
+    def parse_msg(self, msg):
+        pass
 
     def on_message(self, message):
         chan_client_to_command.send(message)
 
     def on_message_from_command(self):
         line = chan_command_to_client.receive()
-        self.sendLine(line)
+        self.cmd_execute(line)
         stackless.tasklet(self.on_message_from_command)()
         reactor.callLater(0, stackless.schedule)
+
+    def cmd_execute(self, cmd, *argl, **argd):
+        pass

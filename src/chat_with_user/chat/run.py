@@ -9,11 +9,13 @@ import stackless
 from twisted.internet import reactor
 from twisted.internet import stdio
 
-from command import Command
+from cmd_handler import CmdHandler
+from chat import Chat
 
 
 def init_client():
-    stdio.StandardIO(Command())
+    c = Chat()
+    stdio.StandardIO(CmdHandler(c))
 
 
 def start_reactor():
