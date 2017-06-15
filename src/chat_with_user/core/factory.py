@@ -6,6 +6,3 @@ Created on 15/06/2017
 '''
 
 
-class Server(object):
-    def __init__(self):
-        pass
