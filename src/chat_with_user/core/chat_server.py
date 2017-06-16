@@ -11,7 +11,7 @@ from twisted.internet.protocol import connectionDone
 from twisted.protocols.basic import LineReceiver
 
 
-class ChatServer(LineReceiver):
+class ChatServerProtocol(LineReceiver):
     def __init__(self, chat):
         self.chat = chat
 
@@ -40,3 +40,6 @@ class ChatServer(LineReceiver):
             user_id = msg['user_id']
             self.chat.on_msg(user_id, msg)
         pass
+
+    def send_to_client(self, msg):
+        self.sendLine(msg)

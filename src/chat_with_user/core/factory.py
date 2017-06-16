@@ -6,7 +6,7 @@ Created on 15/06/2017
 '''
 from twisted.internet.protocol import Factory
 
-from chat_server import ChatServer
+from chat_server import ChatServerProtocol
 
 
 class ChatServerFactory(Factory):
@@ -14,4 +14,4 @@ class ChatServerFactory(Factory):
         self.chat = chat
 
     def buildProtocol(self, addr):
-        return ChatServer(self.chat)
+        return ChatServerProtocol(self.chat)
