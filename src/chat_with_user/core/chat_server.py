@@ -25,8 +25,18 @@ class ChatServer(LineReceiver):
         stackless.tasklet(self.parse_msg)(line)
         reactor.callLater(0, stackless.schedule)
 
-    def parse_msg(self, line):
+    def parse_msg(self, msg):
+
+        if "create_user" in msg:
+            name = msg['name']
+            password = msg['password']
+
+            user_id = self.chat.account_mgr.account_create(name, password)
+            if user_id:
+                pass
+        elif "login" in msg:
+            pass
+        else:
+            user_id = msg['user_id']
+            self.chat.on_msg(user_id, msg)
         pass
-
-
-
