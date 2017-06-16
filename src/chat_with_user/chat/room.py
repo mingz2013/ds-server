@@ -13,7 +13,7 @@ class Room(object):
 
     def __send_to_all(self, msg):
         for m in self.__members:
-            m.send_to_client(msg)
+            m.send_to_protocol(msg)
             pass
 
     def on_msg(self, user_id, msg):

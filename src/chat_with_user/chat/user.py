@@ -23,6 +23,6 @@ class User(object):
     def set_name(self, name):
         self.name = name
 
-    def send_to_client(self, msg):
+    def send_to_protocol(self, msg):
         self.__protocol.send_to_client(msg)
         pass
