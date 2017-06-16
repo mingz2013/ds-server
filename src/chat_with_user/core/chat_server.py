@@ -7,7 +7,6 @@ Created on 10/06/2017
 
 import stackless
 from twisted.internet import reactor
-from twisted.internet.protocol import Factory
 from twisted.internet.protocol import connectionDone
 from twisted.protocols.basic import LineReceiver
 
@@ -30,9 +29,4 @@ class ChatServer(LineReceiver):
         pass
 
 
-class ChatServerFactory(Factory):
-    def __init__(self, chat):
-        self.chat = chat
 
-    def buildProtocol(self, addr):
-        return ChatServer(self.chat)

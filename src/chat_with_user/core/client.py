@@ -8,8 +8,8 @@ from twisted.internet import stdio
 
 
 def init_client():
-    from command_protocol import CommandProtocol
-    stdio.StandardIO(CommandProtocol())
+    from cmd_handler import CmdHandler
+    stdio.StandardIO(CmdHandler())
 
 
 if __name__ == '__main__':

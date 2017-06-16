@@ -23,16 +23,21 @@ class ChatClient(LineReceiver):
         reactor.callLater(0, stackless.schedule)
 
     def parse_msg(self, msg):
+        # 这里解析服务器传来的消息, 并封装用户显示数据给cmd
+
+        self.send_to_cmd(msg)
         pass
 
-    def on_message(self, message):
+    def send_to_cmd(self, message):
         chan_client_to_command.send(message)
 
     def on_message_from_command(self):
-        line = chan_command_to_client.receive()
-        self.cmd_execute(line)
+        msg = chan_command_to_client.receive()
+        self.cmd_execute(msg['cmd'], msg)
         stackless.tasklet(self.on_message_from_command)()
         reactor.callLater(0, stackless.schedule)
 
     def cmd_execute(self, cmd, *argl, **argd):
+        # 执行cmd发过来的命令
+
         pass

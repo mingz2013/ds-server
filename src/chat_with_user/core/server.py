@@ -6,11 +6,12 @@ Created on 14/06/2017
 '''
 
 from twisted.internet import reactor
-
+from ..chat import Chat
 
 def init_server():
     from chat_server import ChatServerFactory
-    reactor.listenTCP(8888, ChatServerFactory())
+    c = Chat()
+    reactor.listenTCP(8888, ChatServerFactory(c))
 
 
 if __name__ == '__main__':
