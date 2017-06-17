@@ -9,9 +9,9 @@ from twisted.internet.protocol import Factory
 from chat_server import ChatServerProtocol
 
 
-class ChatServerFactory(Factory):
-    def __init__(self, chat):
-        self.chat = chat
+class TcpServerFactory(Factory):
+    def __init__(self, entity):
+        self.entity = entity
 
     def buildProtocol(self, addr):
-        return ChatServerProtocol(self.chat)
+        return ChatServerProtocol(self.entity)

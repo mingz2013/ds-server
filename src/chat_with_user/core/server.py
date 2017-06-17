@@ -8,10 +8,11 @@ Created on 14/06/2017
 from twisted.internet import reactor
 from ..chat import Chat
 
+
 def init_server():
-    from factory import ChatServerFactory
+    from factory import TcpServerFactory
     c = Chat()
-    reactor.listenTCP(8888, ChatServerFactory(c))
+    reactor.listenTCP(8888, TcpServerFactory(c))
 
 
 if __name__ == '__main__':
