@@ -25,33 +25,21 @@ class TcpServerProtocol(LineReceiver):
         pass
 
     def connectionLost(self, reason=connectionDone):
+        self.entity.on_lost(self)
         pass
 
     def lineReceived(self, line):
-        stackless.tasklet(self.parse_msg)(line)
+        stackless.tasklet(self.on_msg)(line)
         reactor.callLater(0, stackless.schedule)
 
-    def parse_msg(self, msg):
-
-        if "create_user" in msg:
-            name = msg['name']
-            password = msg['password']
-
-            user_id = self.chat.account_mgr.account_create(name, password)
-            if user_id:
-                pass
-        elif "login" in msg:
-            pass
-        else:
-            user_id = msg['user_id']
-            self.chat.on_msg(user_id, msg)
-        pass
+    def on_msg(self, msg):
+        self.entity.on_msg(self, msg)
 
     def send_to_client(self, msg):
         self.sendLine(msg)
 
 
-class ChatClient(LineReceiver):
+class TcpClientProtocol(LineReceiver):
     def connectionMade(self):
         stackless.tasklet(self.on_message_from_command)()
         reactor.callLater(0, stackless.schedule)

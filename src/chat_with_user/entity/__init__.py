@@ -30,13 +30,27 @@ class Chat(object):
     def login(self, user_id, password):
         pass
 
-    def on_msg(self, user_id, msg):
+    def on_lost(self, protocol):
+        pass
 
-        if "create_room" in msg:
+    def on_msg(self, protocol, msg):
+
+        if "create_user" in msg:
+            name = msg['name']
+            password = msg['password']
+            user_id = self.account_mgr.account_create(name, password)
+            if user_id:
+                self.__login_map.update({
+                    user_id: protocol
+                })
+                pass
+        elif "login" in msg:
+            pass
+        elif "create_room" in msg:
             pass
         elif "join_room" in msg:
             pass
         elif "room_id" in msg:
-            self.get_room(msg['room_id']).on_msg(user_id, msg)
+            self.get_room(msg['room_id']).on_msg(msg)
         else:
             pass
