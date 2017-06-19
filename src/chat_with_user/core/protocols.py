@@ -9,11 +9,8 @@ from os import linesep
 
 import stackless
 from twisted.internet import reactor
-from twisted.internet.protocol import ClientFactory
 from twisted.internet.protocol import connectionDone
 from twisted.protocols.basic import LineReceiver
-
-import stackless
 
 chan_command_to_client = stackless.channel()
 chan_client_to_command = stackless.channel()
@@ -45,9 +42,6 @@ class TcpServerProtocol(LineReceiver):
     def on_msg(self, msg):
         self.entity.on_msg(self, msg)
 
-        # def send_to_client(self, msg):
-        #     self.sendLine(msg)
-
 
 class TcpClientProtocol(LineReceiver):
     def __init__(self, entity):
@@ -55,23 +49,25 @@ class TcpClientProtocol(LineReceiver):
         pass
 
     def connectionMade(self):
-        stackless.tasklet(self.on_message_from_command)()
-        reactor.callLater(0, stackless.schedule)
+        self.entity.on_made(self)
+        pass
+
+    def connectionLost(self, reason=connectionDone):
+        self.entity.on_lost(self)
 
     def lineReceived(self, line):
-        stackless.tasklet(self.parse_msg)(line)
+        stackless.tasklet(self.on_msg)(line)
         reactor.callLater(0, stackless.schedule)
 
-    # def send_to_cmd(self, message):
-    #     chan_client_to_command.send(message)
+    def on_msg(self, msg):
+        self.entity.on_msg(self, msg)
+        pass
 
-    def on_message_from_command(self):
+    def on_chan(self):
         msg = chan_command_to_client.receive()
         self.cmd_execute(msg['cmd'], msg)
         stackless.tasklet(self.on_message_from_command)()
         reactor.callLater(0, stackless.schedule)
-
-
 
 
 class CmdHandlerProtocol(LineReceiver):
@@ -83,19 +79,13 @@ class CmdHandlerProtocol(LineReceiver):
             "connect": self._connect_to_server
         }
 
-    def _connect_to_server(self):
-        stackless.tasklet(self.on_message_from_client)()
-        reactor.callLater(0, stackless.schedule)
-        f = ClientFactory()
-        f.protocol = TcpClientProtocol
-        reactor.connectTCP('localhost', 8888, f)
-
-    def _send_to_client(self, cmd, *argl, **argd):
+    def send_to_chan(self, cmd, *argl, **argd):
         msg = {}
         chan_command_to_client.send(msg)
         pass
 
     def connectionMade(self):
+        self.entity.on_made(self)
         pass
 
     def connectionLost(self, reason=connectionDone):
@@ -108,7 +98,7 @@ class CmdHandlerProtocol(LineReceiver):
     def on_msg(self, msg):
         self.entity.on_msg(self, msg)
 
-    def on_message_from_client(self):
+    def on_chan(self):
         msg = chan_client_to_command.receive()
         # 这里控制怎么显示,显示样式
         self.sendLine(msg)

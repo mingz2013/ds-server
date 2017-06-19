@@ -13,6 +13,7 @@ class CmdHandler(object):
         pass
 
     def __conn_to_server(self, ip, port):
+        self.client.conn_to_server(ip, port)
         pass
 
     def on_made(self, conn):
