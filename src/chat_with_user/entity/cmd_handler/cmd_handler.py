@@ -7,7 +7,8 @@ Created on 19/06/2017
 
 
 class CmdHandler(object):
-    def __init__(self):
+    def __init__(self, client):
+        self.client = client
         self.conn = None
         pass
 
