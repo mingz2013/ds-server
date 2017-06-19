@@ -20,6 +20,14 @@ from channel import chan_client_to_command, chan_command_to_client
 class TcpServerProtocol(LineReceiver):
     def __init__(self, entity):
         self.entity = entity
+        self.__user_id = -1
+
+    def set_user_id(self, user_id):
+        self.__user_id = user_id
+
+    @property
+    def user_id(self):
+        return self.__user_id
 
     def connectionMade(self):
         pass
@@ -35,8 +43,8 @@ class TcpServerProtocol(LineReceiver):
     def on_msg(self, msg):
         self.entity.on_msg(self, msg)
 
-    def send_to_client(self, msg):
-        self.sendLine(msg)
+        # def send_to_client(self, msg):
+        #     self.sendLine(msg)
 
 
 class TcpClientProtocol(LineReceiver):
