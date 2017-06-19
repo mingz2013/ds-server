@@ -29,4 +29,5 @@ class ChatClient(Entity):
         pass
 
     def on_chan(self, conn, msg):
+        # print msg
         conn.sendLine(msg)

@@ -30,4 +30,5 @@ class CmdHandler(Entity):
         conn.sendLine(msg)
 
     def on_msg(self, conn, msg):
+        # print msg
         conn.send_to_chan(msg)

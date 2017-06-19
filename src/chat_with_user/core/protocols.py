@@ -18,21 +18,22 @@ second_chan = stackless.channel()
 
 class BaseProtocol(LineReceiver):
     def __init__(self, entity):
-        self.__entity = entity
+        self.entity = entity
         pass
 
     def connectionMade(self):
-        self.__entity.on_conn_made(self)
+        self.entity.on_conn_made(self)
 
     def connectionLost(self, reason=connectionDone):
-        self.__entity.on_conn_lost(self)
+        self.entity.on_conn_lost(self)
 
     def lineReceived(self, line):
         stackless.tasklet(self.on_msg)(line)
         reactor.callLater(0, stackless.schedule)
 
     def on_msg(self, msg):
-        self.__entity.on_msg(self, msg)
+        # print msg
+        self.entity.on_msg(self, msg)
 
 
 class TcpServerProtocol(BaseProtocol):
@@ -66,15 +67,17 @@ class ChannelProtocol(BaseProtocol):
 
 class TcpClientProtocol(ChannelProtocol):
     def __init__(self, entity):
-        BaseProtocol.__init__(self, entity)
+        ChannelProtocol.__init__(self, entity)
 
     def send_to_chan(self, msg):
         first_chan.send(msg)
         pass
 
     def on_chan(self):
+        # print "tcp client on chan"
         msg = second_chan.receive()
-        self.__entity.on_chan(self, msg)
+        # print "tcp client on chan:", msg
+        self.entity.on_chan(self, msg)
         self.start_listen_chan()
 
 
@@ -82,7 +85,7 @@ class CmdHandlerProtocol(ChannelProtocol):
     delimiter = linesep
 
     def __init__(self, entity):
-        BaseProtocol.__init__(self, entity)
+        ChannelProtocol.__init__(self, entity)
 
     def send_to_chan(self, msg):
         second_chan.send(msg)
@@ -90,5 +93,5 @@ class CmdHandlerProtocol(ChannelProtocol):
 
     def on_chan(self):
         msg = first_chan.receive()
-        self.__entity.on_chan(self, msg)
+        self.entity.on_chan(self, msg)
         self.start_listen_chan()
