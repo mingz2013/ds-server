@@ -29,6 +29,7 @@ class TcpServerProtocol(LineReceiver):
         return self.__user_id
 
     def connectionMade(self):
+        self.entity.on_made(self)
         pass
 
     def connectionLost(self, reason=connectionDone):
