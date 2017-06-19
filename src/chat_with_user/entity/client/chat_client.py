@@ -1,14 +1,14 @@
 # -*- coding:utf-8 -*-
 '''
-Created on 15/06/2017
+Created on 19/06/2017
 
 @author: zhaojm
 '''
 
 
-class MsgHandler(object):
+class ChatClient(object):
     def __init__(self):
         pass
 
-    def handle_msg(self, msg):
+    def on_msg(self, conn, msg):
         pass

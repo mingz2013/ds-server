@@ -5,13 +5,12 @@ Created on 17/06/2017
 @author: zhaojm
 '''
 
-import stackless
-from twisted.internet import reactor
-from twisted.internet.protocol import connectionDone
-from twisted.protocols.basic import LineReceiver
-import stackless
-from twisted.internet import reactor
+from os import linesep
 
+import stackless
+from twisted.internet import reactor
+from twisted.internet.protocol import ClientFactory
+from twisted.internet.protocol import connectionDone
 from twisted.protocols.basic import LineReceiver
 
 from channel import chan_client_to_command, chan_command_to_client
@@ -75,3 +74,46 @@ class TcpClientProtocol(LineReceiver):
         # 执行cmd发过来的命令
 
         pass
+
+
+class CmdHandlerProtocol(LineReceiver):
+    delimiter = linesep
+
+    def __init__(self, entity):
+        self.entity = entity
+        self.cmd_executer = {
+            "connect": self._connect_to_server
+        }
+
+    def _connect_to_server(self):
+        stackless.tasklet(self.on_message_from_client)()
+        reactor.callLater(0, stackless.schedule)
+        f = ClientFactory()
+        f.protocol = TcpClientProtocol
+        reactor.connectTCP('localhost', 8888, f)
+
+    def _send_to_client(self, cmd, *argl, **argd):
+        msg = {}
+        chan_command_to_client.send(msg)
+        pass
+
+    def connectionMade(self):
+        pass
+
+    def connectionLost(self, reason=connectionDone):
+        self.entity.on_lost(self)
+
+    def lineReceived(self, line):
+        stackless.tasklet(self.on_msg)(line)
+        reactor.callLater(0, stackless.schedule)
+
+    def on_msg(self, msg):
+        self.entity.on_msg(self, msg)
+
+    def on_message_from_client(self):
+        msg = chan_client_to_command.receive()
+        # 这里控制怎么显示,显示样式
+        self.sendLine(msg)
+        self.transport.write('>>> ')
+        stackless.tasklet(self.on_message_from_client)()
+        reactor.callLater(0, stackless.schedule)

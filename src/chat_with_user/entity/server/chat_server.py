@@ -1,13 +1,14 @@
 # -*- coding:utf-8 -*-
 '''
-Created on 15/06/2017
+Created on 19/06/2017
 
 @author: zhaojm
 '''
+
 import account
 
 
-class Chat(object):
+class ChatServer(object):
     def __init__(self):
         self.__login_map = {}
         self.__room_map = {}
