@@ -27,7 +27,8 @@ class ChatServer(Entity):
         return self.__room_map.get(room_id)
 
     def on_conn_lost(self, conn):
-        del self.__login_map[conn.user_id]
+        if conn.user_id and conn.user_id in self.__login_map:
+            del self.__login_map[conn.user_id]
 
     def on_msg(self, conn, msg):
         # if "create_user" in msg:
