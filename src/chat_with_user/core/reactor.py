@@ -5,7 +5,6 @@ Created on 19/06/2017
 @author: zhaojm
 '''
 
-from twisted.internet import reactor
 import stackless
 from twisted.internet import reactor
 

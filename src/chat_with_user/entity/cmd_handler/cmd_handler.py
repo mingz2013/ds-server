@@ -8,9 +8,14 @@ Created on 19/06/2017
 
 class CmdHandler(object):
     def __init__(self):
+        self.conn = None
+        pass
+
+    def __conn_to_server(self, ip, port):
         pass
 
     def on_made(self, conn):
+        self.conn = conn
         pass
 
     def on_lost(self, conn):
@@ -20,9 +25,9 @@ class CmdHandler(object):
         # 这里解析命令
         # 并分发命令
         if "conn" in msg:
-            self.__conn_to_server()
+            self.__conn_to_server(msg['ip'], msg['port'])
 
         pass
 
-    def __conn_to_server(self):
+    def on_chan(self, chan, msg):
         pass

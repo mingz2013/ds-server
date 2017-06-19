@@ -13,13 +13,16 @@ from twisted.internet.protocol import ClientFactory
 from twisted.internet.protocol import connectionDone
 from twisted.protocols.basic import LineReceiver
 
-from channel import chan_client_to_command, chan_command_to_client
+import stackless
+
+chan_command_to_client = stackless.channel()
+chan_client_to_command = stackless.channel()
 
 
 class TcpServerProtocol(LineReceiver):
     def __init__(self, entity):
         self.entity = entity
-        self.__user_id = -1
+        self.__user_id = -1  # 定义一个user_id变量, 能够通过user_id索引protocol, 效率高一些
 
     def set_user_id(self, user_id):
         self.__user_id = user_id
@@ -47,6 +50,10 @@ class TcpServerProtocol(LineReceiver):
 
 
 class TcpClientProtocol(LineReceiver):
+    def __init__(self, entity):
+        self.entity = entity
+        pass
+
     def connectionMade(self):
         stackless.tasklet(self.on_message_from_command)()
         reactor.callLater(0, stackless.schedule)
@@ -55,14 +62,8 @@ class TcpClientProtocol(LineReceiver):
         stackless.tasklet(self.parse_msg)(line)
         reactor.callLater(0, stackless.schedule)
 
-    def parse_msg(self, msg):
-        # 这里解析服务器传来的消息, 并封装用户显示数据给cmd
-
-        self.send_to_cmd(msg)
-        pass
-
-    def send_to_cmd(self, message):
-        chan_client_to_command.send(message)
+    # def send_to_cmd(self, message):
+    #     chan_client_to_command.send(message)
 
     def on_message_from_command(self):
         msg = chan_command_to_client.receive()
@@ -70,10 +71,7 @@ class TcpClientProtocol(LineReceiver):
         stackless.tasklet(self.on_message_from_command)()
         reactor.callLater(0, stackless.schedule)
 
-    def cmd_execute(self, cmd, *argl, **argd):
-        # 执行cmd发过来的命令
 
-        pass
 
 
 class CmdHandlerProtocol(LineReceiver):
