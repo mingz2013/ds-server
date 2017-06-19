@@ -25,7 +25,8 @@ class ChatClient(Entity):
         self.conn = None
 
     def on_msg(self, conn, msg):
+        conn.send_to_chan(msg)
         pass
 
-    def on_chan(self, chan, msg):
-        pass
+    def on_chan(self, conn, msg):
+        conn.sendLine(msg)

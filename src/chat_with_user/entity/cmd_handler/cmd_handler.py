@@ -20,19 +20,14 @@ class CmdHandler(Entity):
 
     def on_conn_made(self, conn):
         self.conn = conn
+        self.__conn_to_server('localhost', 8888)
         pass
 
     def on_conn_lost(self, conn):
         self.conn = None
 
-    def on_chan(self, chan, msg):
-        pass
+    def on_chan(self, conn, msg):
+        conn.sendLine(msg)
 
     def on_msg(self, conn, msg):
-        # 这里解析命令
-        # 并分发命令
-        if "conn" in msg:
-            self.__conn_to_server(msg['ip'], msg['port'])
-
-        pass
-
+        conn.send_to_chan(msg)
