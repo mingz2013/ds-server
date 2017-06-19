@@ -5,8 +5,10 @@ Created on 19/06/2017
 @author: zhaojm
 '''
 
+from core.entity import Entity
 
-class CmdHandler(object):
+
+class CmdHandler(Entity):
     def __init__(self, client):
         self.client = client
         self.conn = None
@@ -16,11 +18,14 @@ class CmdHandler(object):
         self.client.conn_to_server(ip, port)
         pass
 
-    def on_made(self, conn):
+    def on_conn_made(self, conn):
         self.conn = conn
         pass
 
-    def on_lost(self, conn):
+    def on_conn_lost(self, conn):
+        self.conn = None
+
+    def on_chan(self, chan, msg):
         pass
 
     def on_msg(self, conn, msg):
@@ -31,5 +36,3 @@ class CmdHandler(object):
 
         pass
 
-    def on_chan(self, chan, msg):
-        pass

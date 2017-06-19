@@ -6,9 +6,10 @@ Created on 19/06/2017
 '''
 
 import account
+from core.entity import Entity
 
 
-class ChatServer(object):
+class ChatServer(Entity):
     def __init__(self):
         self.__login_map = {}
         self.__room_map = {}
@@ -25,9 +26,8 @@ class ChatServer(object):
     def get_room(self, room_id):
         return self.__room_map.get(room_id)
 
-    def on_lost(self, conn):
+    def on_conn_lost(self, conn):
         del self.__login_map[conn.user_id]
-        pass
 
     def on_msg(self, conn, msg):
 

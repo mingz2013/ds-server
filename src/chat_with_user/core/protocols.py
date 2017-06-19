@@ -12,8 +12,8 @@ from twisted.internet import reactor
 from twisted.internet.protocol import connectionDone
 from twisted.protocols.basic import LineReceiver
 
-chan_command_to_client = stackless.channel()
-chan_client_to_command = stackless.channel()
+first_chan = stackless.channel()
+second_chan = stackless.channel()
 
 
 class BaseProtocol(LineReceiver):
@@ -34,12 +34,6 @@ class BaseProtocol(LineReceiver):
     def on_msg(self, msg):
         self.__entity.on_msg(self, msg)
 
-    def on_chan(self):
-        pass
-
-    def send_to_chan(self, msg):
-        pass
-
 
 class TcpServerProtocol(BaseProtocol):
     def __init__(self, entity):
@@ -54,37 +48,47 @@ class TcpServerProtocol(BaseProtocol):
         return self.__user_id
 
 
-class TcpClientProtocol(BaseProtocol):
+class ChannelProtocol(BaseProtocol):
+    def __init__(self, entity):
+        BaseProtocol.__init__(self, entity)
+        self.start_listen_chan()
+
+    def start_listen_chan(self):
+        stackless.tasklet(self.on_chan)()
+        reactor.callLater(0, stackless.schedule)
+
+    def on_chan(self):
+        pass
+
+    def send_to_chan(self, msg):
+        pass
+
+
+class TcpClientProtocol(ChannelProtocol):
     def __init__(self, entity):
         BaseProtocol.__init__(self, entity)
 
     def send_to_chan(self, msg):
-        chan_command_to_client.send(msg)
-
-    def on_chan(self):
-        msg = chan_command_to_client.receive()
-        self.on_msg_from_chan(msg)
-        stackless.tasklet(self.on_chan)()
-        reactor.callLater(0, stackless.schedule)
-
-    def on_msg_from_chan(self, msg):
+        first_chan.send(msg)
         pass
 
+    def on_chan(self):
+        msg = second_chan.receive()
+        self.__entity.on_chan(self, msg)
+        self.start_listen_chan()
 
-class CmdHandlerProtocol(BaseProtocol):
+
+class CmdHandlerProtocol(ChannelProtocol):
     delimiter = linesep
 
     def __init__(self, entity):
         BaseProtocol.__init__(self, entity)
 
     def send_to_chan(self, msg):
-        chan_command_to_client.send(msg)
+        second_chan.send(msg)
+        pass
 
     def on_chan(self):
-        msg = chan_client_to_command.receive()
-        self.on_msg_from_chan(msg)
-        stackless.tasklet(self.on_chan)()
-        reactor.callLater(0, stackless.schedule)
-
-    def on_msg_from_chan(self, msg):
-        pass
+        msg = first_chan.receive()
+        self.__entity.on_chan(self, msg)
+        self.start_listen_chan()

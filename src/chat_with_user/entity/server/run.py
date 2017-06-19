@@ -5,7 +5,7 @@ Created on 19/06/2017
 @author: zhaojm
 '''
 
-from . import ChatServer
+from chat_server import ChatServer
 from core.reactor import start_reactor
 from core.factory import init_server
 

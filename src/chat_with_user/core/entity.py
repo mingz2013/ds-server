@@ -7,14 +7,15 @@ Created on 19/06/2017
 
 
 class Entity(object):
-    def __init__(self):
-        pass
 
     def on_conn_made(self, conn):
-        return NotImplementedError()
+        pass
 
     def on_conn_lost(self, conn):
+        pass
+
+    def on_msg(self, conn, msg):
         return NotImplementedError()
 
-    def on_msg(self, msg):
-        return NotImplementedError()
+    def on_chan(self, conn, msg):
+        pass
