@@ -6,7 +6,22 @@ Created on 19/06/2017
 '''
 
 import stackless
-from twisted.internet import reactor
+from twisted.internet import reactor, stdio
+
+from factory import BaseFactory, BaseClientFactory
+from protocols import StandardIOProtocol
+
+
+def init_server(entity):
+    reactor.listenTCP(8888, BaseFactory(entity))
+
+
+def init_stdio(entity):
+    stdio.StandardIO(StandardIOProtocol(entity))
+
+
+def conn_to_server(entity, ip, port):
+    reactor.connectTCP(ip, port, BaseClientFactory(entity))
 
 
 def start_reactor():

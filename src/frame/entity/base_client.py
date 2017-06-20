@@ -5,13 +5,12 @@ Created on 20/06/2017
 @author: zhaojm
 '''
 
-from core.entity import Entity
-from core.factory import conn_to_server
+from frame.core.entity import Entity
+from frame.core.reactor import conn_to_server
 
 
 class BaseClient(Entity):
-    def __init__(self, server):
-        self.server = server
+    def __init__(self):
         self.conn = None
         pass
 
@@ -26,8 +25,4 @@ class BaseClient(Entity):
         self.conn = None
 
     def on_msg(self, conn, msg):
-        self.server.on_client_msg(self, msg)
         pass
-
-    def sendLine(self, server, msg):
-        self.conn.sendLine(msg)
