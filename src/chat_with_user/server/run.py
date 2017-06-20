@@ -13,9 +13,10 @@ source_path = os.path.join(current_path, "../../")
 sys.path.append(source_path)
 
 from chat_server import ChatServer
-from core.reactor import start_reactor
-from core.factory import init_server
+from frame.core.reactor import start_reactor
+from frame.core.reactor import init_server
 
-s = ChatServer()
-init_server(s)
-start_reactor()
+if __name__ == '__main__':
+    s = ChatServer()
+    init_server(s, '0.0.0.0', 8888)
+    start_reactor()

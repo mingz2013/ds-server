@@ -23,5 +23,3 @@ class BaseClientFactory(ClientFactory):
 
     def buildProtocol(self, addr):
         return BaseProtocol(self.entity)
-
-

@@ -5,20 +5,20 @@ Created on 19/06/2017
 @author: zhaojm
 '''
 
-from core.entity import Entity
-from entity.client.chat_client import ChatClient
+from frame.entity.cmd_handler import CmdHandler
+from chat_client import ChatClient
+from frame.core.reactor import init_client
 
 
-class CmdHandler(Entity):
+class ChatCmdHandler(CmdHandler):
     def __init__(self):
-        Entity.__init__(self)
-        self.client = ChatClient(self)
+        CmdHandler.__init__(self)
+        self.chat_client = ChatClient(self)
         self.conn = None
         pass
 
     def __conn_to_server(self, ip, port):
-        self.client.conn_to_server(ip, port)
-        pass
+        init_client(self.chat_client, ip, port)
 
     def on_conn_made(self, conn):
         self.conn = conn
@@ -29,7 +29,7 @@ class CmdHandler(Entity):
         self.conn = None
 
     def on_msg(self, conn, msg):
-        self.client.sendLine(self, msg)
+        pass
 
     def on_client_msg(self, client, msg):
         self.conn.sendLine(msg)

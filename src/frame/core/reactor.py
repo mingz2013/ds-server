@@ -12,8 +12,8 @@ from factory import BaseFactory, BaseClientFactory
 from protocols import StandardIOProtocol
 
 
-def init_server(entity):
-    reactor.listenTCP(8888, BaseFactory(entity))
+def init_server(entity, ip, port):
+    reactor.listenTCP(port, BaseFactory(entity))
 
 
 def init_stdio(entity):

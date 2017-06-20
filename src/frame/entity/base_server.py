@@ -26,5 +26,5 @@ if __name__ == '__main__':
     from frame.core.reactor import init_server, start_reactor
 
     s = BaseServer()
-    init_server(s)
+    init_server(s, '0.0.0.0', 8888)
     start_reactor()

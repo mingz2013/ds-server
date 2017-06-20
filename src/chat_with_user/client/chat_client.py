@@ -5,18 +5,15 @@ Created on 19/06/2017
 @author: zhaojm
 '''
 
-from core.entity import Entity
-from core.factory import conn_to_server
+from frame.entity.base_client import BaseClient
 
 
-class ChatClient(Entity):
-    def __init__(self, server):
-        self.server = server
+class ChatClient(BaseClient):
+    def __init__(self, cmd_handler):
+        BaseClient.__init__(self)
+        self.cmd_handler = cmd_handler
         self.conn = None
         pass
-
-    def conn_to_server(self, ip, port):
-        conn_to_server(ip, port, self)
 
     def on_conn_made(self, conn):
         self.conn = conn
@@ -26,8 +23,6 @@ class ChatClient(Entity):
         self.conn = None
 
     def on_msg(self, conn, msg):
-        self.server.on_client_msg(self, msg)
+        self.cmd_handler.on_client_msg(self, msg)
         pass
 
-    def sendLine(self, server, msg):
-        self.conn.sendLine(msg)

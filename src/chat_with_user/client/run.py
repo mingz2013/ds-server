@@ -12,10 +12,11 @@ current_path = os.path.dirname(os.path.abspath(__file__))
 source_path = os.path.join(current_path, "../../")
 sys.path.append(source_path)
 
-from entity.client.cmd_handler import CmdHandler
-from core.factory import init_cmd_handler
-from core.reactor import start_reactor
+from chat_with_user.client.cmd_handler import ChatCmdHandler
 
-cmd = CmdHandler()
-init_cmd_handler(cmd)
-start_reactor()
+from frame.core.reactor import init_stdio, start_reactor
+
+if __name__ == '__main__':
+    c = ChatCmdHandler()
+    init_stdio(c)
+    start_reactor()
