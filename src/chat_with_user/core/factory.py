@@ -4,9 +4,10 @@ Created on 15/06/2017
 
 @author: zhaojm
 '''
-from twisted.internet.protocol import Factory, ClientFactory
-from protocols import TcpClientProtocol, TcpServerProtocol, CmdHandlerProtocol
 from twisted.internet import reactor, stdio
+from twisted.internet.protocol import Factory, ClientFactory
+
+from protocols import TcpClientProtocol, TcpServerProtocol, CmdHandlerProtocol
 
 
 class TcpServerFactory(Factory):

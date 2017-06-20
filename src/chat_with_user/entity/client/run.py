@@ -18,8 +18,6 @@ from core.reactor import start_reactor
 from entity.client.chat_client import ChatClient
 
 client = ChatClient()
-
 cmd = CmdHandler(client)
-
 init_cmd_handler(cmd)
 start_reactor()

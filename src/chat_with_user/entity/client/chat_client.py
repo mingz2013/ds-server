@@ -5,8 +5,8 @@ Created on 19/06/2017
 @author: zhaojm
 '''
 
-from core.factory import conn_to_server
 from core.entity import Entity
+from core.factory import conn_to_server
 
 
 class ChatClient(Entity):

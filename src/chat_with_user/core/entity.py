@@ -7,7 +7,6 @@ Created on 19/06/2017
 
 
 class Entity(object):
-
     def on_conn_made(self, conn):
         pass
 

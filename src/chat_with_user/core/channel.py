@@ -25,8 +25,6 @@ class Channel(object):
         stackless.tasklet(self.on_sencond_chan)()
         reactor.callLater(0, stackless.schedule)
 
-
-
     def on_first_chan(self):
         line = self.first_chan.receive()
         self.start_first_chan()
