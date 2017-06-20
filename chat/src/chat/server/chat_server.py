@@ -21,6 +21,7 @@ class ChatServer(BaseServer):
         pass
 
     def on_msg(self, conn, msg):
+        conn.sendLine(msg)
         pass
 
 

@@ -29,8 +29,10 @@ class ChatCmdHandler(CmdHandler):
         self.conn = None
 
     def on_msg(self, conn, msg):
+        self.chat_client.on_cmd(msg)
         pass
 
     def on_client_msg(self, client, msg):
+        # 从client传过来的数据
         self.conn.sendLine(msg)
         pass

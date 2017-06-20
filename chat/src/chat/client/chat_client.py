@@ -26,3 +26,7 @@ class ChatClient(BaseClient):
         self.cmd_handler.on_client_msg(self, msg)
         pass
 
+    def on_cmd(self, msg):
+        # 从cmd handler传过来的数据
+        self.conn.sendLine(msg)
+        pass
