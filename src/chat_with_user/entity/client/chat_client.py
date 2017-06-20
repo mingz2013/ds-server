@@ -10,7 +10,8 @@ from core.factory import conn_to_server
 
 
 class ChatClient(Entity):
-    def __init__(self):
+    def __init__(self, server):
+        self.server = server
         self.conn = None
         pass
 
@@ -21,13 +22,12 @@ class ChatClient(Entity):
         self.conn = conn
         pass
 
-    def on_conn_lost(self, conn):
+    def on_conn_lost(self, conn, reason):
         self.conn = None
 
     def on_msg(self, conn, msg):
-        conn.send_to_chan(msg)
+        self.server.on_client_msg(self, msg)
         pass
 
-    def on_chan(self, conn, msg):
-        # print msg
-        conn.sendLine(msg)
+    def sendLine(self, server, msg):
+        self.conn.sendLine(msg)

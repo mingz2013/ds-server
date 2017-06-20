@@ -7,27 +7,27 @@ Created on 15/06/2017
 from twisted.internet import reactor, stdio
 from twisted.internet.protocol import Factory, ClientFactory
 
-from protocols import TcpClientProtocol, TcpServerProtocol, CmdHandlerProtocol
+from protocols import BaseProtocol, CmdHandlerProtocol
 
 
-class TcpServerFactory(Factory):
+class BaseFactory(Factory):
     def __init__(self, entity):
         self.entity = entity
 
     def buildProtocol(self, addr):
-        return TcpServerProtocol(self.entity)
+        return BaseProtocol(self.entity)
 
 
-class TcpClientFactory(ClientFactory):
+class BaseClientFactory(ClientFactory):
     def __init__(self, entity):
         self.entity = entity
 
     def buildProtocol(self, addr):
-        return TcpClientProtocol(self.entity)
+        return BaseProtocol(self.entity)
 
 
 def init_server(entity):
-    reactor.listenTCP(8888, TcpServerFactory(entity))
+    reactor.listenTCP(8888, BaseClientFactory(entity))
 
 
 def init_cmd_handler(entity):
@@ -35,4 +35,4 @@ def init_cmd_handler(entity):
 
 
 def conn_to_server(ip, port, entity):
-    reactor.connectTCP(ip, port, TcpClientFactory(entity))
+    reactor.connectTCP(ip, port, BaseClientFactory(entity))

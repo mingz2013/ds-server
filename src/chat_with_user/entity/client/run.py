@@ -15,9 +15,7 @@ sys.path.append(source_path)
 from entity.client.cmd_handler import CmdHandler
 from core.factory import init_cmd_handler
 from core.reactor import start_reactor
-from entity.client.chat_client import ChatClient
 
-client = ChatClient()
-cmd = CmdHandler(client)
+cmd = CmdHandler()
 init_cmd_handler(cmd)
 start_reactor()
