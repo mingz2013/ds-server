@@ -29,6 +29,7 @@ class ChatCmdHandler(CmdHandler):
         self.conn = None
 
     def on_msg(self, conn, msg):
+        self.echo_client.sendLine(msg)
         pass
 
     def on_client_msg(self, client, msg):

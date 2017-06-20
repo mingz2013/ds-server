@@ -25,3 +25,6 @@ class EchoClient(BaseClient):
     def on_msg(self, conn, msg):
         self.cmd_handler.on_client_msg(self, msg)
         pass
+
+    def sendLine(self, msg):
+        self.conn.sendLine(msg)
