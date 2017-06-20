@@ -12,7 +12,7 @@ current_path = os.path.dirname(os.path.abspath(__file__))
 source_path = os.path.join(current_path, "../../")
 sys.path.append(source_path)
 
-from chat_with_user.client.cmd_handler import ChatCmdHandler
+from cmd_handler import ChatCmdHandler
 
 from frame.core.reactor import init_stdio, start_reactor
 
