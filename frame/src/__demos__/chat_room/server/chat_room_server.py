@@ -11,19 +11,19 @@ from frame.entity.base_server import BaseServer
 class ChatRoomServer(BaseServer):
     def __init__(self):
         BaseServer.__init__(self)
-        self.__conn_list = []
+        self.__conn_set = set()
         pass
 
     def on_conn_lost(self, conn, reason):
-        if conn in self.__conn_list:
-            self.__conn_list.remove(conn)
+        if conn in self.__conn_set:
+            self.__conn_set.remove(conn)
 
     def on_conn_made(self, conn):
-        self.__conn_list.append(conn)
+        self.__conn_set.add(conn)
 
     def on_msg(self, conn, msg):
         print 'on msg', msg
-        for m in self.__conn_list:
+        for m in self.__conn_set:
             if m != conn:
                 m.sendLine(msg)
 
