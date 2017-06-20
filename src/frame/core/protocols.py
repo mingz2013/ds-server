@@ -40,7 +40,7 @@ class BaseProtocol(LineReceiver):
         self.entity.on_msg(self, msg)
 
 
-class CmdHandlerProtocol(BaseProtocol):
+class StandardIOProtocol(BaseProtocol):
     delimiter = linesep
 
     def __init__(self, entity):
