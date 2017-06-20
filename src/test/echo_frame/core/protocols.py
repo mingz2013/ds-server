@@ -22,14 +22,22 @@ class BaseProtocol(LineReceiver):
         pass
 
     def connectionMade(self):
-        self.entity.on_conn_made(self)
+        stackless.tasklet(self.on_conn_made)()
+        reactor.callLater(0, stackless.schedule)
 
     def connectionLost(self, reason=connectionDone):
-        self.entity.on_conn_lost(self)
+        stackless.tasklet(self.on_conn_lost)(reason)
+        reactor.callLater(0, stackless.schedule)
 
     def lineReceived(self, line):
         stackless.tasklet(self.on_msg)(line)
         reactor.callLater(0, stackless.schedule)
+
+    def on_conn_made(self):
+        self.entity.on_conn_made(self)
+
+    def on_conn_lost(self, reason):
+        self.entity.on_conn_lost(self)
 
     def on_msg(self, msg):
         # print msg
