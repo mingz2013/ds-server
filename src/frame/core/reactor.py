@@ -8,7 +8,7 @@ Created on 19/06/2017
 import stackless
 from twisted.internet import reactor, stdio
 
-from factory import BaseFactory, BaseClientFactory
+from factories import BaseFactory, BaseClientFactory
 from protocols import StandardIOProtocol
 
 
