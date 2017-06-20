@@ -20,7 +20,7 @@ def init_stdio(entity):
     stdio.StandardIO(StandardIOProtocol(entity))
 
 
-def conn_to_server(entity, ip, port):
+def init_client(entity, ip, port):
     reactor.connectTCP(ip, port, BaseClientFactory(entity))
 
 

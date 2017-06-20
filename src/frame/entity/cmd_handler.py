@@ -21,3 +21,11 @@ class CmdHandler(Entity):
 
     def on_msg(self, conn, msg):
         pass
+
+
+if __name__ == '__main__':
+    from frame.core.reactor import init_stdio, start_reactor
+
+    c = CmdHandler()
+    init_stdio(c)
+    start_reactor()

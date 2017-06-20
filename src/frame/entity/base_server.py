@@ -20,3 +20,11 @@ class BaseServer(Entity):
 
     def on_msg(self, conn, msg):
         pass
+
+
+if __name__ == '__main__':
+    from frame.core.reactor import init_server, start_reactor
+
+    s = BaseServer()
+    init_server(s)
+    start_reactor()
