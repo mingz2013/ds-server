@@ -14,6 +14,7 @@ class BaseFactory(Factory):
         self.entity = entity
 
     def buildProtocol(self, addr):
+        # return self.protocol(self.entity)
         return BaseProtocol(self.entity)
 
 
