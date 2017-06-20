@@ -9,7 +9,7 @@ import os
 import sys
 
 current_path = os.path.dirname(os.path.abspath(__file__))
-source_path = os.path.join(current_path, "../../")
+source_path = os.path.join(current_path, "../../../")
 sys.path.append(source_path)
 
 from echo_server import EchoServer

@@ -16,6 +16,7 @@ class EchoClient(BaseClient):
         pass
 
     def on_conn_made(self, conn):
+        # print 'conn made in client'
         self.conn = conn
         pass
 
@@ -23,8 +24,10 @@ class EchoClient(BaseClient):
         self.conn = None
 
     def on_msg(self, conn, msg):
+        # print 'on msg on client'
         self.cmd_handler.on_client_msg(self, msg)
         pass
 
     def sendLine(self, msg):
+        # print 'send line in client'
         self.conn.sendLine(msg)

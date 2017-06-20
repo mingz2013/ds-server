@@ -14,6 +14,7 @@ class EchoServer(BaseServer):
         pass
 
     def on_msg(self, conn, msg):
+        print msg
         conn.sendLine(msg)
 
 

@@ -10,7 +10,7 @@ from echo_client import EchoClient
 from frame.core.reactor import init_client
 
 
-class ChatCmdHandler(CmdHandler):
+class EchoCmdHandler(CmdHandler):
     def __init__(self):
         CmdHandler.__init__(self)
         self.echo_client = EchoClient(self)
@@ -29,6 +29,7 @@ class ChatCmdHandler(CmdHandler):
         self.conn = None
 
     def on_msg(self, conn, msg):
+        # print 'on msg on cmd handler'
         self.echo_client.sendLine(msg)
         pass
 

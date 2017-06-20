@@ -9,14 +9,14 @@ import os
 import sys
 
 current_path = os.path.dirname(os.path.abspath(__file__))
-source_path = os.path.join(current_path, "../../")
+source_path = os.path.join(current_path, "../../../")
 sys.path.append(source_path)
 
-from chat_with_user.client.cmd_handler import ChatCmdHandler
+from cmd_handler import EchoCmdHandler
 
 from frame.core.reactor import init_stdio, start_reactor
 
 if __name__ == '__main__':
-    c = ChatCmdHandler()
+    c = EchoCmdHandler()
     init_stdio(c)
     start_reactor()
