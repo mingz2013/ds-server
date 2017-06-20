@@ -7,12 +7,10 @@ Created on 19/06/2017
 
 import os
 import sys
-import unittest
 
 current_path = os.path.dirname(os.path.abspath(__file__))
 source_path = os.path.join(current_path, "../../")
 sys.path.append(source_path)
-
 
 from chat_server import ChatServer
 from core.reactor import start_reactor
