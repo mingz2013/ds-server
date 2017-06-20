@@ -15,7 +15,8 @@ from twisted.protocols.basic import LineReceiver
 
 class BaseProtocol(LineReceiver):
     def __init__(self, entity):
-        self.entity = entity
+        self.entity = entity  # 实体业务逻辑
+        self.tag = None  # 做个标记
         pass
 
     def connectionMade(self):

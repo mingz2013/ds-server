@@ -20,7 +20,7 @@ class ChatServer(BaseServer):
         pass
 
     def on_msg(self, conn, msg):
-        conn.sendLine(msg)
+        pass
 
 
 if __name__ == '__main__':
