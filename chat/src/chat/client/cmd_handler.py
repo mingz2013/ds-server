@@ -1,7 +1,7 @@
 # -*- coding:utf-8 -*-
 '''
 Created on 19/06/2017
-
+此模块用于解析用户输入, 执行用户命令
 @author: zhaojm
 '''
 
