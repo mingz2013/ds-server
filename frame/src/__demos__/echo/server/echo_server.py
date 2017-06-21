@@ -19,8 +19,8 @@ class EchoServer(BaseServer):
 
 
 if __name__ == '__main__':
-    from frame.core.reactor import start_reactor, init_server
+    from frame.core import reactor
 
     c = EchoServer()
-    init_server(c, '0.0.0.0', 8888)
-    start_reactor()
+    reactor.init_server(c, '0.0.0.0', 8888)
+    reactor.start_reactor()
