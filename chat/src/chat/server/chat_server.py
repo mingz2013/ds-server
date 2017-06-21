@@ -6,13 +6,12 @@ Created on 19/06/2017
 '''
 
 from frame.entity.base_server import BaseServer
+import g
 
 
 class ChatServer(BaseServer):
     def __init__(self):
         BaseServer.__init__(self)
-        self.__login_map = {}  # {user_id: conn}
-        pass
 
     def on_conn_lost(self, conn, reason):
         pass
