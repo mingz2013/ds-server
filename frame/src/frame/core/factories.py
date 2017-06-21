@@ -27,12 +27,12 @@ class BaseClientFactory(ClientFactory):
 
     def clientConnectionFailed(self, connector, reason):
         # 客户端连接失败
-        connector.connect()  # 一般在连接失败时用于重新连接
+        # connector.connect()  # 一般在连接失败时用于重新连接
         pass
 
     def clientConnectionLost(self, connector, reason):
         # 连接断开
-        connector.stopConnection()  # 关闭会话
+        # connector.stopConnection()  # 关闭会话
         pass
 
     def startedConnecting(self, connector):
