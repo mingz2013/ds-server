@@ -15,8 +15,8 @@ from twisted.protocols.basic import LineReceiver
 
 class BaseProtocol(LineReceiver):
     def __init__(self, entity):
-        self.entity = entity  # 实体业务逻辑
-        self.tag = None  # 做个标记
+        self._entity = entity  # 实体业务逻辑
+        self.tag = None  # 做个标记, 可在外部用于区分和索引protocol
         pass
 
     def connectionMade(self):
@@ -32,13 +32,13 @@ class BaseProtocol(LineReceiver):
         reactor.callLater(0, stackless.schedule)
 
     def on_conn_made(self):
-        self.entity.on_conn_made(self)
+        self._entity.on_conn_made(self)
 
     def on_conn_lost(self, reason):
-        self.entity.on_conn_lost(self, reason)
+        self._entity.on_conn_lost(self, reason)
 
     def on_msg(self, msg):
-        self.entity.on_msg(self, msg)
+        self._entity.on_msg(self, msg)
 
 
 class StandardIOProtocol(BaseProtocol):

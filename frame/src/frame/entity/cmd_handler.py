@@ -24,8 +24,8 @@ class CmdHandler(Entity):
 
 
 if __name__ == '__main__':
-    from frame.core.reactor import init_stdio, start_reactor
+    from frame.core import reactor
 
     c = CmdHandler()
-    init_stdio(c)
-    start_reactor()
+    reactor.init_stdio(c)
+    reactor.start_reactor()

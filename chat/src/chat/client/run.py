@@ -14,9 +14,9 @@ sys.path.append(os.path.join(source_path, "chat/src/"))
 sys.path.append(os.path.join(source_path, "frame/src/"))
 from cmd_handler import ChatCmdHandler
 
-from frame.core.reactor import init_stdio, start_reactor
+from frame.core import reactor
 
 if __name__ == '__main__':
     c = ChatCmdHandler()
-    init_stdio(c)
-    start_reactor()
+    reactor.init_stdio(c)
+    reactor.start_reactor()

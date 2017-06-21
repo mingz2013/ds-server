@@ -11,19 +11,19 @@ from protocols import BaseProtocol
 
 class BaseFactory(Factory):
     def __init__(self, entity):
-        self.entity = entity
+        self._entity = entity
 
     def buildProtocol(self, addr):
         # return self.protocol(self.entity)
-        return BaseProtocol(self.entity)
+        return BaseProtocol(self._entity)
 
 
 class BaseClientFactory(ClientFactory):
     def __init__(self, entity):
-        self.entity = entity
+        self._entity = entity
 
     def buildProtocol(self, addr):
-        return BaseProtocol(self.entity)
+        return BaseProtocol(self._entity)
 
     def clientConnectionFailed(self, connector, reason):
         # 客户端连接失败

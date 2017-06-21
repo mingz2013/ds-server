@@ -25,8 +25,8 @@ class BaseClient(Entity):
 
 
 if __name__ == '__main__':
-    from frame.core.reactor import init_client, start_reactor
+    from frame.core import reactor
 
     c = BaseClient()
-    init_client(c, 'localhost', 8888)
-    start_reactor()
+    reactor.init_client(c, 'localhost', 8888)
+    reactor.start_reactor()

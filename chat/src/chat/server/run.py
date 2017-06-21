@@ -14,10 +14,9 @@ sys.path.append(os.path.join(source_path, "chat/src/"))
 sys.path.append(os.path.join(source_path, "frame/src/"))
 
 from chat_server import ChatServer
-from frame.core.reactor import start_reactor
-from frame.core.reactor import init_server
+from frame.core import reactor
 
 if __name__ == '__main__':
     s = ChatServer()
-    init_server(s, '0.0.0.0', 8888)
-    start_reactor()
+    reactor.init_server(s, '0.0.0.0', 8888)
+    reactor.start_reactor()

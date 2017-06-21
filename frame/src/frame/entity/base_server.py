@@ -23,8 +23,8 @@ class BaseServer(Entity):
 
 
 if __name__ == '__main__':
-    from frame.core.reactor import init_server, start_reactor
+    from frame.core import reactor
 
     s = BaseServer()
-    init_server(s, '0.0.0.0', 8888)
-    start_reactor()
+    reactor.init_server(s, '0.0.0.0', 8888)
+    reactor.start_reactor()
