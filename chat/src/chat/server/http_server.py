@@ -15,5 +15,21 @@ from frame.entity.base_server import BaseServer
 from flask import Flask
 from twisted.internet import reactor
 
+from flask import Flask
+
+app = Flask(__name__)
 
 
+@app.route('/index')
+def index():
+    return 'index'
+
+
+@app.route('/login')
+def login():
+    pass
+
+
+@app.route('/register')
+def register():
+    pass

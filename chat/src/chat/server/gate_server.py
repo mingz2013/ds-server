@@ -2,29 +2,27 @@
 '''
 Created on 26/06/2017
 
-网关服务器, 用于接收客户端连接
+http服务, 客户端首先登陆这个地址, 简单验证client_id, 然后连接数据库, 选择一个login server发送给客户端
 
-客户端从 login_server 拿到session和地址, 连接过来
-
-从db_server验证session, 验证成功则登陆成功
 
 @author: zhaojm
 '''
-from frame.entity.base_server import BaseServer
+
+from flask import Flask
+
+app = Flask(__name__)
 
 
-class GateServer(BaseServer):
-    def __init__(self):
-        BaseServer.__init__(self)
-        self._conn_map = {}
+@app.route('/index')
+def index():
+    return 'index'
 
-    def on_conn_lost(self, conn, reason):
-        if conn.tag in self._conn_map:
-            del self._conn_map[conn.tag]
-        pass
 
-    def on_conn_made(self, conn):
-        pass
+@app.route('/login')
+def login():
+    pass
 
-    def on_msg(self, conn, msg):
-        pass
+
+@app.route('/register')
+def register():
+    pass

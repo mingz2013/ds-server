@@ -2,29 +2,29 @@
 '''
 Created on 26/06/2017
 
+网关服务器, 用于接收客户端连接
 
-账号服务器, 用于登陆
+客户端从 login_server 拿到session和地址, 连接过来
 
-客户端连接过来, 通过账号密码登陆或注册
-
-注册登陆成功, 生成一个session, 将session写入一个db_server
-从在线的gate_server中选择一个, 并传给客户端gate_server 地址 和 session
+从db_server验证session, 验证成功则登陆成功
 
 @author: zhaojm
 '''
 from frame.entity.base_server import BaseServer
 
 
-class AccountServer(BaseServer):
+class NetServer(BaseServer):
     def __init__(self):
         BaseServer.__init__(self)
+        self._conn_map = {}
 
     def on_conn_lost(self, conn, reason):
+        if conn.tag in self._conn_map:
+            del self._conn_map[conn.tag]
         pass
 
     def on_conn_made(self, conn):
         pass
 
     def on_msg(self, conn, msg):
-        conn.sendLine(msg)
         pass
