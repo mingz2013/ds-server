@@ -16,6 +16,30 @@ def init_server(entity, ip, port):
     reactor.listenTCP(port, BaseFactory(entity))
 
 
+def init_http_server():
+    pass
+
+
+def init_ws_server():
+    pass
+
+
+def init_sio_server():
+    pass
+
+
+def init_http_client():
+    pass
+
+
+def init_ws_client():
+    pass
+
+
+def init_sio_client():
+    pass
+
+
 def init_stdio(entity):
     stdio.StandardIO(StandardIOProtocol(entity))
 
