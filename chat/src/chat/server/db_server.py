@@ -4,12 +4,14 @@ Created on 26/06/2017
 
 数据库管理, 用于连接数据库
 
+
+
 @author: zhaojm
 '''
 from frame.entity.base_server import BaseServer
 
 
-class AccountServer(BaseServer):
+class DbServer(BaseServer):
     def __init__(self):
         BaseServer.__init__(self)
 

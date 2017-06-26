@@ -2,7 +2,7 @@
 '''
 Created on 26/06/2017
 
-
+roomserver, 用于管理房间信息
 
 
 @author: zhaojm

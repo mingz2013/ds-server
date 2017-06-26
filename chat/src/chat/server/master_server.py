@@ -2,7 +2,7 @@
 '''
 Created on 26/06/2017
 
-用于管理
+管理server, 用于管理??
 
 @author: zhaojm
 '''
