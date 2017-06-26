@@ -7,23 +7,27 @@ Created on 26/06/2017
 
 客户端连接过来, 通过账号密码登陆或注册
 
-注册登陆成功, 从在线的gate_server中选择一个, 并传给客户端gate_server 地址 和 session
+注册登陆成功, 生成一个session, 将session写入一个db_server
+从在线的gate_server中选择一个, 并传给客户端gate_server 地址 和 session
 
 @author: zhaojm
 '''
-from frame.entity.base_server import BaseServer
+
+from flask import Flask
+
+app = Flask(__name__)
 
 
-class AccountServer(BaseServer):
-    def __init__(self):
-        BaseServer.__init__(self)
+@app.route('/index')
+def index():
+    return 'index'
 
-    def on_conn_lost(self, conn, reason):
-        pass
 
-    def on_conn_made(self, conn):
-        pass
+@app.route('/login')
+def login():
+    pass
 
-    def on_msg(self, conn, msg):
-        conn.sendLine(msg)
-        pass
+
+@app.route('/register')
+def register():
+    pass
