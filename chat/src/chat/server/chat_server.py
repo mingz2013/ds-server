@@ -2,13 +2,12 @@
 '''
 Created on 19/06/2017
 
-本模块用于接收用户连接, 和用户直接通信, 连接管理
+聊天服务
 
 @author: zhaojm
 '''
 
 from frame.entity.base_server import BaseServer
-import g
 
 
 class ChatServer(BaseServer):

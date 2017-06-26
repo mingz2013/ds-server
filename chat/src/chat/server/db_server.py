@@ -2,10 +2,11 @@
 '''
 Created on 26/06/2017
 
+数据库管理, 用于连接数据库
+
 @author: zhaojm
 '''
 from frame.entity.base_server import BaseServer
-import g
 
 
 class AccountServer(BaseServer):

@@ -2,10 +2,11 @@
 '''
 Created on 26/06/2017
 
+用于管理
+
 @author: zhaojm
 '''
 from frame.entity.base_server import BaseServer
-import g
 
 
 class MasterServer(BaseServer):

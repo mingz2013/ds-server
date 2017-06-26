@@ -2,10 +2,12 @@
 '''
 Created on 26/06/2017
 
+
+
+
 @author: zhaojm
 '''
 from frame.entity.base_server import BaseServer
-import g
 
 
 class RoomServer(BaseServer):

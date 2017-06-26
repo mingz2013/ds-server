@@ -2,10 +2,11 @@
 '''
 Created on 26/06/2017
 
+网关服务器, 用于接收客户端连接
+
 @author: zhaojm
 '''
 from frame.entity.base_server import BaseServer
-import g
 
 
 class GateServer(BaseServer):

@@ -2,6 +2,8 @@
 '''
 Created on 26/06/2017
 
+用于接收ws连接, 并转换到其他服务器
+
 @author: zhaojm
 '''
 from frame.entity.base_server import BaseServer

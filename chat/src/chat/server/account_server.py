@@ -2,10 +2,13 @@
 '''
 Created on 26/06/2017
 
+
+账号服务器, 用于登陆
+
+
 @author: zhaojm
 '''
 from frame.entity.base_server import BaseServer
-import g
 
 
 class AccountServer(BaseServer):
