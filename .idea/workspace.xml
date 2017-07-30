@@ -2,27 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e885f0e0-bca7-4d41-835b-3eb8d7b34ed8" name="Default" comment="init">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/rpc/src/__demos__/rpc_demo/client/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/rpc/src/__demos__/rpc_demo/client/client.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/rpc/src/__demos__/rpc_demo/server/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/rpc/src/__demos__/rpc_demo/server/entity.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/rpc/src/__demos__/rpc_demo/server/rpc_export.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/rpc/src/__demos__/rpc_demo/server/server.py" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/rpc/src/net/sio.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/rpc/src/net/udp.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/rpc/src/net/ws.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/rpc/src/protocols/__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/rpc/src/protocols/json.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/rpc/src/protocols/protobuf.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/rpc/src/protocols/xml.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/rpc/src/rpc/rpc_center.py" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/rpc/src/net/__init__.py" afterPath="$PROJECT_DIR$/rpc/src/rpc/rpc_export.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/rpc/src/net/http.py" afterPath="$PROJECT_DIR$/rpc/src/rpc/rpc_export.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/rpc/src/net/tcp.py" afterPath="$PROJECT_DIR$/rpc/src/rpc/rpc_mark.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/rpc/src/protocols/__init__.py" afterPath="$PROJECT_DIR$/rpc/src/__demos__/rpc_demo/__init__.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/rpc/src/rpc/rpc_protocol.py" afterPath="$PROJECT_DIR$/rpc/src/rpc/msg.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rpc/src/rpc/rpc_server.py" afterPath="$PROJECT_DIR$/rpc/src/rpc/rpc_server.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rpc/src/__demos__/rpc_demo/server/rpc_export.py" afterPath="$PROJECT_DIR$/rpc/src/__demos__/rpc_demo/server/rpc_export.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rpc/src/rpc/rpc_export.py" afterPath="$PROJECT_DIR$/rpc/src/rpc/rpc_export.py" />
     </list>
     <ignored path="server.frame.python.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -44,11 +26,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="server.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/rpc/src/__demos__/rpc_demo/server/server.py">
+      <file leaf-file-name="rpc_client.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/rpc/src/rpc/rpc_client.py">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="18" column="8" selection-start-line="18" selection-start-column="8" selection-end-line="18" selection-end-column="8" />
+              <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="msg.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/rpc/src/rpc/msg.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.7152062">
+              <caret line="37" column="0" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -58,37 +50,7 @@
         <entry file="file://$PROJECT_DIR$/rpc/src/__demos__/rpc_demo/server/entity.py">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="base_client.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/frame_twisted/src/frame/entity/base_client.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="31" selection-end-column="27" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="http_server.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/frame_twisted/src/frame/entity/http_server.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="base_server.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/frame_twisted/src/frame/entity/base_server.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="25" column="4" selection-start-line="25" selection-start-column="4" selection-end-line="25" selection-end-column="34" />
+              <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -98,22 +60,30 @@
         <entry file="file://$PROJECT_DIR$/rpc/src/__demos__/rpc_demo/server/rpc_export.py">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="18" column="8" selection-start-line="18" selection-start-column="8" selection-end-line="18" selection-end-column="8" />
+              <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
               <folding>
-                <element signature="e#79#112#0" expanded="true" />
+                <element signature="e#78#111#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="rpc_server.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/rpc/src/rpc/rpc_server.py">
+      <file leaf-file-name="rpc_export.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/rpc/src/rpc/rpc_export.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.6958763">
-              <caret line="36" column="0" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
-              <folding>
-                <element signature="e#104#151#0" expanded="true" />
-              </folding>
+            <state vertical-scroll-proportion="0.0">
+              <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="rpc_mark.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/rpc/src/rpc/rpc_mark.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="33" column="0" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -171,19 +141,19 @@
         <option value="$PROJECT_DIR$/rpc/src/protocols/json.py" />
         <option value="$PROJECT_DIR$/rpc/src/rpc/rpc_center.py" />
         <option value="$PROJECT_DIR$/rpc/src/rpc/rpc_client.py" />
-        <option value="$PROJECT_DIR$/rpc/src/rpc/rpc_export.py" />
         <option value="$PROJECT_DIR$/rpc/src/rpc/rpc_mark.py" />
         <option value="$PROJECT_DIR$/rpc/src/rpc/rpc_protocol.py" />
         <option value="$PROJECT_DIR$/rpc/src/rpc/msg.py" />
-        <option value="$PROJECT_DIR$/rpc/src/rpc/rpc_server.py" />
         <option value="$PROJECT_DIR$/rpc/src/__demos__/rpc_demo/__init__.py" />
         <option value="$PROJECT_DIR$/rpc/src/__demos__/rpc_demo/rpc_server.py" />
         <option value="$PROJECT_DIR$/rpc/src/__demos__/rpc_demo/client/__init__.py" />
         <option value="$PROJECT_DIR$/rpc/src/__demos__/rpc_demo/server/__init__.py" />
         <option value="$PROJECT_DIR$/rpc/src/__demos__/rpc_demo/client/client.py" />
         <option value="$PROJECT_DIR$/rpc/src/__demos__/rpc_demo/server/server.py" />
-        <option value="$PROJECT_DIR$/rpc/src/__demos__/rpc_demo/server/rpc_export.py" />
         <option value="$PROJECT_DIR$/rpc/src/__demos__/rpc_demo/server/entity.py" />
+        <option value="$PROJECT_DIR$/rpc/src/rpc/rpc_server.py" />
+        <option value="$PROJECT_DIR$/rpc/src/__demos__/rpc_demo/server/rpc_export.py" />
+        <option value="$PROJECT_DIR$/rpc/src/rpc/rpc_export.py" />
       </list>
     </option>
   </component>
@@ -377,10 +347,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="rpc" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="doc" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -701,7 +667,13 @@
       <option name="project" value="LOCAL" />
       <updated>1501406893495</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="init">
+      <created>1501410994060</created>
+      <option name="number" value="00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1501410994060</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1036,30 +1008,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/rpc/src/rpc/rpc_client.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/rpc/src/rpc/msg.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="50" column="0" selection-start-line="50" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/rpc/src/rpc/rpc_mark.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6378866">
-          <caret line="33" column="0" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/rpc/src/__demos__/rpc_demo/client/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1084,26 +1032,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/rpc/src/rpc/rpc_export.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="16" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/rpc/src/__demos__/rpc_demo/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frame_twisted/src/frame/entity/base_client.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="31" selection-end-column="27" />
           <folding />
         </state>
       </provider>
@@ -1118,8 +1050,34 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/frame_twisted/src/frame/entity/base_server.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
+        <state vertical-scroll-proportion="0.48324743">
           <caret line="25" column="4" selection-start-line="25" selection-start-column="4" selection-end-line="25" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rpc/src/__demos__/rpc_demo/server/server.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="20" column="8" selection-start-line="20" selection-start-column="8" selection-end-line="20" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rpc/src/rpc/rpc_server.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6378866">
+          <caret line="33" column="0" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
+          <folding>
+            <element signature="e#103#150#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frame_twisted/src/frame/entity/base_client.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5219072">
+          <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="31" selection-end-column="27" />
           <folding />
         </state>
       </provider>
@@ -1127,7 +1085,15 @@
     <entry file="file://$PROJECT_DIR$/rpc/src/__demos__/rpc_demo/server/entity.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rpc/src/rpc/rpc_mark.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="33" column="0" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1135,28 +1101,34 @@
     <entry file="file://$PROJECT_DIR$/rpc/src/__demos__/rpc_demo/server/rpc_export.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="18" column="8" selection-start-line="18" selection-start-column="8" selection-end-line="18" selection-end-column="8" />
+          <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
           <folding>
-            <element signature="e#79#112#0" expanded="true" />
+            <element signature="e#78#111#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/rpc/src/__demos__/rpc_demo/server/server.py">
+    <entry file="file://$PROJECT_DIR$/rpc/src/rpc/rpc_export.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="18" column="8" selection-start-line="18" selection-start-column="8" selection-end-line="18" selection-end-column="8" />
+          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/rpc/src/rpc/rpc_server.py">
+    <entry file="file://$PROJECT_DIR$/rpc/src/rpc/rpc_client.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6958763">
-          <caret line="36" column="0" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
-          <folding>
-            <element signature="e#104#151#0" expanded="true" />
-          </folding>
+        <state vertical-scroll-proportion="0.0">
+          <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rpc/src/rpc/msg.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.7152062">
+          <caret line="37" column="0" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>

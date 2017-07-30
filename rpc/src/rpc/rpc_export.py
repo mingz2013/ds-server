@@ -7,11 +7,11 @@ __author__ = "zhaojm"
 from rpc.rpc_mark import mark_rpc
 
 
-@mark_rpc.mark_rpc()
+@mark_rpc.mark_rpc("get_info")
 def on_get_info(conn, args):
     pass
 
 
-@mark_rpc.mark_rpc()
+@mark_rpc.mark_rpc("register")
 def on_register(conn, args):
     pass
