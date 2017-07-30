@@ -5,7 +5,7 @@ Created on 26/06/2017
 @author: zhaojm
 '''
 
-from frame.rpc.rpc_server import RpcServer
+from frame.servers.rpc.rpc_server import RpcServer
 
 
 class Server(RpcServer):

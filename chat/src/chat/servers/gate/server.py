@@ -8,7 +8,7 @@ http服务, 客户端首先登陆这个地址, 简单验证client_id, 然后连�
 @author: zhaojm
 '''
 
-from frame.rpc.rpc_server import RpcServer
+from frame.servers.rpc.rpc_server import RpcServer
 
 
 class Server(RpcServer):

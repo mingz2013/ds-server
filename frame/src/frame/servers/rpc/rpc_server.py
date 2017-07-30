@@ -9,16 +9,14 @@ __author__ = "zhaojm"
 
 from frame.entity.base_server import BaseServer
 
-
-from frame.rpc.msg import Msg
-from frame.rpc.rpc_mark import RpcMark
+from frame.servers.rpc.msg import Msg
+from frame.servers.rpc.rpc_mark import RpcMark
 
 
 class RpcServer(BaseServer):
     def __init__(self):
         BaseServer.__init__(self)
         self.__rpc_mark = RpcMark()
-        self.register_rpc()
         pass
 
     def on_conn_made(self, conn):
@@ -37,6 +35,3 @@ class RpcServer(BaseServer):
 
     def rpc_mark(self):
         return self.__rpc_mark
-
-    def register_rpc(self):
-        from frame.rpc.rpc_export import *

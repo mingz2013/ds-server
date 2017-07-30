@@ -10,11 +10,10 @@ Created on 21/06/2017
 s = {}  # 存储server对象列表, 限制了每个进程最多一个相同的server对象
 
 
-def register_server(s_str):
-    exec_str = "from chat.servers.%s.server import Server; s['%s'] = Server()" % s_str
-    exec exec_str
-
-
 def main():
     s_list_str = ["db", "gate", "http", "master", "net", "room", "sdk", "sio", "ws"]
-    for s_str in s_list_str: register_server(s_str)
+    for s_str in s_list_str:
+        # register server
+        exec "from chat.servers.%s.server import Server; s['%s'] = Server()" % s_str
+        # register rpc
+        exec "from chat.servers.%s.rpc import *" % s_str
