@@ -12,7 +12,6 @@ from frame.entity.cmd_handler import CmdHandler
 
 class ChatCmdHandler(CmdHandler):
     def __init__(self):
-        CmdHandler.__init__(self)
         self.chat_client = ChatRoomClient(self)
         self.conn = None
         pass

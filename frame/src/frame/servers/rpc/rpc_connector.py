@@ -9,7 +9,6 @@ from frame.entity.base_client import BaseClient
 
 class RpcConnector(BaseClient):
     def __init__(self):
-        BaseClient.__init__(self)
         self.conn = None
         pass
 

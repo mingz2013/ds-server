@@ -6,9 +6,6 @@ __author__ = "zhaojm"
 
 
 class Entity(object):
-    def __init__(self):
-        pass
-
     def do_some_thing(self):
         pass
 

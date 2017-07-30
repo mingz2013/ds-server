@@ -12,7 +12,6 @@ from frame.core.reactor import init_client
 
 class EchoCmdHandler(CmdHandler):
     def __init__(self):
-        CmdHandler.__init__(self)
         self.echo_client = EchoClient(self)
         self.conn = None
         pass

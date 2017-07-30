@@ -8,7 +8,7 @@ __date__ = "30/07/2017"
 __author__ = "zhaojm"
 
 
-class RpcMark(object):
+class RpcMixin(object):
     def __init__(self):
         self.__rpc_export = {}
         # TODO 注册接口

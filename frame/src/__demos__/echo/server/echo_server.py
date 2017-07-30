@@ -9,10 +9,6 @@ from frame.entity.base_server import BaseServer
 
 
 class EchoServer(BaseServer):
-    def __init__(self):
-        BaseServer.__init__(self)
-        pass
-
     def on_msg(self, conn, msg):
         print msg
         conn.sendLine(msg)

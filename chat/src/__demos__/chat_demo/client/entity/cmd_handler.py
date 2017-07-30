@@ -12,7 +12,6 @@ from frame.core.reactor import init_client
 
 class ChatCmdHandler(CmdHandler):
     def __init__(self):
-        CmdHandler.__init__(self)
         self.chat_client = ChatClient(self)
         self.conn = None
         pass

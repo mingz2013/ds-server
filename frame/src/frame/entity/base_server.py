@@ -9,9 +9,6 @@ from frame.core.entity import Entity
 
 
 class BaseServer(Entity):
-    def __init__(self):
-        pass
-
     def on_conn_made(self, conn):
         pass
 

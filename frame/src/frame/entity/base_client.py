@@ -9,16 +9,13 @@ from frame.core.entity import Entity
 
 
 class BaseClient(Entity):
-    def __init__(self):
-        self.conn = None
-        pass
+
 
     def on_conn_made(self, conn):
-        self.conn = conn
         pass
 
     def on_conn_lost(self, conn, reason):
-        self.conn = None
+        pass
 
     def on_msg(self, conn, msg):
         pass

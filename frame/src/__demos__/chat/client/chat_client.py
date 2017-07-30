@@ -10,7 +10,6 @@ from frame.entity.base_client import BaseClient
 
 class ChatClient(BaseClient):
     def __init__(self, cmd_handler):
-        BaseClient.__init__(self)
         self.cmd_handler = cmd_handler
         self.conn = None
         pass

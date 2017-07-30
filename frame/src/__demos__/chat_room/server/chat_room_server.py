@@ -10,7 +10,6 @@ from frame.entity.base_server import BaseServer
 
 class ChatRoomServer(BaseServer):
     def __init__(self):
-        BaseServer.__init__(self)
         self.__conn_set = set()
         pass
 

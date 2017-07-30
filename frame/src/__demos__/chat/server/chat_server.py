@@ -12,9 +12,6 @@ import g
 
 
 class ChatServer(BaseServer):
-    def __init__(self):
-        BaseServer.__init__(self)
-
     def on_conn_lost(self, conn, reason):
         pass
 
