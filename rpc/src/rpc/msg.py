@@ -41,6 +41,18 @@ class Msg(object):
         return self.__msg
 
     @property
+    def cmd(self):
+        return self.__msg['cmd']
+
+    @property
+    def params(self):
+        return self.__msg['params']
+
+    @property
+    def result(self):
+        return self.__msg['result']
+
+    @property
     def json_str(self):
         return json.dumps(self.__msg)
 
