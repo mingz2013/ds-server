@@ -7,7 +7,7 @@ Created on 21/06/2017
 @author: zhaojm
 """
 
-s = {}  # 存储server对象列表, 限制了每个进程最多一个相同的server对象
+s = {}  # 存储server对象列表, 这里限制了每个进程最多一个相同的server对象, 否则会有key冲突
 
 
 def init_servers():
