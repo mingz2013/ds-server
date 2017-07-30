@@ -1,9 +1,9 @@
 # -*- coding:utf-8 -*-
-'''
+"""
 Created on 17/06/2017
 
 @author: zhaojm
-'''
+"""
 
 from os import linesep
 
@@ -18,6 +18,12 @@ class BaseProtocol(LineReceiver):
         self._entity = entity  # 实体业务逻辑
         self.tag = None  # 做个标记, 可在外部用于区分和索引protocol
         pass
+
+    def rawDataReceived(self, data):
+        """
+        Override this for when raw data is received.
+        """
+
 
     def connectionMade(self):
         stackless.tasklet(self.on_conn_made)()

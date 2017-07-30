@@ -1,9 +1,9 @@
 # -*- coding:utf-8 -*-
-'''
+"""
 Created on 19/06/2017
 
 @author: zhaojm
-'''
+"""
 
 from frame.entity.base_client import BaseClient
 
@@ -28,6 +28,6 @@ class EchoClient(BaseClient):
         self.cmd_handler.on_client_msg(self, msg)
         pass
 
-    def sendLine(self, msg):
+    def send_line(self, msg):
         # print 'send line in client'
         self.conn.sendLine(msg)

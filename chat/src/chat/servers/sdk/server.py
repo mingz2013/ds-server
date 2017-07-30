@@ -1,5 +1,5 @@
 # -*- coding:utf-8 -*-
-'''
+"""
 Created on 26/06/2017
 
 
@@ -11,7 +11,7 @@ Created on 26/06/2017
 从在线的gate_server中选择一个, 并传给客户端gate_server 地址 和 session
 
 @author: zhaojm
-'''
+"""
 from frame.entity.base_server import BaseServer
 from flask import Flask
 from twisted.internet import reactor

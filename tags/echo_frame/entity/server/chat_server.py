@@ -1,9 +1,9 @@
 # -*- coding:utf-8 -*-
-'''
+"""
 Created on 19/06/2017
 
 @author: zhaojm
-'''
+"""
 
 import account
 from core.entity import Entity

@@ -1,11 +1,11 @@
 # -*- coding:utf-8 -*-
-'''
+"""
 Created on 26/06/2017
 
 用于接收ws连接, 并转换到其他服务器
 
 @author: zhaojm
-'''
+"""
 from frame.servers.rpc.rpc_server import RpcServer
 
 

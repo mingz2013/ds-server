@@ -1,9 +1,9 @@
 # -*- coding:utf-8 -*-
-'''
+"""
 Created on 19/06/2017
 
 @author: zhaojm
-'''
+"""
 
 from frame.entity.cmd_handler import CmdHandler
 from echo_client import EchoClient
@@ -30,7 +30,7 @@ class EchoCmdHandler(CmdHandler):
 
     def on_msg(self, conn, msg):
         # print 'on msg on cmd handler'
-        self.echo_client.sendLine(msg)
+        self.echo_client.send_line(msg)
         pass
 
     def on_client_msg(self, client, msg):

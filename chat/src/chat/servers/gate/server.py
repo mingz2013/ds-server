@@ -1,5 +1,5 @@
 # -*- coding:utf-8 -*-
-'''
+"""
 Created on 26/06/2017
 
 网关服务器, 用于接收客户端连接
@@ -9,7 +9,7 @@ Created on 26/06/2017
 从db_server验证session, 验证成功则登陆成功
 
 @author: zhaojm
-'''
+"""
 from frame.servers.rpc.rpc_server import RpcServer
 
 

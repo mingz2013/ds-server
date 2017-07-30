@@ -1,11 +1,11 @@
 # -*- coding:utf-8 -*-
-'''
+"""
 Created on 15/06/2017
 
 本模块 控制用户登陆,权限验证
 
 @author: zhaojm
-'''
+"""
 
 import db
 

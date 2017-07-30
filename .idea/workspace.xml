@@ -2,7 +2,132 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e885f0e0-bca7-4d41-835b-3eb8d7b34ed8" name="Default" comment="init">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/chat/src/__demos__/chat_demo/client/entity/client.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/frame/src/frame/servers/rpc/msg.py" afterPath="$PROJECT_DIR$/frame/src/frame/entity/msg.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/chat/src/__demos__/chat_demo/client/entity/cmd_handler.py" afterPath="$PROJECT_DIR$/chat/src/__demos__/chat_demo/client/entity/cmd_handler.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/chat/src/__demos__/chat_demo/client/run.py" afterPath="$PROJECT_DIR$/chat/src/__demos__/chat_demo/client/run.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/chat/src/__demos__/chat_demo/server/run.py" afterPath="$PROJECT_DIR$/chat/src/__demos__/chat_demo/server/run.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/chat/src/chat/__init__.py" afterPath="$PROJECT_DIR$/chat/src/chat/__init__.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/chat/src/chat/clients/chat_client.py" afterPath="$PROJECT_DIR$/chat/src/chat/clients/chat_client.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/chat/src/chat/entity/db.py" afterPath="$PROJECT_DIR$/chat/src/chat/entity/db.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/chat/src/chat/entity/g.py" afterPath="$PROJECT_DIR$/chat/src/chat/entity/g.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/chat/src/chat/entity/room.py" afterPath="$PROJECT_DIR$/chat/src/chat/entity/room.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/chat/src/chat/entity/sdk.py" afterPath="$PROJECT_DIR$/chat/src/chat/entity/sdk.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/chat/src/chat/entity/user.py" afterPath="$PROJECT_DIR$/chat/src/chat/entity/user.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/chat/src/chat/servers/db/server.py" afterPath="$PROJECT_DIR$/chat/src/chat/servers/db/server.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/chat/src/chat/servers/gate/server.py" afterPath="$PROJECT_DIR$/chat/src/chat/servers/gate/server.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/chat/src/chat/servers/http/server.py" afterPath="$PROJECT_DIR$/chat/src/chat/servers/http/server.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/chat/src/chat/servers/manager/server.py" afterPath="$PROJECT_DIR$/chat/src/chat/servers/manager/server.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/chat/src/chat/servers/sdk/server.py" afterPath="$PROJECT_DIR$/chat/src/chat/servers/sdk/server.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/chat/src/chat/servers/sio/server.py" afterPath="$PROJECT_DIR$/chat/src/chat/servers/sio/server.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/chat/src/chat/servers/ws/server.py" afterPath="$PROJECT_DIR$/chat/src/chat/servers/ws/server.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frame/src/__demos__/__init__.py" afterPath="$PROJECT_DIR$/frame/src/__demos__/__init__.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frame/src/__demos__/chat/__init__.py" afterPath="$PROJECT_DIR$/frame/src/__demos__/chat/__init__.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frame/src/__demos__/chat/client/__init__.py" afterPath="$PROJECT_DIR$/frame/src/__demos__/chat/client/__init__.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frame/src/__demos__/chat/client/chat_client.py" afterPath="$PROJECT_DIR$/frame/src/__demos__/chat/client/chat_client.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frame/src/__demos__/chat/client/cmd_handler.py" afterPath="$PROJECT_DIR$/frame/src/__demos__/chat/client/cmd_handler.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frame/src/__demos__/chat/client/g.py" afterPath="$PROJECT_DIR$/frame/src/__demos__/chat/client/g.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frame/src/__demos__/chat/client/run.py" afterPath="$PROJECT_DIR$/frame/src/__demos__/chat/client/run.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frame/src/__demos__/chat/server/__init__.py" afterPath="$PROJECT_DIR$/frame/src/__demos__/chat/server/__init__.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frame/src/__demos__/chat/server/chat_server.py" afterPath="$PROJECT_DIR$/frame/src/__demos__/chat/server/chat_server.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frame/src/__demos__/chat/server/db.py" afterPath="$PROJECT_DIR$/frame/src/__demos__/chat/server/db.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frame/src/__demos__/chat/server/g.py" afterPath="$PROJECT_DIR$/frame/src/__demos__/chat/server/g.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frame/src/__demos__/chat/server/room.py" afterPath="$PROJECT_DIR$/frame/src/__demos__/chat/server/room.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frame/src/__demos__/chat/server/run.py" afterPath="$PROJECT_DIR$/frame/src/__demos__/chat/server/run.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frame/src/__demos__/chat/server/sdk.py" afterPath="$PROJECT_DIR$/frame/src/__demos__/chat/server/sdk.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frame/src/__demos__/chat/server/user.py" afterPath="$PROJECT_DIR$/frame/src/__demos__/chat/server/user.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frame/src/__demos__/chat_room/__init__.py" afterPath="$PROJECT_DIR$/frame/src/__demos__/chat_room/__init__.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frame/src/__demos__/chat_room/client/__init__.py" afterPath="$PROJECT_DIR$/frame/src/__demos__/chat_room/client/__init__.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frame/src/__demos__/chat_room/client/chat_room_client.py" afterPath="$PROJECT_DIR$/frame/src/__demos__/chat_room/client/chat_room_client.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frame/src/__demos__/chat_room/client/cmd_handler.py" afterPath="$PROJECT_DIR$/frame/src/__demos__/chat_room/client/cmd_handler.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frame/src/__demos__/chat_room/client/run.py" afterPath="$PROJECT_DIR$/frame/src/__demos__/chat_room/client/run.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frame/src/__demos__/chat_room/server/__init__.py" afterPath="$PROJECT_DIR$/frame/src/__demos__/chat_room/server/__init__.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frame/src/__demos__/chat_room/server/chat_room_server.py" afterPath="$PROJECT_DIR$/frame/src/__demos__/chat_room/server/chat_room_server.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frame/src/__demos__/chat_room/server/run.py" afterPath="$PROJECT_DIR$/frame/src/__demos__/chat_room/server/run.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frame/src/__demos__/echo/__init__.py" afterPath="$PROJECT_DIR$/frame/src/__demos__/echo/__init__.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frame/src/__demos__/echo/client/__init__.py" afterPath="$PROJECT_DIR$/frame/src/__demos__/echo/client/__init__.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frame/src/__demos__/echo/client/cmd_handler.py" afterPath="$PROJECT_DIR$/frame/src/__demos__/echo/client/cmd_handler.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frame/src/__demos__/echo/client/echo_client.py" afterPath="$PROJECT_DIR$/frame/src/__demos__/echo/client/echo_client.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frame/src/__demos__/echo/client/run.py" afterPath="$PROJECT_DIR$/frame/src/__demos__/echo/client/run.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frame/src/__demos__/echo/server/__init__.py" afterPath="$PROJECT_DIR$/frame/src/__demos__/echo/server/__init__.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frame/src/__demos__/echo/server/echo_server.py" afterPath="$PROJECT_DIR$/frame/src/__demos__/echo/server/echo_server.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frame/src/__demos__/echo/server/run.py" afterPath="$PROJECT_DIR$/frame/src/__demos__/echo/server/run.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frame/src/frame/__init__.py" afterPath="$PROJECT_DIR$/frame/src/frame/__init__.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frame/src/frame/core/__init__.py" afterPath="$PROJECT_DIR$/frame/src/frame/core/__init__.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frame/src/frame/core/entity.py" afterPath="$PROJECT_DIR$/frame/src/frame/core/entity.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frame/src/frame/core/factories.py" afterPath="$PROJECT_DIR$/frame/src/frame/core/factories.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frame/src/frame/core/http.py" afterPath="$PROJECT_DIR$/frame/src/frame/core/http.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frame/src/frame/core/protocols.py" afterPath="$PROJECT_DIR$/frame/src/frame/core/protocols.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frame/src/frame/core/reactor.py" afterPath="$PROJECT_DIR$/frame/src/frame/core/reactor.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frame/src/frame/entity/base_client.py" afterPath="$PROJECT_DIR$/frame/src/frame/entity/base_client.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frame/src/frame/entity/base_server.py" afterPath="$PROJECT_DIR$/frame/src/frame/entity/base_server.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frame/src/frame/entity/cmd_handler.py" afterPath="$PROJECT_DIR$/frame/src/frame/entity/cmd_handler.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frame/src/frame/entity/http_server.py" afterPath="$PROJECT_DIR$/frame/src/frame/entity/http_server.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frame/src/frame/servers/rpc/rpc_mark.py" afterPath="$PROJECT_DIR$/frame/src/frame/servers/rpc/rpc_mark.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frame/src/frame/servers/rpc/rpc_server.py" afterPath="$PROJECT_DIR$/frame/src/frame/servers/rpc/rpc_server.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tags/__init__.py" afterPath="$PROJECT_DIR$/tags/__init__.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tags/chat_twisted_and_stackless/__init__.py" afterPath="$PROJECT_DIR$/tags/chat_twisted_and_stackless/__init__.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tags/chat_twisted_and_stackless/channel.py" afterPath="$PROJECT_DIR$/tags/chat_twisted_and_stackless/channel.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tags/chat_twisted_and_stackless/chat_client_protocol.py" afterPath="$PROJECT_DIR$/tags/chat_twisted_and_stackless/chat_client_protocol.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tags/chat_twisted_and_stackless/chat_server_protocol.py" afterPath="$PROJECT_DIR$/tags/chat_twisted_and_stackless/chat_server_protocol.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tags/chat_twisted_and_stackless/client.py" afterPath="$PROJECT_DIR$/tags/chat_twisted_and_stackless/client.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tags/chat_twisted_and_stackless/command_protocol.py" afterPath="$PROJECT_DIR$/tags/chat_twisted_and_stackless/command_protocol.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tags/chat_twisted_and_stackless/run.py" afterPath="$PROJECT_DIR$/tags/chat_twisted_and_stackless/run.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tags/chat_twisted_and_stackless/server.py" afterPath="$PROJECT_DIR$/tags/chat_twisted_and_stackless/server.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tags/echo_frame/__init__.py" afterPath="$PROJECT_DIR$/tags/echo_frame/__init__.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tags/echo_frame/core/__init__.py" afterPath="$PROJECT_DIR$/tags/echo_frame/core/__init__.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tags/echo_frame/core/channel.py" afterPath="$PROJECT_DIR$/tags/echo_frame/core/channel.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tags/echo_frame/core/entity.py" afterPath="$PROJECT_DIR$/tags/echo_frame/core/entity.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tags/echo_frame/core/factory.py" afterPath="$PROJECT_DIR$/tags/echo_frame/core/factory.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tags/echo_frame/core/msg.py" afterPath="$PROJECT_DIR$/tags/echo_frame/core/msg.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tags/echo_frame/core/protocols.py" afterPath="$PROJECT_DIR$/tags/echo_frame/core/protocols.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tags/echo_frame/core/reactor.py" afterPath="$PROJECT_DIR$/tags/echo_frame/core/reactor.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tags/echo_frame/entity/__init__.py" afterPath="$PROJECT_DIR$/tags/echo_frame/entity/__init__.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tags/echo_frame/entity/client/__init__.py" afterPath="$PROJECT_DIR$/tags/echo_frame/entity/client/__init__.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tags/echo_frame/entity/client/chat_client.py" afterPath="$PROJECT_DIR$/tags/echo_frame/entity/client/chat_client.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tags/echo_frame/entity/client/cmd_handler.py" afterPath="$PROJECT_DIR$/tags/echo_frame/entity/client/cmd_handler.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tags/echo_frame/entity/client/run.py" afterPath="$PROJECT_DIR$/tags/echo_frame/entity/client/run.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tags/echo_frame/entity/common/__init__.py" afterPath="$PROJECT_DIR$/tags/echo_frame/entity/common/__init__.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tags/echo_frame/entity/common/room.py" afterPath="$PROJECT_DIR$/tags/echo_frame/entity/common/room.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tags/echo_frame/entity/common/user.py" afterPath="$PROJECT_DIR$/tags/echo_frame/entity/common/user.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tags/echo_frame/entity/server/__init__.py" afterPath="$PROJECT_DIR$/tags/echo_frame/entity/server/__init__.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tags/echo_frame/entity/server/account.py" afterPath="$PROJECT_DIR$/tags/echo_frame/entity/server/account.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tags/echo_frame/entity/server/chat_server.py" afterPath="$PROJECT_DIR$/tags/echo_frame/entity/server/chat_server.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tags/echo_frame/entity/server/db.py" afterPath="$PROJECT_DIR$/tags/echo_frame/entity/server/db.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tags/echo_frame/entity/server/run.py" afterPath="$PROJECT_DIR$/tags/echo_frame/entity/server/run.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tags/echo_twisted/__init__.py" afterPath="$PROJECT_DIR$/tags/echo_twisted/__init__.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tags/echo_twisted/client.py" afterPath="$PROJECT_DIR$/tags/echo_twisted/client.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tags/echo_twisted/server.py" afterPath="$PROJECT_DIR$/tags/echo_twisted/server.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tags/echo_twisted_and_stackless/__init__.py" afterPath="$PROJECT_DIR$/tags/echo_twisted_and_stackless/__init__.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tags/echo_twisted_and_stackless/channel.py" afterPath="$PROJECT_DIR$/tags/echo_twisted_and_stackless/channel.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tags/echo_twisted_and_stackless/client.py" afterPath="$PROJECT_DIR$/tags/echo_twisted_and_stackless/client.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tags/echo_twisted_and_stackless/command.py" afterPath="$PROJECT_DIR$/tags/echo_twisted_and_stackless/command.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tags/echo_twisted_and_stackless/run.py" afterPath="$PROJECT_DIR$/tags/echo_twisted_and_stackless/run.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tags/echo_twisted_and_stackless/server.py" afterPath="$PROJECT_DIR$/tags/echo_twisted_and_stackless/server.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tags/echo_with_frame/__init__.py" afterPath="$PROJECT_DIR$/tags/echo_with_frame/__init__.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tags/echo_with_frame/frame/__init__.py" afterPath="$PROJECT_DIR$/tags/echo_with_frame/frame/__init__.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tags/echo_with_frame/frame/core/__init__.py" afterPath="$PROJECT_DIR$/tags/echo_with_frame/frame/core/__init__.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tags/echo_with_frame/frame/core/entity.py" afterPath="$PROJECT_DIR$/tags/echo_with_frame/frame/core/entity.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tags/echo_with_frame/frame/core/factories.py" afterPath="$PROJECT_DIR$/tags/echo_with_frame/frame/core/factories.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tags/echo_with_frame/frame/core/protocols.py" afterPath="$PROJECT_DIR$/tags/echo_with_frame/frame/core/protocols.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tags/echo_with_frame/frame/core/reactor.py" afterPath="$PROJECT_DIR$/tags/echo_with_frame/frame/core/reactor.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tags/echo_with_frame/frame/echo/__init__.py" afterPath="$PROJECT_DIR$/tags/echo_with_frame/frame/echo/__init__.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tags/echo_with_frame/frame/echo/client/__init__.py" afterPath="$PROJECT_DIR$/tags/echo_with_frame/frame/echo/client/__init__.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tags/echo_with_frame/frame/echo/client/cmd_handler.py" afterPath="$PROJECT_DIR$/tags/echo_with_frame/frame/echo/client/cmd_handler.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tags/echo_with_frame/frame/echo/client/echo_client.py" afterPath="$PROJECT_DIR$/tags/echo_with_frame/frame/echo/client/echo_client.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tags/echo_with_frame/frame/echo/client/run.py" afterPath="$PROJECT_DIR$/tags/echo_with_frame/frame/echo/client/run.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tags/echo_with_frame/frame/echo/server/__init__.py" afterPath="$PROJECT_DIR$/tags/echo_with_frame/frame/echo/server/__init__.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tags/echo_with_frame/frame/echo/server/echo_server.py" afterPath="$PROJECT_DIR$/tags/echo_with_frame/frame/echo/server/echo_server.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tags/echo_with_frame/frame/echo/server/run.py" afterPath="$PROJECT_DIR$/tags/echo_with_frame/frame/echo/server/run.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tags/echo_with_frame/frame/entity/__init__.py" afterPath="$PROJECT_DIR$/tags/echo_with_frame/frame/entity/__init__.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tags/echo_with_frame/frame/entity/base_client.py" afterPath="$PROJECT_DIR$/tags/echo_with_frame/frame/entity/base_client.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tags/echo_with_frame/frame/entity/base_server.py" afterPath="$PROJECT_DIR$/tags/echo_with_frame/frame/entity/base_server.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tags/echo_with_frame/frame/entity/cmd_handler.py" afterPath="$PROJECT_DIR$/tags/echo_with_frame/frame/entity/cmd_handler.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tags/test_c_and_s.py" afterPath="$PROJECT_DIR$/tags/test_c_and_s.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tags/test_channel.py" afterPath="$PROJECT_DIR$/tags/test_channel.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tags/test_command.py" afterPath="$PROJECT_DIR$/tags/test_command.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tags/test_stackless.py" afterPath="$PROJECT_DIR$/tags/test_stackless.py" />
     </list>
     <ignored path="server.frame.python.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -23,7 +148,114 @@
     <favorites_list name="server.frame.python" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file leaf-file-name="reactor.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/frame/src/frame/core/reactor.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="54" column="0" selection-start-line="54" selection-start-column="0" selection-end-line="54" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="rpc.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/frame/src/frame/servers/rpc/rpc.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.5604396">
+              <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="reactor.py" pinned="false" current-in-tab="false">
+        <entry file="file:///usr/local/Cellar/pypy/5.8.0/libexec/site-packages/twisted/internet/reactor.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="37" column="16" selection-start-line="37" selection-start-column="16" selection-end-line="37" selection-end-column="16" />
+              <folding>
+                <element signature="e#1703#1751#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="__init__.py" pinned="false" current-in-tab="false">
+        <entry file="file:///usr/local/Cellar/pypy/5.8.0/libexec/site-packages/twisted/internet/__init__.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="epollreactor.py" pinned="false" current-in-tab="false">
+        <entry file="file:///usr/local/Cellar/pypy/5.8.0/libexec/site-packages/twisted/internet/epollreactor.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="406" column="12" selection-start-line="406" selection-start-column="12" selection-end-line="406" selection-end-column="12" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main.py" pinned="false" current-in-tab="false">
+        <entry file="file:///usr/local/Cellar/pypy/5.8.0/libexec/site-packages/twisted/internet/main.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="21" column="23" selection-start-line="21" selection-start-column="23" selection-end-line="21" selection-end-column="23" />
+              <folding>
+                <element signature="e#309#357#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="cmd_handler.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/chat/src/__demos__/chat_demo/client/entity/cmd_handler.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="8" column="19" selection-start-line="8" selection-start-column="19" selection-end-line="8" selection-end-column="19" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="run.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/chat/src/__demos__/chat_demo/client/run.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="14" column="31" selection-start-line="14" selection-start-column="31" selection-end-line="14" selection-end-column="31" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="server.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/chat/src/chat/servers/sdk/server.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+              <folding>
+                <element signature="e#203#250#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="client.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/chat/src/__demos__/chat_demo/client/entity/client.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="11" column="26" selection-start-line="11" selection-start-column="26" selection-end-line="11" selection-end-column="26" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -38,24 +270,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/chat/doc/1.md" />
-        <option value="$PROJECT_DIR$/rpc/config/rpc/servers.json" />
-        <option value="$PROJECT_DIR$/rpc/src/rpc/rpc_config.py" />
-        <option value="$PROJECT_DIR$/frame_twisted/src/frame/entity/__init__.py" />
-        <option value="$PROJECT_DIR$/frame_twisted/src/frame/rpc/__init__.py" />
-        <option value="$PROJECT_DIR$/frame_twisted/src/frame/rpc/rpc_client.py" />
-        <option value="$PROJECT_DIR$/frame_twisted/src/frame/rpc/rpc_export.py" />
-        <option value="$PROJECT_DIR$/frame_twisted/src/__demos__/rpc_demo/server/rpc_export.py" />
-        <option value="$PROJECT_DIR$/chat/src/chat/servers/db/rpc.py" />
-        <option value="$PROJECT_DIR$/frame_twisted/src/frame/rpc/rpc_server.py" />
-        <option value="$PROJECT_DIR$/chat/src/chat/entity/config.py" />
-        <option value="$PROJECT_DIR$/frame_twisted/src/__demos__/rpc_demo/server/server.py" />
-        <option value="$PROJECT_DIR$/frame/src/frame/rpc/rpc_mark.py" />
-        <option value="$PROJECT_DIR$/frame/src/frame/rpc/rpc_mark_mixin.py" />
-        <option value="$PROJECT_DIR$/frame/src/frame/rpc/rpc_server.py" />
-        <option value="$PROJECT_DIR$/frame/src/frame/rpc/conf.py" />
-        <option value="$PROJECT_DIR$/frame/src/frame/rpc/g.py" />
-        <option value="$PROJECT_DIR$/frame/src/frame/rpc/rpc_export.py" />
         <option value="$PROJECT_DIR$/frame/src/frame/servers/rpc/g.py" />
         <option value="$PROJECT_DIR$/frame/src/frame/servers/__init__.py" />
         <option value="$PROJECT_DIR$/frame/src/frame/servers/rpc/rpc_export.py" />
@@ -74,7 +288,6 @@
         <option value="$PROJECT_DIR$/chat/src/chat/servers/db/client.py" />
         <option value="$PROJECT_DIR$/chat/src/chat/servers/db/accepter.py" />
         <option value="$PROJECT_DIR$/chat/src/chat/servers/db/server.py" />
-        <option value="$PROJECT_DIR$/frame/src/frame/servers/rpc/rpc_server.py" />
         <option value="$PROJECT_DIR$/chat/src/chat/servers/gate/connector.py" />
         <option value="$PROJECT_DIR$/chat/src/chat/servers/http/connector.py" />
         <option value="$PROJECT_DIR$/chat/src/chat/servers/manager/connector.py" />
@@ -89,6 +302,25 @@
         <option value="$PROJECT_DIR$/frame/src/__demos__/rpc_demo/server/g.py" />
         <option value="$PROJECT_DIR$/frame/src/__demos__/rpc_demo/server/rpc.py" />
         <option value="$PROJECT_DIR$/frame/src/__demos__/rpc_demo/server/server.py" />
+        <option value="$PROJECT_DIR$/frame/src/frame/servers/rpc/rpc_server.py" />
+        <option value="$PROJECT_DIR$/frame/src/__demos__/echo/client/echo_client.py" />
+        <option value="$PROJECT_DIR$/frame/src/__demos__/chat/server/user.py" />
+        <option value="$PROJECT_DIR$/chat/src/chat/entity/user.py" />
+        <option value="$PROJECT_DIR$/frame/src/frame/servers/rpc/rpc_mark.py" />
+        <option value="$PROJECT_DIR$/frame/src/__demos__/chat_room/client/__init__.py" />
+        <option value="$PROJECT_DIR$/frame/src/__demos__/chat_room/client/chat_room_client.py" />
+        <option value="$PROJECT_DIR$/frame/src/__demos__/chat_room/client/run.py" />
+        <option value="$PROJECT_DIR$/frame/src/__demos__/chat_room/__init__.py" />
+        <option value="$PROJECT_DIR$/frame/src/__demos__/chat_room/server/__init__.py" />
+        <option value="$PROJECT_DIR$/frame/src/frame/core/protocols.py" />
+        <option value="$PROJECT_DIR$/frame/src/frame/core/http.py" />
+        <option value="$PROJECT_DIR$/tags/echo_frame/entity/common/user.py" />
+        <option value="$PROJECT_DIR$/tags/echo_with_frame/frame/echo/client/echo_client.py" />
+        <option value="$PROJECT_DIR$/frame/src/__demos__/echo/client/cmd_handler.py" />
+        <option value="$PROJECT_DIR$/frame/src/__demos__/chat_room/client/cmd_handler.py" />
+        <option value="$PROJECT_DIR$/chat/src/__demos__/chat_demo/client/entity/cmd_handler.py" />
+        <option value="$PROJECT_DIR$/chat/src/__demos__/chat_demo/client/entity/client.py" />
+        <option value="$PROJECT_DIR$/chat/src/__demos__/chat_demo/client/run.py" />
       </list>
     </option>
   </component>
@@ -145,6 +377,184 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="server.frame.python" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="server.frame.python" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="chat" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="server.frame.python" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="server.frame.python" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="chat" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="__demos__" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="server.frame.python" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="server.frame.python" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="chat" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="__demos__" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="chat_demo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="server.frame.python" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="server.frame.python" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="chat" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="__demos__" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="chat_demo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="client" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="server.frame.python" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="server.frame.python" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="chat" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="__demos__" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="chat_demo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="client" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="entity" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="server.frame.python" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="server.frame.python" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="chat" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="__demos__" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="chat_demo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="client" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="clients" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="server.frame.python" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="server.frame.python" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="chat" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
       <pane id="Scratches" />
@@ -176,8 +586,8 @@
       <recent name="$PROJECT_DIR$/chat/src/chat/servers/manager" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/config" />
       <recent name="$PROJECT_DIR$/frame/src/frame/entity" />
+      <recent name="$PROJECT_DIR$/config" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/frame/src/frame/servers/rpc" />
       <recent name="$PROJECT_DIR$/chat/src/chat/clients" />
@@ -594,7 +1004,13 @@
       <option name="project" value="LOCAL" />
       <updated>1501424218735</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="init">
+      <created>1501424718114</created>
+      <option name="number" value="00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1501424718114</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -605,19 +1021,19 @@
       <window_info id="Kevoree Base64 Translator" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.39925373" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26647565" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="LuaJ" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2176617" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2176617" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17406876" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -637,298 +1053,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/chat/src/chat/entity/conf.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frame/src/frame/servers/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/chat/src/chat/entity/chat.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/chat/src/chat/servers/gate/server.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.19329897">
-          <caret line="10" column="15" selection-start-line="10" selection-start-column="15" selection-end-line="10" selection-end-column="15" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/chat/src/chat/servers/sio/server.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.13530928">
-          <caret line="7" column="18" selection-start-line="7" selection-start-column="18" selection-end-line="7" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/chat/src/chat/servers/gate/connector.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="9" column="15" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="15" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/chat/src/chat/servers/http/connector.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="9" column="28" selection-start-line="9" selection-start-column="28" selection-end-line="9" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/chat/src/chat/servers/manager/rpc.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/chat/src/chat/servers/manager/connector.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="11" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/chat/src/chat/servers/proxy/connector.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/chat/src/chat/servers/sdk/connector.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/chat/src/chat/servers/ws/connector.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/chat/src/chat/servers/sio/connector.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/chat/src/chat/clients/sio_client.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/chat/src/chat/clients/sdk_client.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/chat/src/chat/clients/net_client.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/chat/src/chat/clients/http_client.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/chat/src/__demos__/chat_demo/server/run.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#71#80#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/chat/src/chat/clients/ws_client.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/chat/src/chat/servers/sdk/server.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.79866886">
-          <caret line="36" column="0" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
-          <folding>
-            <element signature="e#203#250#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/chat/src/chat/entity/g.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6422629">
-          <caret line="30" column="0" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/chat/src/chat/clients/chat_client.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.79866886">
-          <caret line="32" column="0" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/chat/src/chat/servers/gate/rpc.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/chat/src/chat/servers/proxy/server.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/chat/src/chat/servers/manager/server.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.59900165">
-          <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/chat/src/chat/servers/db/rpc.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/chat/src/chat/servers/db/server.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/chat/src/chat/servers/ws/server.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/chat/src/chat/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frame/src/frame/servers/rpc/rpc.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frame/src/frame/servers/rpc/rpc_mark.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5607321">
-          <caret line="29" column="18" selection-start-line="29" selection-start-column="18" selection-end-line="29" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frame/src/frame/servers/rpc/msg.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.5723794">
-          <caret line="63" column="0" selection-start-line="63" selection-start-column="0" selection-end-line="63" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frame/src/frame/servers/rpc/rpc_connector.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7237937">
-          <caret line="29" column="0" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frame/src/frame/servers/rpc/rpc_server.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6239601">
-          <caret line="29" column="0" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frame/src/__demos__/rpc_demo/client/client.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.12479201">
-          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/servers.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.025996534">
-          <caret line="1" column="1" selection-start-line="1" selection-start-column="1" selection-end-line="1" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/frame/src/__demos__/rpc_demo/server/rpc.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -955,26 +1079,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frame/src/__demos__/rpc_demo/server/server.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/frame/src/frame/entity/base_client.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="32" column="0" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frame/src/frame/entity/base_server.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -987,57 +1095,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frame/src/frame/entity/http_server.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.59900165">
-          <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frame/src/frame/core/protocols.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.32612312">
-          <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
-          <folding>
-            <element signature="e#71#93#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frame/src/frame/core/factories.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6239601">
-          <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
-          <folding>
-            <element signature="e#70#130#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frame/src/frame/core/reactor.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6738769">
-          <caret line="32" column="0" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/frame/src/frame/core/entity.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frame/src/frame/core/http.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.57237935">
-          <caret line="23" column="25" selection-start-line="23" selection-start-column="25" selection-end-line="23" selection-end-column="25" />
-          <folding>
-            <element signature="e#353#394#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1055,6 +1117,386 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.14975041">
           <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frame/src/frame/entity/http_server.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.59900165">
+          <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frame/src/frame/entity/base_server.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chat/src/chat/servers/manager/server.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frame/src/frame/servers/rpc/rpc_server.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+          <folding>
+            <element signature="e#103#150#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frame/src/frame/servers/rpc/rpc_connector.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="29" column="0" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frame/doc/1.md">
+      <provider editor-type-id="MultiMarkdownFxPreviewEditor">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="split-provider[text-editor;MultiMarkdownPreviewEditor]">
+        <state split_layout="FIRST">
+          <first_editor vertical-scroll-proportion="0.075">
+            <caret line="2" column="41" selection-start-line="2" selection-start-column="41" selection-end-line="2" selection-end-column="41" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frame/src/frame/servers/rpc/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="4" column="14" selection-start-line="4" selection-start-column="14" selection-end-line="4" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frame/src/frame/core/factories.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="24" column="28" selection-start-line="24" selection-start-column="28" selection-end-line="24" selection-end-column="28" />
+          <folding>
+            <element signature="e#70#130#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chat/doc/readme.md">
+      <provider editor-type-id="MultiMarkdownFxPreviewEditor">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="split-provider[text-editor;MultiMarkdownPreviewEditor]">
+        <state split_layout="FIRST">
+          <first_editor vertical-scroll-proportion="0.0375">
+            <caret line="1" column="31" selection-start-line="1" selection-start-column="31" selection-end-line="1" selection-end-column="31" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chat/doc/1.md">
+      <provider editor-type-id="MultiMarkdownFxPreviewEditor">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="split-provider[text-editor;MultiMarkdownPreviewEditor]">
+        <state split_layout="FIRST">
+          <first_editor vertical-scroll-proportion="0.3325">
+            <caret line="34" column="12" selection-start-line="34" selection-start-column="12" selection-end-line="34" selection-end-column="12" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/local/Cellar/pypy/5.8.0/libexec/site-packages/twisted/protocols/basic.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="610" column="0" selection-start-line="610" selection-start-column="0" selection-end-line="614" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frame/src/__demos__/echo/client/echo_client.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="33" column="0" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frame/src/__demos__/chat/server/user.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chat/src/chat/entity/user.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="11" column="31" selection-start-line="11" selection-start-column="31" selection-end-line="11" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frame/src/frame/servers/rpc/rpc_mark.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frame/src/__demos__/chat_room/client/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="5" column="3" selection-start-line="5" selection-start-column="3" selection-end-line="5" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frame/src/__demos__/chat_room/client/chat_room_client.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="5" column="3" selection-start-line="5" selection-start-column="3" selection-end-line="5" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frame/src/__demos__/chat_room/client/run.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="5" column="3" selection-start-line="5" selection-start-column="3" selection-end-line="5" selection-end-column="3" />
+          <folding>
+            <element signature="e#71#80#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frame/src/__demos__/chat_room/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="5" column="3" selection-start-line="5" selection-start-column="3" selection-end-line="5" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frame/src/__demos__/chat_room/server/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="5" column="3" selection-start-line="5" selection-start-column="3" selection-end-line="5" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tags/echo_twisted/server.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tags/echo_frame/core/entity.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frame/src/frame/core/http.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="28" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tags/echo_frame/entity/common/user.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="11" column="31" selection-start-line="11" selection-start-column="31" selection-end-line="11" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tags/echo_with_frame/frame/echo/client/echo_client.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="33" column="0" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frame/src/__demos__/echo/client/cmd_handler.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="32" column="35" selection-start-line="32" selection-start-column="35" selection-end-line="32" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frame/src/__demos__/chat/server/chat_server.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+          <folding>
+            <element signature="e#99#146#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frame/src/__demos__/chat_room/client/cmd_handler.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="31" column="35" selection-start-line="31" selection-start-column="35" selection-end-line="31" selection-end-column="35" />
+          <folding>
+            <element signature="e#71#114#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frame/src/__demos__/rpc_demo/server/server.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="15" column="4" selection-start-line="15" selection-start-column="4" selection-end-line="15" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frame/src/frame/core/protocols.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="29" column="16" selection-start-line="29" selection-start-column="16" selection-end-line="29" selection-end-column="16" />
+          <folding>
+            <element signature="e#71#93#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chat/src/__demos__/chat_demo/client/clients/http.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chat/src/__demos__/chat_demo/client/clients/sio.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chat/src/__demos__/chat_demo/client/clients/ws.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chat/src/__demos__/chat_demo/client/entity/client.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="11" column="26" selection-start-line="11" selection-start-column="26" selection-end-line="11" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chat/src/__demos__/chat_demo/client/entity/cmd_handler.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="8" column="19" selection-start-line="8" selection-start-column="19" selection-end-line="8" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chat/src/__demos__/chat_demo/client/run.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="14" column="31" selection-start-line="14" selection-start-column="31" selection-end-line="14" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chat/src/chat/servers/sdk/server.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+          <folding>
+            <element signature="e#203#250#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/local/Cellar/pypy/5.8.0/libexec/site-packages/twisted/internet/reactor.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="37" column="16" selection-start-line="37" selection-start-column="16" selection-end-line="37" selection-end-column="16" />
+          <folding>
+            <element signature="e#1703#1751#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/local/Cellar/pypy/5.8.0/libexec/site-packages/twisted/internet/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/local/Cellar/pypy/5.8.0/libexec/site-packages/twisted/internet/epollreactor.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="406" column="12" selection-start-line="406" selection-start-column="12" selection-end-line="406" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/local/Cellar/pypy/5.8.0/libexec/site-packages/twisted/internet/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="21" column="23" selection-start-line="21" selection-start-column="23" selection-end-line="21" selection-end-column="23" />
+          <folding>
+            <element signature="e#309#357#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frame/src/frame/core/reactor.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="54" column="0" selection-start-line="54" selection-start-column="0" selection-end-line="54" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frame/src/frame/servers/rpc/rpc.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5604396">
+          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
           <folding />
         </state>
       </provider>

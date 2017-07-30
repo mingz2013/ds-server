@@ -1,9 +1,9 @@
 # -*- coding:utf-8 -*-
-'''
+"""
 Created on 19/06/2017
 
 @author: zhaojm
-'''
+"""
 
 from core.entity import Entity
 from core.factory import conn_to_server

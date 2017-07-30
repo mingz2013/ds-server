@@ -1,9 +1,9 @@
 # -*- coding:utf-8 -*-
-'''
+"""
 Created on 19/06/2017
 
 @author: zhaojm
-'''
+"""
 
 from chat_room_client import ChatRoomClient
 from frame.core.reactor import init_client
@@ -29,7 +29,7 @@ class ChatCmdHandler(CmdHandler):
         self.conn = None
 
     def on_msg(self, conn, msg):
-        self.chat_client.sendLine(msg)
+        self.chat_client.send_line(msg)
         pass
 
     def on_client_msg(self, client, msg):

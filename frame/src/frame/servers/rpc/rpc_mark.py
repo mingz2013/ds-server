@@ -15,9 +15,9 @@ class RpcMark(object):
 
     def mark_rpc(self, event, handler=None):
 
-        def decorator(handler):
+        def decorator(handle):
             if event not in self.__rpc_export:
-                self.__rpc_export[event] = handler
+                self.__rpc_export[event] = handle
 
         if handler is None:
             return decorator
