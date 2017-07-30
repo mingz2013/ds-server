@@ -2,25 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e885f0e0-bca7-4d41-835b-3eb8d7b34ed8" name="Default" comment="init">
-      <change type="MOVED" beforePath="$PROJECT_DIR$/frame/src/frame/servers/rpc/rpc_mark.py" afterPath="$PROJECT_DIR$/frame/src/frame/servers/rpc/rpc_mixin.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/chat/src/__demos__/chat_demo/client/entity/cmd_handler.py" afterPath="$PROJECT_DIR$/chat/src/__demos__/chat_demo/client/entity/cmd_handler.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/chat/src/chat/clients/chat_client.py" afterPath="$PROJECT_DIR$/chat/src/chat/clients/chat_client.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frame/src/__demos__/chat/client/chat_client.py" afterPath="$PROJECT_DIR$/frame/src/__demos__/chat/client/chat_client.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frame/src/__demos__/chat/client/cmd_handler.py" afterPath="$PROJECT_DIR$/frame/src/__demos__/chat/client/cmd_handler.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frame/src/__demos__/chat/server/chat_server.py" afterPath="$PROJECT_DIR$/frame/src/__demos__/chat/server/chat_server.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frame/src/__demos__/chat_room/client/chat_room_client.py" afterPath="$PROJECT_DIR$/frame/src/__demos__/chat_room/client/chat_room_client.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frame/src/__demos__/chat_room/client/cmd_handler.py" afterPath="$PROJECT_DIR$/frame/src/__demos__/chat_room/client/cmd_handler.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frame/src/__demos__/chat_room/server/chat_room_server.py" afterPath="$PROJECT_DIR$/frame/src/__demos__/chat_room/server/chat_room_server.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frame/src/__demos__/echo/client/cmd_handler.py" afterPath="$PROJECT_DIR$/frame/src/__demos__/echo/client/cmd_handler.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frame/src/__demos__/echo/client/echo_client.py" afterPath="$PROJECT_DIR$/frame/src/__demos__/echo/client/echo_client.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frame/src/__demos__/echo/server/echo_server.py" afterPath="$PROJECT_DIR$/frame/src/__demos__/echo/server/echo_server.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frame/src/__demos__/rpc_demo/server/entity.py" afterPath="$PROJECT_DIR$/frame/src/__demos__/rpc_demo/server/entity.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frame/src/frame/entity/base_client.py" afterPath="$PROJECT_DIR$/frame/src/frame/entity/base_client.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frame/src/frame/entity/base_server.py" afterPath="$PROJECT_DIR$/frame/src/frame/entity/base_server.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frame/src/frame/entity/cmd_handler.py" afterPath="$PROJECT_DIR$/frame/src/frame/entity/cmd_handler.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frame/src/frame/servers/rpc/rpc_connector.py" afterPath="$PROJECT_DIR$/frame/src/frame/servers/rpc/rpc_connector.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frame/src/frame/servers/rpc/rpc_server.py" afterPath="$PROJECT_DIR$/frame/src/frame/servers/rpc/rpc_server.py" />
     </list>
     <ignored path="server.frame.python.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -41,108 +23,7 @@
     <favorites_list name="server.frame.python" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="rpc_connector.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/frame/src/frame/servers/rpc/rpc_connector.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="10" column="23" selection-start-line="10" selection-start-column="23" selection-end-line="10" selection-end-column="23" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="rpc_mixin.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/frame/src/frame/servers/rpc/rpc_mixin.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="10" column="6" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="6" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="rpc_server.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/frame/src/frame/servers/rpc/rpc_server.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="18" column="17" selection-start-line="18" selection-start-column="17" selection-end-line="18" selection-end-column="17" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="chat_server_protocol.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tags/chat_twisted_and_stackless/chat_server_protocol.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="54" column="8" selection-start-line="54" selection-start-column="8" selection-end-line="54" selection-end-column="8" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="channel.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tags/echo_frame/core/channel.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="12" column="8" selection-start-line="12" selection-start-column="8" selection-end-line="12" selection-end-column="8" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="factory.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tags/echo_frame/core/factory.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="21" column="8" selection-start-line="21" selection-start-column="8" selection-end-line="21" selection-end-column="8" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="msg.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tags/echo_frame/core/msg.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="9" column="8" selection-start-line="9" selection-start-column="8" selection-end-line="9" selection-end-column="8" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="protocols.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tags/echo_frame/core/protocols.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="61" column="21" selection-start-line="61" selection-start-column="21" selection-end-line="61" selection-end-column="21" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="chat_client.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/tags/echo_frame/entity/client/chat_client.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.33195877">
-              <caret line="12" column="8" selection-start-line="12" selection-start-column="8" selection-end-line="12" selection-end-column="8" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="base_server.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/frame/src/frame/entity/base_server.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="10" column="6" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="6" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -923,7 +804,13 @@
       <option name="project" value="LOCAL" />
       <updated>1501429645650</updated>
     </task>
-    <option name="localTasksCounter" value="38" />
+    <task id="LOCAL-00038" summary="init">
+      <created>1501431464858</created>
+      <option name="number" value="00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1501431464858</updated>
+    </task>
+    <option name="localTasksCounter" value="39" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1304,7 +1191,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/frame/src/frame/entity/base_server.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
+        <state vertical-scroll-proportion="0.30927834">
           <caret line="10" column="6" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="6" />
           <folding />
         </state>
@@ -1318,17 +1205,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frame/src/frame/servers/rpc/rpc_server.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="18" column="17" selection-start-line="18" selection-start-column="17" selection-end-line="18" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tags/chat_twisted_and_stackless/chat_server_protocol.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
+        <state vertical-scroll-proportion="0.33195877">
           <caret line="54" column="8" selection-start-line="54" selection-start-column="8" selection-end-line="54" selection-end-column="8" />
           <folding />
         </state>
@@ -1336,7 +1215,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/tags/echo_frame/core/channel.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
+        <state vertical-scroll-proportion="0.33195877">
           <caret line="12" column="8" selection-start-line="12" selection-start-column="8" selection-end-line="12" selection-end-column="8" />
           <folding />
         </state>
@@ -1344,7 +1223,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/tags/echo_frame/core/factory.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
+        <state vertical-scroll-proportion="0.33195877">
           <caret line="21" column="8" selection-start-line="21" selection-start-column="8" selection-end-line="21" selection-end-column="8" />
           <folding />
         </state>
@@ -1352,7 +1231,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/tags/echo_frame/core/msg.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
+        <state vertical-scroll-proportion="0.2783505">
           <caret line="9" column="8" selection-start-line="9" selection-start-column="8" selection-end-line="9" selection-end-column="8" />
           <folding />
         </state>
@@ -1360,7 +1239,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/tags/echo_frame/core/protocols.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
+        <state vertical-scroll-proportion="0.33195877">
           <caret line="61" column="21" selection-start-line="61" selection-start-column="21" selection-end-line="61" selection-end-column="21" />
           <folding />
         </state>
@@ -1368,8 +1247,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/tags/echo_frame/entity/client/chat_client.py">
       <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.30515465">
+          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <folding>
+            <element signature="e#71#101#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frame/src/frame/servers/rpc/rpc_server.py">
+      <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.33195877">
-          <caret line="12" column="8" selection-start-line="12" selection-start-column="8" selection-end-line="12" selection-end-column="8" />
+          <caret line="18" column="17" selection-start-line="18" selection-start-column="17" selection-end-line="18" selection-end-column="17" />
           <folding />
         </state>
       </provider>
