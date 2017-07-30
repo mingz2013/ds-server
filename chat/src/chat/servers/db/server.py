@@ -12,8 +12,6 @@ from frame.servers.rpc.rpc_server import RpcServer
 
 
 class Server(RpcServer):
-    def __init__(self):
-        RpcServer.__init__(self)
 
     def on_conn_lost(self, conn, reason):
         pass
