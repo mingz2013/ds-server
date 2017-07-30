@@ -2,17 +2,15 @@
 '''
 Created on 26/06/2017
 
-roomserver, 用于管理房间信息
-
-
 @author: zhaojm
 '''
-from frame.entity.base_server import BaseServer
+
+from frame.rpc.rpc_server import RpcServer
 
 
-class RoomServer(BaseServer):
+class SIOServer(RpcServer):
     def __init__(self):
-        BaseServer.__init__(self)
+        RpcServer.__init__(self)
 
     def on_conn_lost(self, conn, reason):
         pass

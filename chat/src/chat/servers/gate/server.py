@@ -2,18 +2,18 @@
 '''
 Created on 26/06/2017
 
-数据库管理, 用于连接数据库
-
+http服务, 客户端首先登陆这个地址, 简单验证client_id, 然后连接数据库, 选择一个login server发送给客户端
 
 
 @author: zhaojm
 '''
-from frame.entity.base_server import BaseServer
+
+from frame.rpc.rpc_server import RpcServer
 
 
-class DbServer(BaseServer):
+class GateServer(RpcServer):
     def __init__(self):
-        BaseServer.__init__(self)
+        RpcServer.__init__(self)
 
     def on_conn_lost(self, conn, reason):
         pass

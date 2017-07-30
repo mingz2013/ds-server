@@ -16,6 +16,7 @@ from frame.rpc.msg import Msg
 class RpcServer(BaseServer):
     def __init__(self):
         BaseServer.__init__(self)
+        # 注册rpc接口
         pass
 
     def on_conn_made(self, conn):

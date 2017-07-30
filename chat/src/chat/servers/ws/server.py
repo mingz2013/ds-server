@@ -2,16 +2,16 @@
 '''
 Created on 26/06/2017
 
-管理server, 用于管理??
+用于接收ws连接, 并转换到其他服务器
 
 @author: zhaojm
 '''
-from frame.entity.base_server import BaseServer
+from frame.rpc.rpc_server import RpcServer
 
 
-class MasterServer(BaseServer):
+class WSServer(RpcServer):
     def __init__(self):
-        BaseServer.__init__(self)
+        RpcServer.__init__(self)
 
     def on_conn_lost(self, conn, reason):
         pass

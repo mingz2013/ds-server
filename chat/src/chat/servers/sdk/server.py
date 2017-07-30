@@ -12,12 +12,12 @@ Created on 26/06/2017
 
 @author: zhaojm
 '''
-from frame.entity.base_server import BaseServer
+from frame.rpc.rpc_server import RpcServer
 
 
-class AccountServer(BaseServer):
+class SdkServer(RpcServer):
     def __init__(self):
-        BaseServer.__init__(self)
+        RpcServer.__init__(self)
 
     def on_conn_lost(self, conn, reason):
         pass
