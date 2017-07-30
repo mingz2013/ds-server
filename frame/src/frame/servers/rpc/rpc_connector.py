@@ -7,7 +7,7 @@ __author__ = "zhaojm"
 from frame.entity.base_client import BaseClient
 
 
-class RpcClient(BaseClient):
+class RpcConnector(BaseClient):
     def __init__(self):
         BaseClient.__init__(self)
         self.conn = None
