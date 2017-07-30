@@ -8,8 +8,6 @@ from frame.core.entity import Entity
 
 
 class CmdHandler(Entity):
-
-
     def on_conn_made(self, conn):
         pass
 

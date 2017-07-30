@@ -8,9 +8,6 @@ from frame.core.ws_entity import WSServerEntity
 
 
 class WSServer(WSServerEntity):
-    def __init__(self):
-        pass
-
     def on_connect(self, request):
         pass
 
