@@ -2,7 +2,7 @@
 """
 Created on 26/06/2017
 
-代理server, 用于转发ws, sio, http协议到系统内部
+代理server, 用于转发ws, sio, http协议到系统内部, 中转服务
 
 @author: zhaojm
 """
