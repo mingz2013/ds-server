@@ -9,8 +9,8 @@ __author__ = "zhaojm"
 
 from frame.entity.base_server import BaseServer
 
-from rpc.rpc_mark import mark_rpc
-from rpc.msg import Msg
+from frame.rpc.rpc_mark import mark_rpc
+from frame.rpc.msg import Msg
 
 
 class RpcServer(BaseServer):
