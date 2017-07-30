@@ -1,8 +1,6 @@
 # -*- coding:utf-8 -*-
 """
-
 装饰器, 用于标注rpc接口
-
 """
 __date__ = "30/07/2017"
 __author__ = "zhaojm"

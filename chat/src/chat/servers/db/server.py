@@ -4,8 +4,6 @@ Created on 26/06/2017
 
 数据库管理, 用于连接数据库
 
-
-
 @author: zhaojm
 """
 from frame.servers.rpc.rpc_server import RpcServer
