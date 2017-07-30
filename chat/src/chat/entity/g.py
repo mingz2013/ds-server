@@ -7,7 +7,7 @@ Created on 21/06/2017
 @author: zhaojm
 '''
 
-s = {}
+s = {}  # 存储server对象列表, 限制了每个进程最多一个相同的server对象
 
 
 def register_server(s_str):
