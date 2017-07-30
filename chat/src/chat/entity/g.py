@@ -11,7 +11,7 @@ s = {}  # 存储server对象列表, 这里限制了每个进程最多一个相�
 
 
 def init_servers():
-    s_list_str = ["db", "gate", "manager", "proxy", "sio", "ws"]
+    s_list_str = ["db", "gate", "manager", "robot", "proxy", "sio", "ws"]
     for s_str in s_list_str:
         # register server
         exec "from chat.servers.%s.server import Server; s['%s'] = Server()" % s_str
@@ -35,7 +35,7 @@ def start_servers():
         port = 8000 + index
         ip = "127.0.0.1"
 
-        if k in ["db", "gate", "manager", "proxy"]:
+        if k in ["db", "gate", "manager", "robot", "proxy"]:
             reactor.init_server(v, ip, port)
         elif k in ["http", "sdk"]:
             reactor.init_http_server(v, ip, port)
