@@ -8,7 +8,7 @@ Created on 26/06/2017
 from frame.rpc.rpc_server import RpcServer
 
 
-class SIOServer(RpcServer):
+class Server(RpcServer):
     def __init__(self):
         RpcServer.__init__(self)
 

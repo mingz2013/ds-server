@@ -11,7 +11,7 @@ http服务, 客户端首先登陆这个地址, 简单验证client_id, 然后连�
 from frame.rpc.rpc_server import RpcServer
 
 
-class GateServer(RpcServer):
+class Server(RpcServer):
     def __init__(self):
         RpcServer.__init__(self)
 

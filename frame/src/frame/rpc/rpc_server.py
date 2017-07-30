@@ -9,14 +9,16 @@ __author__ = "zhaojm"
 
 from frame.entity.base_server import BaseServer
 
-from frame.rpc.rpc_mark import mark_rpc
+
 from frame.rpc.msg import Msg
+from frame.rpc.rpc_mark import RpcMark
 
 
 class RpcServer(BaseServer):
     def __init__(self):
         BaseServer.__init__(self)
-        # 注册rpc接口
+        self.__rpc_mark = RpcMark()
+        self.register_rpc()
         pass
 
     def on_conn_made(self, conn):
@@ -29,6 +31,12 @@ class RpcServer(BaseServer):
         # 解析rpc协议, 调用不同的rpc接口
 
         msg = Msg.from_msg(msg)
-        mark_rpc.handle_rpc(conn, msg.cmd, msg)
+        self.__rpc_mark.handle_rpc(conn, msg.cmd, msg)
 
         pass
+
+    def rpc_mark(self):
+        return self.__rpc_mark
+
+    def register_rpc(self):
+        from frame.rpc.rpc_export import *

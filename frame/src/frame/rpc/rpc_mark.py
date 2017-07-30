@@ -8,9 +8,10 @@ __date__ = "30/07/2017"
 __author__ = "zhaojm"
 
 
-class MarkRpc(object):
+class RpcMark(object):
     def __init__(self):
         self.__rpc_export = {}
+        # TODO 注册接口
 
     def mark_rpc(self, event, handler=None):
 
@@ -27,8 +28,3 @@ class MarkRpc(object):
             return self.__rpc_export[event](conn, args)
         else:
             print "event error", event
-
-
-mark_rpc = MarkRpc()
-
-__all__ = [mark_rpc]

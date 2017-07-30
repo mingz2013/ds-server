@@ -4,14 +4,14 @@
 __date__ = "30/07/2017"
 __author__ = "zhaojm"
 
-from frame.rpc.rpc_mark import mark_rpc
+from frame.rpc import g
 
 
-@mark_rpc.mark_rpc("get_info")
+@g.s.rpc_mark.mark_rpc("get_info")
 def on_get_info(conn, args):
     pass
 
 
-@mark_rpc.mark_rpc("register")
+@g.s.rpc_mark.mark_rpc("register")
 def on_register(conn, args):
     pass

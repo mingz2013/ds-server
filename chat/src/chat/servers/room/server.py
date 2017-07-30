@@ -10,7 +10,7 @@ roomserver, 用于管理房间信息
 from frame.rpc.rpc_server import RpcServer
 
 
-class RoomServer(RpcServer):
+class Server(RpcServer):
     def __init__(self):
         RpcServer.__init__(self)
 

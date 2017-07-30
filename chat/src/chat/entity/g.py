@@ -7,6 +7,14 @@ Created on 21/06/2017
 @author: zhaojm
 '''
 
-g_conf_map = {}  # 全局配置数据
+s = {}
 
-user_id_conn_map = {}  # {user_id: conn}, 用于存储客户端连接
+
+def register_server(s_str):
+    exec_str = "from chat.servers.%s.server import Server; s['%s'] = Server()" % s_str
+    exec exec_str
+
+
+def main():
+    s_list_str = ["db", "gate", "http", "master", "net", "room", "sdk", "sio", "ws"]
+    for s_str in s_list_str: register_server(s_str)
