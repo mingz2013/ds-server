@@ -13,7 +13,7 @@ class RpcMark(object):
         self.__rpc_export = {}
         # TODO 注册接口
 
-    def mark_rpc(self, event, handler=None):
+    def rpc_mark(self, event, handler=None):
 
         def decorator(handle):
             if event not in self.__rpc_export:
@@ -23,7 +23,7 @@ class RpcMark(object):
             return decorator
         decorator(handler)
 
-    def handle_rpc(self, conn, event, args):
+    def rpc_handle(self, conn, event, args):
         if event in self.__rpc_export:
             return self.__rpc_export[event](conn, args)
         else:

@@ -13,13 +13,11 @@ from frame.entity.msg import Msg
 from frame.servers.rpc.rpc_mark import RpcMark
 
 
-class RpcServer(BaseServer):
-    def rpc_mark(self):
-        return self.__rpc_mark
+class RpcServer(BaseServer, RpcMark):
 
     def __init__(self):
+        RpcMark.__init__(self)
         BaseServer.__init__(self)
-        self.__rpc_mark = RpcMark()
         pass
 
     def on_conn_made(self, conn):
@@ -32,7 +30,7 @@ class RpcServer(BaseServer):
         # 解析rpc协议, 调用不同的rpc接口
 
         msg = Msg.from_msg(msg)
-        self.__rpc_mark.handle_rpc(conn, msg.cmd, msg)
+        self.rpc_handle(conn, msg.cmd, msg)
 
         pass
 
