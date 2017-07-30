@@ -4,7 +4,7 @@
 __date__ = "30/07/2017"
 __author__ = "zhaojm"
 
-from frame.servers.rpc import g
+from frame.entity import g
 
 
 @g.s.rpc_mark.mark_rpc("get_info")

@@ -15,7 +15,7 @@ if __name__ == '__main__':
     from frame.core import reactor
     from frame.servers.rpc.rpc import *
 
-    s = Accepter()
+    s = Server()
     reactor.init_server(s, '0.0.0.0', 8888)
     reactor.start_reactor()
     pass

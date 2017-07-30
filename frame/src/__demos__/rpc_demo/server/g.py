@@ -4,3 +4,6 @@
 __date__ = "30/07/2017"
 __author__ = "zhaojm"
 
+from frame.servers.rpc.rpc_server import RpcServer
+
+s = RpcServer()
