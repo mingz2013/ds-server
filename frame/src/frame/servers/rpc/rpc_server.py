@@ -14,6 +14,9 @@ from frame.servers.rpc.rpc_mark import RpcMark
 
 
 class RpcServer(BaseServer):
+    def rpc_mark(self):
+        return self.__rpc_mark
+
     def __init__(self):
         BaseServer.__init__(self)
         self.__rpc_mark = RpcMark()
@@ -33,5 +36,3 @@ class RpcServer(BaseServer):
 
         pass
 
-    def rpc_mark(self):
-        return self.__rpc_mark
