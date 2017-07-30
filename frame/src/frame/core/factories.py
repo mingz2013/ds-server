@@ -5,8 +5,11 @@ Created on 15/06/2017
 @author: zhaojm
 """
 from twisted.internet.protocol import Factory, ClientFactory
+from twisted.web.http import HTTPFactory
+from twisted.web.server import Site
+from autobahn.twisted.websocket import WebSocketServerFactory, WebSocketClientFactory
 
-from protocols import BaseProtocol
+from protocols import BaseProtocol, BaseWebSocketServerProtocol, BaseWebSocketClientProtocol
 
 
 class BaseFactory(Factory):
@@ -37,4 +40,35 @@ class BaseClientFactory(ClientFactory):
 
     def startedConnecting(self, connector):
         # 连接建立成功时
+        pass
+
+
+# class BaseSite(Site):
+#     def __init__(self, entity):
+#         super(BaseSite, self).__init__()
+#         self._entity = entity
+#
+#     def buildProtocol(self, addr):
+#         return BaseProtocol(self._entity)
+
+
+class BaseWebSocketServerFactory(WebSocketServerFactory):
+    def __init__(self, entity, *args, **kwargs):
+        super(BaseWebSocketServerFactory).__init__(*args, **kwargs)
+        self._entity = entity
+        # self.protocol = protocol
+
+    def buildProtocol(self, addr):
+        return BaseWebSocketServerProtocol(self._entity)
+        pass
+
+
+class BaseWebSocketClientFactory(WebSocketClientFactory):
+    def __init__(self, entity, *args, **kwargs):
+        super(BaseWebSocketClientFactory).__init__(*args, **kwargs)
+        self._entity = entity
+        # self.protocol = protocol
+
+    def buildProtocol(self, addr):
+        return BaseWebSocketClientProtocol(self._entity)
         pass

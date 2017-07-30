@@ -12,25 +12,16 @@ Created on 26/06/2017
 
 @author: zhaojm
 """
-from frame.entity.base_server import BaseServer
-from flask import Flask
-from twisted.internet import reactor
-
-from flask import Flask
-
-app = Flask(__name__)
+from frame.servers.rpc.rpc_server import RpcServer
 
 
-@app.route('/index')
-def index():
-    return 'index'
+class Server(RpcServer):
+    def on_conn_lost(self, conn, reason):
+        pass
 
+    def on_conn_made(self, conn):
+        pass
 
-@app.route('/login')
-def login():
-    pass
-
-
-@app.route('/register')
-def register():
-    pass
+    def on_msg(self, conn, msg):
+        conn.sendLine(msg)
+        pass
