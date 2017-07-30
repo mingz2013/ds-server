@@ -2,12 +2,14 @@
 '''
 Created on 26/06/2017
 
-http服务, 客户端首先登陆这个地址, 简单验证client_id, 然后连接数据库, 选择一个login server发送给客户端
+网关服务器, 用于接收客户端连接
 
+客户端从 login_server 拿到session和地址, 连接过来
+
+从db_server验证session, 验证成功则登陆成功
 
 @author: zhaojm
 '''
-
 from frame.servers.rpc.rpc_server import RpcServer
 
 
