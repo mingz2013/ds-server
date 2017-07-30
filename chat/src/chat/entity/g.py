@@ -11,24 +11,37 @@ s = {}  # 存储server对象列表, 限制了每个进程最多一个相同的se
 
 
 def init_servers():
-    s_list_str = ["db", "gate", "http", "manager", "proxy", "sdk", "sio", "ws"]
+    s_list_str = ["db", "gate", "manager", "proxy", "sio", "ws"]
     for s_str in s_list_str:
         # register server
         exec "from chat.servers.%s.server import Server; s['%s'] = Server()" % s_str
+
+    s_list_str = ['http', 'sdk']
+    for s_str in s_list_str:
+        # register web app
+        exec "from chat.servers.%s.server import app; s['%s'] = app" % s_str
+
+    s_list_str = ["db", "gate", "manager", "proxy"]
+    for s_str in s_list_str:
         # register rpc
         exec "from chat.servers.%s.rpc import *" % s_str
 
 
 def start_servers():
     from frame.core import reactor
+    index = 0
     for (k, v) in s.items():
+
+        port = 8000 + index
+        ip = "127.0.0.1"
+
         if k in ["db", "gate", "manager", "proxy"]:
-            reactor.init_server(v, "127.0.0.1", 8888)
+            reactor.init_server(v, ip, port)
         elif k in ["http", "sdk"]:
-            reactor.init_http_server(v, "127.0.0.1", 80)
+            reactor.init_http_server(v, ip, port)
         elif k in ["sio"]:
-            reactor.init_sio_server(v, "127.0.0.1", 8002, u"ws://127.0.0.1:8002")
+            reactor.init_sio_server(v, ip, port, u"ws://%s:%s" % (ip, port))
         elif k in ["ws"]:
-            reactor.init_ws_server(v, "127.0.0.1", 8003, u"ws://127.0.0.1:8003")
+            reactor.init_ws_server(v, ip, port, u"ws://%s:%s" % (ip, port))
         else:
-            pass
+            print "unknown k", k

@@ -11,9 +11,6 @@ Created on 26/06/2017
 
 @author: zhaojm
 """
-from frame.entity.base_server import BaseServer
-from flask import Flask
-from twisted.internet import reactor
 
 from flask import Flask
 

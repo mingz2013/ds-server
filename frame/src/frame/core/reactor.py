@@ -11,6 +11,12 @@ from twisted.internet import reactor, stdio
 from factories import BaseFactory, BaseClientFactory, BaseWebSocketServerFactory, BaseWebSocketClientFactory
 from protocols import StandardIOProtocol
 
+from flask import Flask
+from twisted.web.server import Site
+from twisted.web.wsgi import WSGIResource
+from twisted.internet import reactor
+from twisted.web.proxy import ReverseProxyResource
+from twisted.web.resource import Resource
 
 
 def init_server(entity, ip, port):
@@ -40,8 +46,18 @@ def init_sio_client():
     pass
 
 
-def init_http_server(entity, ip, port):
+def init_http_server(app, ip, port):
     # reactor.listenTCP(port, BaseHTTPFactory(entity), interface=ip)
+
+    flask_site = WSGIResource(reactor, reactor.getThreadPool(), app)
+
+    root = Resource()
+    root.putChild('/', flask_site)
+
+    # site_example = ReverseProxyResource('www.example.com', 80, ''.encode('utf-8'))
+    # root.putChild('example1', site_example)
+
+    reactor.listenTCP(port, Site(root), interface=ip)
     pass
 
 def init_http_client():
