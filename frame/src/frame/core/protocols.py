@@ -11,6 +11,7 @@ import stackless
 from twisted.internet import reactor
 from twisted.internet.protocol import connectionDone
 from twisted.protocols.basic import LineReceiver
+from autobahn.twisted.websocket import WebSocketServerProtocol, WebSocketClientProtocol
 
 class BaseProtocol(LineReceiver):
     def __init__(self, entity):
@@ -50,7 +51,6 @@ class StandardIOProtocol(BaseProtocol):
     delimiter = linesep
 
 
-from autobahn.twisted.websocket import WebSocketServerProtocol, WebSocketClientProtocol
 
 
 class BaseWebSocketServerProtocol(WebSocketServerProtocol):

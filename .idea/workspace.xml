@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e885f0e0-bca7-4d41-835b-3eb8d7b34ed8" name="Default" comment="init">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frame/src/frame/core/http_entity.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frame/src/frame/entity/http_server.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/chat/src/chat/entity/g.py" afterPath="$PROJECT_DIR$/chat/src/chat/entity/g.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frame/src/frame/core/protocols.py" afterPath="$PROJECT_DIR$/frame/src/frame/core/protocols.py" />
     </list>
     <ignored path="server.frame.python.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -26,11 +26,23 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
+      <file leaf-file-name="reactor.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/frame/src/frame/core/reactor.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+              <folding>
+                <element signature="e#71#87#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="factories.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/frame/src/frame/core/factories.py">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="70" column="0" selection-start-line="70" selection-start-column="0" selection-end-line="70" selection-end-column="0" />
+              <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
               <folding>
                 <element signature="e#70#130#0" expanded="true" />
               </folding>
@@ -38,23 +50,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="protocols.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/frame/src/frame/core/protocols.py">
+      <file leaf-file-name="http_entity.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/frame/src/frame/core/http_entity.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="88" column="0" selection-start-line="88" selection-start-column="0" selection-end-line="113" selection-end-column="53" />
-              <folding>
-                <element signature="e#71#93#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ws_entity.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/frame/src/frame/core/ws_entity.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="36" column="33" selection-start-line="36" selection-start-column="25" selection-end-line="36" selection-end-column="33" />
+            <state vertical-scroll-proportion="0.12274959">
+              <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -80,38 +80,13 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="http_entity.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/frame/src/frame/core/http_entity.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.17184943">
-              <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="protocol.py" pinned="false" current-in-tab="false">
-        <entry file="file:///usr/local/Cellar/pypy/5.8.0/libexec/site-packages/autobahn/websocket/protocol.py">
+      <file leaf-file-name="protocols.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/frame/src/frame/core/protocols.py">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="2397" column="0" selection-start-line="2397" selection-start-column="0" selection-end-line="2397" selection-end-column="0" />
+              <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
               <folding>
-                <element signature="e#122210#123972#0" expanded="false" />
-                <element signature="e#124018#125365#0" expanded="false" />
-                <element signature="e#126567#134836#0" expanded="false" />
-                <element signature="e#126567#130927#1" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="reactor.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/frame/src/frame/core/reactor.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="41" column="0" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
-              <folding>
-                <element signature="e#71#87#0" expanded="true" />
+                <element signature="e#71#93#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -121,17 +96,7 @@
         <entry file="file://$PROJECT_DIR$/chat/src/chat/entity/g.py">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="34" column="0" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="http_server.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/frame/src/frame/entity/http_server.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -194,15 +159,15 @@
         <option value="$PROJECT_DIR$/chat/src/chat/servers/http/server.py" />
         <option value="$PROJECT_DIR$/frame/doc/1.md" />
         <option value="$PROJECT_DIR$/frame/doc/websocket.md" />
-        <option value="$PROJECT_DIR$/frame/src/frame/core/protocols.py" />
         <option value="$PROJECT_DIR$/frame/src/frame/entity/ws_server.py" />
         <option value="$PROJECT_DIR$/frame/src/frame/core/ws_entity.py" />
         <option value="$PROJECT_DIR$/frame/src/frame/entity/ws_client.py" />
         <option value="$PROJECT_DIR$/frame/src/frame/core/factories.py" />
         <option value="$PROJECT_DIR$/frame/src/frame/core/reactor.py" />
-        <option value="$PROJECT_DIR$/chat/src/chat/entity/g.py" />
         <option value="$PROJECT_DIR$/frame/src/frame/entity/http_server.py" />
         <option value="$PROJECT_DIR$/frame/src/frame/core/http_entity.py" />
+        <option value="$PROJECT_DIR$/chat/src/chat/entity/g.py" />
+        <option value="$PROJECT_DIR$/frame/src/frame/core/protocols.py" />
       </list>
     </option>
   </component>
@@ -1052,7 +1017,13 @@
       <option name="project" value="LOCAL" />
       <updated>1501444515631</updated>
     </task>
-    <option name="localTasksCounter" value="47" />
+    <task id="LOCAL-00047" summary="init">
+      <created>1501444612129</created>
+      <option name="number" value="00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1501444612129</updated>
+    </task>
+    <option name="localTasksCounter" value="48" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1427,16 +1398,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frame/src/frame/core/protocols.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="88" column="0" selection-start-line="88" selection-start-column="0" selection-end-line="113" selection-end-column="53" />
-          <folding>
-            <element signature="e#71#93#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/frame/src/frame/core/ws_entity.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1445,19 +1406,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frame/src/frame/core/factories.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="70" column="0" selection-start-line="70" selection-start-column="0" selection-end-line="70" selection-end-column="0" />
-          <folding>
-            <element signature="e#70#130#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file:///usr/local/Cellar/pypy/5.8.0/libexec/site-packages/autobahn/websocket/protocol.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
+        <state vertical-scroll-proportion="-0.60065466">
           <caret line="2397" column="0" selection-start-line="2397" selection-start-column="0" selection-end-line="2397" selection-end-column="0" />
           <folding>
             <element signature="e#122210#123972#0" expanded="false" />
@@ -1476,28 +1427,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frame/src/frame/core/reactor.py">
+    <entry file="file://$PROJECT_DIR$/frame/src/frame/entity/http_server.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="41" column="0" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
-          <folding>
-            <element signature="e#71#87#0" expanded="true" />
-          </folding>
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/chat/src/chat/entity/g.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="34" column="0" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frame/src/frame/entity/http_server.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1518,10 +1459,40 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/frame/src/frame/core/protocols.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+          <folding>
+            <element signature="e#71#93#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frame/src/frame/core/reactor.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+          <folding>
+            <element signature="e#71#87#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frame/src/frame/core/factories.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+          <folding>
+            <element signature="e#70#130#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/frame/src/frame/core/http_entity.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.17184943">
-          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.12274959">
+          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
           <folding />
         </state>
       </provider>
