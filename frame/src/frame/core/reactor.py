@@ -13,11 +13,11 @@ from protocols import StandardIOProtocol
 
 
 def init_server(entity, ip, port):
-    reactor.listenTCP(port, BaseFactory(entity))
+    reactor.listenTCP(port, BaseFactory(entity), interface=ip)
 
 
 def init_http_server(http_app, ip, port):
-    reactor.listenTCP(port, http_app)
+    reactor.listenTCP(port, http_app, interface=ip)
 
 
 def init_ws_server():
