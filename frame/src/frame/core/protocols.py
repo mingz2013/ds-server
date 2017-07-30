@@ -50,5 +50,3 @@ class BaseProtocol(LineReceiver):
 class StandardIOProtocol(BaseProtocol):
     delimiter = linesep
 
-    def __init__(self, entity):
-        BaseProtocol.__init__(self, entity)
