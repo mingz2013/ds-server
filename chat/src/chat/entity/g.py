@@ -26,5 +26,9 @@ def start_servers():
             reactor.init_server(v, "127.0.0.1", 8888)
         elif k in ["http", "sdk"]:
             reactor.init_http_server(v, "127.0.0.1", 80)
+        elif k in ["sio"]:
+            reactor.init_sio_server(v, "127.0.0.1", 8002)
+        elif k in ["ws"]:
+            reactor.init_ws_server(v, "127.0.0.1", 8003)
         else:
             pass
