@@ -8,6 +8,7 @@ Created on 21/06/2017
 """
 
 from frame.core import reactor
+import logging
 
 s = {}  # 存储server对象列表, 这里限制了每个进程最多一个相同的server对象, 否则会有key冲突
 
@@ -36,7 +37,7 @@ def start_servers():
     ip = "127.0.0.1"
     for (k, v) in s.items():
         port += 1
-        print k, ip, port
+        logging.info('%s %s:%s' % (k, ip, port))
         if k in ["db", "gate", "manager", "robot", "proxy"]:
             reactor.init_server(v, ip, port)
         elif k in ["http", "sdk"]:
@@ -50,6 +51,9 @@ def start_servers():
 
 
 def setup_servers():
+    from frame.entity import g
+    g.init()
+
     init_servers()
     start_servers()
     reactor.start_reactor()

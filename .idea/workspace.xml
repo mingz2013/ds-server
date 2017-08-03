@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e885f0e0-bca7-4d41-835b-3eb8d7b34ed8" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frame/src/frame/entity/log.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frame/src/frame/core/reactor.py" afterPath="$PROJECT_DIR$/frame/src/frame/core/reactor.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/chat/src/chat/entity/g.py" afterPath="$PROJECT_DIR$/chat/src/chat/entity/g.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frame/src/frame/entity/g.py" afterPath="$PROJECT_DIR$/frame/src/frame/entity/g.py" />
     </list>
     <ignored path="server.frame.python.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -23,22 +25,48 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="g.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="g.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/chat/src/chat/entity/g.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="618">
-              <caret line="49" column="0" lean-forward="false" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
+            <state relative-caret-position="748">
+              <caret line="60" column="0" lean-forward="true" selection-start-line="60" selection-start-column="0" selection-end-line="60" selection-end-column="0" />
+              <folding>
+                <element signature="e#95#125#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="log.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/frame/src/frame/entity/log.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="564">
+              <caret line="38" column="42" lean-forward="true" selection-start-line="38" selection-start-column="42" selection-end-line="38" selection-end-column="42" />
+              <folding>
+                <element signature="e#79#93#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="g.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/frame/src/frame/entity/g.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="225">
+              <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="reactor.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="reactor.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/frame/src/frame/core/reactor.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="16" column="36" lean-forward="true" selection-start-line="16" selection-start-column="36" selection-end-line="16" selection-end-column="36" />
-              <folding />
+            <state relative-caret-position="555">
+              <caret line="62" column="0" lean-forward="false" selection-start-line="62" selection-start-column="0" selection-end-line="62" selection-end-column="0" />
+              <folding>
+                <element signature="e#71#87#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -90,7 +118,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/tags/echo_frame/entity/common/user.py" />
         <option value="$PROJECT_DIR$/tags/echo_with_frame/frame/echo/client/echo_client.py" />
         <option value="$PROJECT_DIR$/chat/src/__demos__/chat_demo/client/entity/client.py" />
         <option value="$PROJECT_DIR$/chat/src/__demos__/chat_demo/client/run.py" />
@@ -130,7 +157,6 @@
         <option value="$PROJECT_DIR$/frame/src/frame/entity/ws_server.py" />
         <option value="$PROJECT_DIR$/frame/src/frame/core/http_entity.py" />
         <option value="$PROJECT_DIR$/frame/src/frame/entity/http_server.py" />
-        <option value="$PROJECT_DIR$/frame/src/frame/entity/g.py" />
         <option value="$PROJECT_DIR$/frame/src/frame/core/http.py" />
         <option value="$PROJECT_DIR$/frame/src/__demos__/echo/client/run.py" />
         <option value="$PROJECT_DIR$/chat/src/chat/servers/robot/server.py" />
@@ -139,8 +165,10 @@
         <option value="$PROJECT_DIR$/frame/src/frame/core/factories.py" />
         <option value="$PROJECT_DIR$/chat/src/chat/servers/sdk/server.py" />
         <option value="$PROJECT_DIR$/chat/src/chat/servers/http/server.py" />
-        <option value="$PROJECT_DIR$/chat/src/chat/entity/g.py" />
         <option value="$PROJECT_DIR$/frame/src/frame/core/reactor.py" />
+        <option value="$PROJECT_DIR$/chat/src/chat/entity/log.py" />
+        <option value="$PROJECT_DIR$/frame/src/frame/entity/g.py" />
+        <option value="$PROJECT_DIR$/chat/src/chat/entity/g.py" />
       </list>
     </option>
   </component>
@@ -209,40 +237,6 @@
             <path>
               <item name="server.frame.python" type="b2602c69:ProjectViewProjectNode" />
               <item name="server.frame.python" type="462c0819:PsiDirectoryNode" />
-              <item name="chat" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="chat" type="462c0819:PsiDirectoryNode" />
-              <item name="servers" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="server.frame.python" type="b2602c69:ProjectViewProjectNode" />
-              <item name="server.frame.python" type="462c0819:PsiDirectoryNode" />
-              <item name="chat" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="chat" type="462c0819:PsiDirectoryNode" />
-              <item name="servers" type="462c0819:PsiDirectoryNode" />
-              <item name="http" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="server.frame.python" type="b2602c69:ProjectViewProjectNode" />
-              <item name="server.frame.python" type="462c0819:PsiDirectoryNode" />
-              <item name="chat" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="chat" type="462c0819:PsiDirectoryNode" />
-              <item name="servers" type="462c0819:PsiDirectoryNode" />
-              <item name="sdk" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="server.frame.python" type="b2602c69:ProjectViewProjectNode" />
-              <item name="server.frame.python" type="462c0819:PsiDirectoryNode" />
-              <item name="chat" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="chat" type="462c0819:PsiDirectoryNode" />
-              <item name="utils" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="server.frame.python" type="b2602c69:ProjectViewProjectNode" />
-              <item name="server.frame.python" type="462c0819:PsiDirectoryNode" />
               <item name="frame" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -257,6 +251,14 @@
               <item name="frame" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="frame" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="server.frame.python" type="b2602c69:ProjectViewProjectNode" />
+              <item name="server.frame.python" type="462c0819:PsiDirectoryNode" />
+              <item name="frame" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="frame" type="462c0819:PsiDirectoryNode" />
+              <item name="entity" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -547,13 +549,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1498889075346</updated>
-    </task>
-    <task id="LOCAL-00006" summary="init">
-      <created>1501403564560</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1501403564560</updated>
     </task>
     <task id="LOCAL-00007" summary="init">
       <created>1501406893495</created>
@@ -891,7 +886,14 @@
       <option name="project" value="LOCAL" />
       <updated>1501764933602</updated>
     </task>
-    <option name="localTasksCounter" value="55" />
+    <task id="LOCAL-00055" summary="init">
+      <created>1501765079637</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1501765079637</updated>
+    </task>
+    <option name="localTasksCounter" value="56" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -937,13 +939,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/frame/src/frame/entity/base_client.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="27" column="0" lean-forward="false" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/frame/src/frame/entity/cmd_handler.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -970,13 +965,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frame/src/frame/entity/g.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="9" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -1316,19 +1304,41 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/chat/src/chat/entity/g.py">
+    <entry file="file://$PROJECT_DIR$/frame/src/frame/core/reactor.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="618">
-          <caret line="49" column="0" lean-forward="false" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
+        <state relative-caret-position="555">
+          <caret line="62" column="0" lean-forward="false" selection-start-line="62" selection-start-column="0" selection-end-line="62" selection-end-column="0" />
+          <folding>
+            <element signature="e#71#87#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frame/src/frame/entity/g.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frame/src/frame/core/reactor.py">
+    <entry file="file://$PROJECT_DIR$/frame/src/frame/entity/log.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="36" lean-forward="true" selection-start-line="16" selection-start-column="36" selection-end-line="16" selection-end-column="36" />
-          <folding />
+        <state relative-caret-position="564">
+          <caret line="38" column="42" lean-forward="true" selection-start-line="38" selection-start-column="42" selection-end-line="38" selection-end-column="42" />
+          <folding>
+            <element signature="e#79#93#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chat/src/chat/entity/g.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="748">
+          <caret line="60" column="0" lean-forward="true" selection-start-line="60" selection-start-column="0" selection-end-line="60" selection-end-column="0" />
+          <folding>
+            <element signature="e#95#125#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
