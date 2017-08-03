@@ -28,7 +28,8 @@ def init_client(entity, ip, port):
 
 
 def init_ws_server(entity, ip, port, url):
-    reactor.listenTCP(port, BaseWebSocketServerFactory(entity, url=url), interface=ip)
+    # print url
+    reactor.listenTCP(port, BaseWebSocketServerFactory(entity, url), interface=ip)
 
     pass
 
@@ -46,16 +47,22 @@ def init_sio_client():
     pass
 
 
-def init_http_server(app, ip, port):
+def init_http_server(app, ip, port, route):
     # reactor.listenTCP(port, BaseHTTPFactory(entity), interface=ip)
+
+    print ip, port
 
     flask_site = WSGIResource(reactor, reactor.getThreadPool(), app)
 
     root = Resource()
-    root.putChild('/', flask_site)
+    root.putChild(route, flask_site)
 
     # site_example = ReverseProxyResource('www.example.com', 80, ''.encode('utf-8'))
     # root.putChild('example1', site_example)
+
+
+    # site_example = ReverseProxyResource('www.example.com', 80, '/')
+    # root.putChild('example', site_example)
 
     reactor.listenTCP(port, Site(root), interface=ip)
     pass

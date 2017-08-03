@@ -9,11 +9,11 @@ import os
 import sys
 
 current_path = os.path.dirname(os.path.abspath(__file__))
-source_path = os.path.join(current_path, "../../../../")
+source_path = os.path.join(current_path, "../../../")
 sys.path.append(os.path.join(source_path, "chat/src/"))
 sys.path.append(os.path.join(source_path, "frame/src/"))
 
-from frame.core import reactor
+from chat.entity import g
 
 if __name__ == '__main__':
-    reactor.start_reactor()
+    g.setup_servers()

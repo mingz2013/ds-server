@@ -17,16 +17,16 @@ from flask import Flask
 app = Flask(__name__)
 
 
-@app.route('/index')
+@app.route('/')
 def index():
     return 'index'
 
 
 @app.route('/login')
 def login():
-    pass
+    return "login"
 
 
 @app.route('/register')
 def register():
-    pass
+    return "register"

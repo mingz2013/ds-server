@@ -18,6 +18,6 @@ from flask import Flask
 app = Flask(__name__)
 
 
-@app.route('/example1')
+@app.route('/')
 def index():
-    return 'My Twisted Flask'
+    return 'My Twisted Flask Index'

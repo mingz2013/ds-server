@@ -54,6 +54,8 @@ class BaseClientFactory(ClientFactory):
 
 class BaseWebSocketServerFactory(WebSocketServerFactory):
     def __init__(self, entity, *args, **kwargs):
+        # print args
+        # print kwargs
         super(BaseWebSocketServerFactory).__init__(*args, **kwargs)
         self._entity = entity
         # self.protocol = protocol
