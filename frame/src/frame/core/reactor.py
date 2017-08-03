@@ -6,7 +6,7 @@ Created on 19/06/2017
 """
 
 import stackless
-from twisted.internet import reactor, stdio
+from twisted.internet import stdio
 
 from factories import BaseFactory, BaseClientFactory, BaseWebSocketServerFactory, BaseWebSocketClientFactory
 from protocols import StandardIOProtocol
@@ -50,7 +50,7 @@ def init_sio_client():
 def init_http_server(app, ip, port, route):
     # reactor.listenTCP(port, BaseHTTPFactory(entity), interface=ip)
 
-    print ip, port
+    # print ip, port
 
     flask_site = WSGIResource(reactor, reactor.getThreadPool(), app)
 

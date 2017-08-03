@@ -1,16 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e885f0e0-bca7-4d41-835b-3eb8d7b34ed8" name="Default" comment="init">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/chat/src/chat/run.py" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/chat/src/chat/entity/chat.py" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+    <list default="true" id="e885f0e0-bca7-4d41-835b-3eb8d7b34ed8" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/chat/src/__demos__/chat_demo/server/run.py" afterPath="$PROJECT_DIR$/chat/src/__demos__/chat_demo/server/run.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/chat/src/chat/entity/g.py" afterPath="$PROJECT_DIR$/chat/src/chat/entity/g.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/chat/src/chat/servers/http/server.py" afterPath="$PROJECT_DIR$/chat/src/chat/servers/http/server.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/chat/src/chat/servers/sdk/server.py" afterPath="$PROJECT_DIR$/chat/src/chat/servers/sdk/server.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frame/src/frame/core/factories.py" afterPath="$PROJECT_DIR$/frame/src/frame/core/factories.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frame/src/frame/core/reactor.py" afterPath="$PROJECT_DIR$/frame/src/frame/core/reactor.py" />
     </list>
     <ignored path="server.frame.python.iws" />
@@ -35,7 +27,7 @@
         <entry file="file://$PROJECT_DIR$/chat/src/chat/entity/g.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="618">
-              <caret line="49" column="0" lean-forward="true" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
+              <caret line="49" column="0" lean-forward="false" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -44,8 +36,8 @@
       <file leaf-file-name="reactor.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/frame/src/frame/core/reactor.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="288">
-              <caret line="44" column="0" lean-forward="true" selection-start-line="44" selection-start-column="0" selection-end-line="44" selection-end-column="0" />
+            <state relative-caret-position="240">
+              <caret line="16" column="36" lean-forward="true" selection-start-line="16" selection-start-column="36" selection-end-line="16" selection-end-column="36" />
               <folding />
             </state>
           </provider>
@@ -55,7 +47,7 @@
         <entry file="file://$PROJECT_DIR$/chat/src/chat/servers/http/server.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="210">
-              <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+              <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -65,7 +57,7 @@
         <entry file="file://$PROJECT_DIR$/chat/src/chat/servers/sdk/server.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="480">
-              <caret line="32" column="0" lean-forward="true" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
+              <caret line="32" column="0" lean-forward="false" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -75,7 +67,7 @@
         <entry file="file://$PROJECT_DIR$/frame/src/frame/core/factories.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="529">
-              <caret line="66" column="0" lean-forward="true" selection-start-line="66" selection-start-column="0" selection-end-line="66" selection-end-column="0" />
+              <caret line="66" column="0" lean-forward="false" selection-start-line="66" selection-start-column="0" selection-end-line="66" selection-end-column="0" />
               <folding>
                 <element signature="e#70#130#0" expanded="true" />
               </folding>
@@ -147,8 +139,8 @@
         <option value="$PROJECT_DIR$/frame/src/frame/core/factories.py" />
         <option value="$PROJECT_DIR$/chat/src/chat/servers/sdk/server.py" />
         <option value="$PROJECT_DIR$/chat/src/chat/servers/http/server.py" />
-        <option value="$PROJECT_DIR$/frame/src/frame/core/reactor.py" />
         <option value="$PROJECT_DIR$/chat/src/chat/entity/g.py" />
+        <option value="$PROJECT_DIR$/frame/src/frame/core/reactor.py" />
       </list>
     </option>
   </component>
@@ -556,13 +548,6 @@
       <option name="presentableId" value="Default" />
       <updated>1498889075346</updated>
     </task>
-    <task id="LOCAL-00005" summary="init">
-      <created>1501403094107</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1501403094107</updated>
-    </task>
     <task id="LOCAL-00006" summary="init">
       <created>1501403564560</created>
       <option name="number" value="00006" />
@@ -899,7 +884,14 @@
       <option name="project" value="LOCAL" />
       <updated>1501455528875</updated>
     </task>
-    <option name="localTasksCounter" value="54" />
+    <task id="LOCAL-00054" summary="init">
+      <created>1501764933602</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1501764933602</updated>
+    </task>
+    <option name="localTasksCounter" value="55" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1301,7 +1293,7 @@
     <entry file="file://$PROJECT_DIR$/chat/src/chat/servers/sdk/server.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="480">
-          <caret line="32" column="0" lean-forward="true" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
+          <caret line="32" column="0" lean-forward="false" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1309,7 +1301,7 @@
     <entry file="file://$PROJECT_DIR$/frame/src/frame/core/factories.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="529">
-          <caret line="66" column="0" lean-forward="true" selection-start-line="66" selection-start-column="0" selection-end-line="66" selection-end-column="0" />
+          <caret line="66" column="0" lean-forward="false" selection-start-line="66" selection-start-column="0" selection-end-line="66" selection-end-column="0" />
           <folding>
             <element signature="e#70#130#0" expanded="true" />
           </folding>
@@ -1319,7 +1311,7 @@
     <entry file="file://$PROJECT_DIR$/chat/src/chat/servers/http/server.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
-          <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+          <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1327,15 +1319,15 @@
     <entry file="file://$PROJECT_DIR$/chat/src/chat/entity/g.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="618">
-          <caret line="49" column="0" lean-forward="true" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
+          <caret line="49" column="0" lean-forward="false" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/frame/src/frame/core/reactor.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="44" column="0" lean-forward="true" selection-start-line="44" selection-start-column="0" selection-end-line="44" selection-end-column="0" />
+        <state relative-caret-position="240">
+          <caret line="16" column="36" lean-forward="true" selection-start-line="16" selection-start-column="36" selection-end-line="16" selection-end-column="36" />
           <folding />
         </state>
       </provider>
