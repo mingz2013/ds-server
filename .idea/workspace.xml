@@ -2,51 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e885f0e0-bca7-4d41-835b-3eb8d7b34ed8" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/chat/src/chat/servers/http/rpc.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/chat/src/chat/servers/sdk/rpc.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/chat/src/chat/servers/sio/rpc.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/chat/src/chat/servers/ws/entity.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/chat/src/chat/servers/ws/rpc.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frame/src/frame/servers/tcp/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frame/src/frame/servers/tcp/rpc.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frame/src/frame/servers/tcp/tcp_acceptor.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frame/src/frame/servers/tcp/tcp_connector.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frame/src/frame/servers/tcp/tcp_entity.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frame/src/frame/servers/ws/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frame/src/frame/servers/ws/rpc.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frame/src/frame/servers/ws/ws_acceptor.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frame/src/frame/servers/ws/ws_connector.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frame/src/frame/servers/ws/ws_entity.py" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/chat/src/chat/servers/ws/server.py" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/chat/src/chat/servers/sio/server.py" afterPath="$PROJECT_DIR$/chat/src/chat/servers/sio/entity.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/frame/src/frame/servers/rpc/rpc_acceptor.py" afterPath="$PROJECT_DIR$/frame/src/frame/servers/tcp/tcp_acceptor.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/frame/src/frame/servers/rpc/rpc_connector.py" afterPath="$PROJECT_DIR$/frame/src/frame/servers/tcp/tcp_connector.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/frame/src/frame/servers/rpc/rpc_entity.py" afterPath="$PROJECT_DIR$/frame/src/frame/servers/tcp/tcp_entity.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/chat/src/chat/servers/db/__init__.py" afterPath="$PROJECT_DIR$/chat/src/chat/servers/db/__init__.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/chat/src/chat/servers/db/entity.py" afterPath="$PROJECT_DIR$/chat/src/chat/servers/db/entity.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/chat/src/chat/servers/game/entity.py" afterPath="$PROJECT_DIR$/chat/src/chat/servers/game/entity.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/chat/src/chat/servers/gate/connector.py" afterPath="$PROJECT_DIR$/chat/src/chat/servers/gate/connector.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/chat/src/chat/servers/gate/entity.py" afterPath="$PROJECT_DIR$/chat/src/chat/servers/gate/entity.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/chat/src/chat/servers/http/__init__.py" afterPath="$PROJECT_DIR$/chat/src/chat/servers/http/__init__.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/chat/src/chat/servers/http/connector.py" afterPath="$PROJECT_DIR$/chat/src/chat/servers/http/connector.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/chat/src/chat/servers/http/entity.py" afterPath="$PROJECT_DIR$/chat/src/chat/servers/http/entity.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/chat/src/chat/servers/log/__init__.py" afterPath="$PROJECT_DIR$/chat/src/chat/servers/log/__init__.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/chat/src/chat/servers/log/entity.py" afterPath="$PROJECT_DIR$/chat/src/chat/servers/log/entity.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/chat/src/chat/servers/log/rpc.py" afterPath="$PROJECT_DIR$/chat/src/chat/servers/log/rpc.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/chat/src/chat/servers/manager/__init__.py" afterPath="$PROJECT_DIR$/chat/src/chat/servers/manager/__init__.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/chat/src/chat/servers/manager/connector.py" afterPath="$PROJECT_DIR$/chat/src/chat/servers/manager/connector.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/chat/src/chat/servers/manager/entity.py" afterPath="$PROJECT_DIR$/chat/src/chat/servers/manager/entity.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/chat/src/chat/servers/proxy/__init__.py" afterPath="$PROJECT_DIR$/chat/src/chat/servers/proxy/__init__.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/chat/src/chat/servers/proxy/connector.py" afterPath="$PROJECT_DIR$/chat/src/chat/servers/proxy/connector.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/chat/src/chat/servers/proxy/entity.py" afterPath="$PROJECT_DIR$/chat/src/chat/servers/proxy/entity.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/chat/src/chat/servers/robot/__init__.py" afterPath="$PROJECT_DIR$/chat/src/chat/servers/robot/__init__.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/chat/src/chat/servers/robot/entity.py" afterPath="$PROJECT_DIR$/chat/src/chat/servers/robot/entity.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/chat/src/chat/servers/sdk/__init__.py" afterPath="$PROJECT_DIR$/chat/src/chat/servers/sdk/__init__.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/chat/src/chat/servers/sdk/connector.py" afterPath="$PROJECT_DIR$/chat/src/chat/servers/sdk/connector.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/chat/src/chat/servers/sdk/entity.py" afterPath="$PROJECT_DIR$/chat/src/chat/servers/sdk/entity.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/chat/src/chat/servers/ws/connector.py" afterPath="$PROJECT_DIR$/chat/src/chat/servers/ws/connector.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frame/src/frame/servers/rpc/__init__.py" afterPath="$PROJECT_DIR$/frame/src/frame/servers/rpc/__init__.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/server/startup.json" afterPath="$PROJECT_DIR$/config/server/startup.json" />
     </list>
     <ignored path="server.frame.python.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -72,106 +29,12 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="__init__.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/chat/src/chat/servers/sio/__init__.py">
+      <file leaf-file-name="startup.json" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/config/server/startup.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="60">
+              <caret line="4" column="0" lean-forward="true" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="entity.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/chat/src/chat/servers/sio/entity.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="rpc.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/chat/src/chat/servers/sio/rpc.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="__init__.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/chat/src/chat/servers/ws/__init__.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="connector.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/chat/src/chat/servers/ws/connector.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="entity.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/chat/src/chat/servers/ws/entity.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ws_connector.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/frame/src/frame/servers/ws/ws_connector.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-              <folding>
-                <element signature="e#79#109#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="rpc.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/chat/src/chat/servers/ws/rpc.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="entity.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/chat/src/chat/servers/robot/entity.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ws_entity.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/frame/src/frame/servers/ws/ws_entity.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="390">
-              <caret line="26" column="0" lean-forward="true" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
-              <folding>
-                <element signature="e#81#132#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -191,7 +54,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/chat/src/chat/servers/gate/rpc.py" />
         <option value="$PROJECT_DIR$/chat/src/chat/servers/manager/rpc.py" />
         <option value="$PROJECT_DIR$/chat/src/chat/servers/proxy/rpc.py" />
         <option value="$PROJECT_DIR$/chat/src/chat/servers/robot/rpc.py" />
@@ -210,7 +72,6 @@
         <option value="$PROJECT_DIR$/frame/src/frame/servers/rpc/rpc_connector.py" />
         <option value="$PROJECT_DIR$/frame/src/frame/servers/rpc/rpc_entity.py" />
         <option value="$PROJECT_DIR$/frame/src/frame/servers/tcp/tcp_connector.py" />
-        <option value="$PROJECT_DIR$/frame/src/frame/servers/ws/ws_connector.py" />
         <option value="$PROJECT_DIR$/frame/src/frame/servers/tcp/tcp_entity.py" />
         <option value="$PROJECT_DIR$/frame/src/frame/servers/ws/ws_entity.py" />
         <option value="$PROJECT_DIR$/frame/src/frame/servers/ws/__init__.py" />
@@ -242,6 +103,8 @@
         <option value="$PROJECT_DIR$/chat/src/chat/servers/ws/connector.py" />
         <option value="$PROJECT_DIR$/chat/src/chat/servers/ws/entity.py" />
         <option value="$PROJECT_DIR$/chat/src/chat/servers/ws/rpc.py" />
+        <option value="$PROJECT_DIR$/frame/src/frame/servers/ws/ws_connector.py" />
+        <option value="$PROJECT_DIR$/config/server/startup.json" />
       </list>
     </option>
   </component>
@@ -277,166 +140,6 @@
               <item name="server.frame.python" type="b2602c69:ProjectViewProjectNode" />
               <item name="server.frame.python" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="server.frame.python" type="b2602c69:ProjectViewProjectNode" />
-              <item name="server.frame.python" type="462c0819:PsiDirectoryNode" />
-              <item name="chat" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="server.frame.python" type="b2602c69:ProjectViewProjectNode" />
-              <item name="server.frame.python" type="462c0819:PsiDirectoryNode" />
-              <item name="chat" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="server.frame.python" type="b2602c69:ProjectViewProjectNode" />
-              <item name="server.frame.python" type="462c0819:PsiDirectoryNode" />
-              <item name="chat" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="chat" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="server.frame.python" type="b2602c69:ProjectViewProjectNode" />
-              <item name="server.frame.python" type="462c0819:PsiDirectoryNode" />
-              <item name="chat" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="chat" type="462c0819:PsiDirectoryNode" />
-              <item name="servers" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="server.frame.python" type="b2602c69:ProjectViewProjectNode" />
-              <item name="server.frame.python" type="462c0819:PsiDirectoryNode" />
-              <item name="chat" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="chat" type="462c0819:PsiDirectoryNode" />
-              <item name="servers" type="462c0819:PsiDirectoryNode" />
-              <item name="db" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="server.frame.python" type="b2602c69:ProjectViewProjectNode" />
-              <item name="server.frame.python" type="462c0819:PsiDirectoryNode" />
-              <item name="chat" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="chat" type="462c0819:PsiDirectoryNode" />
-              <item name="servers" type="462c0819:PsiDirectoryNode" />
-              <item name="game" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="server.frame.python" type="b2602c69:ProjectViewProjectNode" />
-              <item name="server.frame.python" type="462c0819:PsiDirectoryNode" />
-              <item name="chat" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="chat" type="462c0819:PsiDirectoryNode" />
-              <item name="servers" type="462c0819:PsiDirectoryNode" />
-              <item name="gate" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="server.frame.python" type="b2602c69:ProjectViewProjectNode" />
-              <item name="server.frame.python" type="462c0819:PsiDirectoryNode" />
-              <item name="chat" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="chat" type="462c0819:PsiDirectoryNode" />
-              <item name="servers" type="462c0819:PsiDirectoryNode" />
-              <item name="http" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="server.frame.python" type="b2602c69:ProjectViewProjectNode" />
-              <item name="server.frame.python" type="462c0819:PsiDirectoryNode" />
-              <item name="chat" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="chat" type="462c0819:PsiDirectoryNode" />
-              <item name="servers" type="462c0819:PsiDirectoryNode" />
-              <item name="log" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="server.frame.python" type="b2602c69:ProjectViewProjectNode" />
-              <item name="server.frame.python" type="462c0819:PsiDirectoryNode" />
-              <item name="chat" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="chat" type="462c0819:PsiDirectoryNode" />
-              <item name="servers" type="462c0819:PsiDirectoryNode" />
-              <item name="manager" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="server.frame.python" type="b2602c69:ProjectViewProjectNode" />
-              <item name="server.frame.python" type="462c0819:PsiDirectoryNode" />
-              <item name="chat" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="chat" type="462c0819:PsiDirectoryNode" />
-              <item name="servers" type="462c0819:PsiDirectoryNode" />
-              <item name="proxy" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="server.frame.python" type="b2602c69:ProjectViewProjectNode" />
-              <item name="server.frame.python" type="462c0819:PsiDirectoryNode" />
-              <item name="chat" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="chat" type="462c0819:PsiDirectoryNode" />
-              <item name="servers" type="462c0819:PsiDirectoryNode" />
-              <item name="robot" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="server.frame.python" type="b2602c69:ProjectViewProjectNode" />
-              <item name="server.frame.python" type="462c0819:PsiDirectoryNode" />
-              <item name="chat" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="chat" type="462c0819:PsiDirectoryNode" />
-              <item name="servers" type="462c0819:PsiDirectoryNode" />
-              <item name="sdk" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="server.frame.python" type="b2602c69:ProjectViewProjectNode" />
-              <item name="server.frame.python" type="462c0819:PsiDirectoryNode" />
-              <item name="chat" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="chat" type="462c0819:PsiDirectoryNode" />
-              <item name="servers" type="462c0819:PsiDirectoryNode" />
-              <item name="sio" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="server.frame.python" type="b2602c69:ProjectViewProjectNode" />
-              <item name="server.frame.python" type="462c0819:PsiDirectoryNode" />
-              <item name="chat" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="chat" type="462c0819:PsiDirectoryNode" />
-              <item name="servers" type="462c0819:PsiDirectoryNode" />
-              <item name="ws" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="server.frame.python" type="b2602c69:ProjectViewProjectNode" />
-              <item name="server.frame.python" type="462c0819:PsiDirectoryNode" />
-              <item name="frame" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="server.frame.python" type="b2602c69:ProjectViewProjectNode" />
-              <item name="server.frame.python" type="462c0819:PsiDirectoryNode" />
-              <item name="frame" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="server.frame.python" type="b2602c69:ProjectViewProjectNode" />
-              <item name="server.frame.python" type="462c0819:PsiDirectoryNode" />
-              <item name="frame" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="frame" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="server.frame.python" type="b2602c69:ProjectViewProjectNode" />
-              <item name="server.frame.python" type="462c0819:PsiDirectoryNode" />
-              <item name="frame" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="frame" type="462c0819:PsiDirectoryNode" />
-              <item name="servers" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="server.frame.python" type="b2602c69:ProjectViewProjectNode" />
-              <item name="server.frame.python" type="462c0819:PsiDirectoryNode" />
-              <item name="frame" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="frame" type="462c0819:PsiDirectoryNode" />
-              <item name="servers" type="462c0819:PsiDirectoryNode" />
-              <item name="ws" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -453,6 +156,7 @@
     <property name="js-jscs-nodeInterpreter" value="/usr/local/bin/node" />
     <property name="GO_FMT" value="false" />
     <property name="add_unversioned_files" value="$PROJECT_DIR$/log/log.log&#10;/Users/zhaojm/.projects/server.frame.python/log/debug.log" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
   </component>
   <component name="PyConsoleOptionsProvider">
     <option name="myPythonConsoleState">
@@ -729,13 +433,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1498889075346</updated>
-    </task>
-    <task id="LOCAL-00018" summary="init">
-      <created>1501416432458</created>
-      <option name="number" value="00018" />
-      <option name="presentableId" value="LOCAL-00018" />
-      <option name="project" value="LOCAL" />
-      <updated>1501416432458</updated>
     </task>
     <task id="LOCAL-00019" summary="init">
       <created>1501416619884</created>
@@ -1073,22 +770,31 @@
       <option name="project" value="LOCAL" />
       <updated>1501922699944</updated>
     </task>
-    <option name="localTasksCounter" value="67" />
+    <task id="LOCAL-00067" summary="init">
+      <created>1501926142901</created>
+      <option name="number" value="00067" />
+      <option name="presentableId" value="LOCAL-00067" />
+      <option name="project" value="LOCAL" />
+      <updated>1501926142901</updated>
+    </task>
+    <option name="localTasksCounter" value="68" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17765044" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Kevoree Base64 Translator" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
-      <window_info id="LuaJ" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20558375" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17765044" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="LuaJ" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection Results" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32994923" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.16768293" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.06805158" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20558375" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -1098,7 +804,6 @@
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21144278" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16768293" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
@@ -1119,14 +824,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/frame/src/frame/servers/ws/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" column="0" lean-forward="true" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/frame/src/frame/servers/ws/rpc.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
@@ -1440,7 +1137,7 @@
         <state relative-caret-position="375">
           <caret line="25" column="0" lean-forward="true" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
           <folding>
-            <element signature="e#80#110#0" expanded="true" />
+            <element signature="e#78#108#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1511,18 +1208,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/frame/src/frame/servers/ws/ws_entity.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="26" column="0" lean-forward="true" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+        <state relative-caret-position="360">
+          <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
           <folding>
-            <element signature="e#81#132#0" expanded="true" />
+            <element signature="e#78#129#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/chat/src/chat/servers/ws/entity.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+        <state relative-caret-position="225">
+          <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1532,8 +1229,16 @@
         <state relative-caret-position="90">
           <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
           <folding>
-            <element signature="e#79#109#0" expanded="true" />
+            <element signature="e#78#108#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/server/startup.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="0" lean-forward="true" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
