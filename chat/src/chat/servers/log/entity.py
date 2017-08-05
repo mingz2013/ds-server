@@ -12,4 +12,4 @@ class Entity(TcpEntity):
         super(Entity, self).__init__()
 
     def init_rpc(self):
-        from .rpc import *
+        from . import rpc

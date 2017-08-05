@@ -10,5 +10,5 @@ from frame.servers.ws.ws_entity import WSEntity
 class Entity(WSEntity):
 
     def init_rpc(self):
-        from .rpc import *
+        from . import rpc
         pass

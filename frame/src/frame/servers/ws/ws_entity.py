@@ -17,8 +17,7 @@ class WSEntity(RpcMixin):
         pass
 
     def init_rpc(self):
-        from .rpc import *
-        pass
+        from . import rpc
 
     def init_acceptor(self, ip, port, url):
         self._acceptor.init_acceptor(ip, port, url)

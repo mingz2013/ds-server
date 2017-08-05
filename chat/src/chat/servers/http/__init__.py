@@ -12,10 +12,10 @@ from frame.core import reactor
 
 
 # def init_server(ip, port, route):
-#     from .rpc import *
+#     from . import rpc
 #     reactor.init_http_server(app, ip, port, route)
 
 
 def init_server(cfg):
-    from .rpc import *
+    from . import rpc
     reactor.init_http_server(app, cfg['ip'], cfg['port'], cfg['route'])

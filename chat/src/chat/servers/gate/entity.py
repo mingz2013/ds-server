@@ -15,4 +15,4 @@ class Entity(TcpEntity):
         self._connector.init_connector("localhost", 6666)
 
     def init_rpc(self):
-        from .rpc import *
+        from . import rpc
