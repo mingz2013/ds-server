@@ -53,20 +53,29 @@ def init_servers_test():
         port += 1
 
 
-def init_servers_from_cfg(cfg):
-    for server in cfg.get('servers'):
-        s = "from chat.servers.%s import init_server; init_server(%s);" % (server['name'], server)
-        logging.info(s)
-        exec s
+def init_server_from_cfg(server):
+    s = "from chat.servers.%s import init_server; init_server(%s);" % (server['name'], server)
+    logging.info(s)
+    exec s
 
 
-def setup_servers_single():
+def setup_servers_type_1():
     log.init_logging()
 
-    init_servers_from_cfg(cfg)
+    for server in cfg.get('servers'):
+        init_server_from_cfg(server)
     reactor.start_reactor()
 
 
+def setup_servers_type_2():
+    for server in cfg.get('servers'):
+        init_server_from_cfg(server)
+        reactor.start_reactor()
+
 def setup_servers():
     if cfg['startup']['type'] == 1:
-        setup_servers_single()
+        setup_servers_type_1()
+    elif cfg['startup']['type'] == 2:
+        setup_servers_type_2()
+    else:
+        logging.error("unknown startup type: %s" % cfg['startup']['type'])
