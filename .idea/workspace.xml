@@ -2,7 +2,241 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e885f0e0-bca7-4d41-835b-3eb8d7b34ed8" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/config/doc/2.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/compile.sh" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/chat/doc/1.md" afterPath="$PROJECT_DIR$/source/chat/doc/1.md" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/chat/doc/readme.md" afterPath="$PROJECT_DIR$/source/chat/doc/readme.md" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/chat/doc/thinking.md" afterPath="$PROJECT_DIR$/source/chat/doc/thinking.md" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/chat/src/__demos__/__init__.py" afterPath="$PROJECT_DIR$/source/chat/src/__demos__/__init__.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/chat/src/__demos__/chat_demo/__init__.py" afterPath="$PROJECT_DIR$/source/chat/src/__demos__/chat_demo/__init__.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/chat/src/__demos__/chat_demo/client/__init__.py" afterPath="$PROJECT_DIR$/source/chat/src/__demos__/chat_demo/client/__init__.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/chat/src/__demos__/chat_demo/client/clients/__init__.py" afterPath="$PROJECT_DIR$/source/chat/src/__demos__/chat_demo/client/clients/__init__.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/chat/src/__demos__/chat_demo/client/clients/http.py" afterPath="$PROJECT_DIR$/source/chat/src/__demos__/chat_demo/client/clients/http.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/chat/src/__demos__/chat_demo/client/clients/sio.py" afterPath="$PROJECT_DIR$/source/chat/src/__demos__/chat_demo/client/clients/sio.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/chat/src/__demos__/chat_demo/client/clients/ws.py" afterPath="$PROJECT_DIR$/source/chat/src/__demos__/chat_demo/client/clients/ws.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/chat/src/__demos__/chat_demo/client/entity/__init__.py" afterPath="$PROJECT_DIR$/source/chat/src/__demos__/chat_demo/client/entity/__init__.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/chat/src/__demos__/chat_demo/client/entity/client.py" afterPath="$PROJECT_DIR$/source/chat/src/__demos__/chat_demo/client/entity/client.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/chat/src/__demos__/chat_demo/client/entity/cmd_handler.py" afterPath="$PROJECT_DIR$/source/chat/src/__demos__/chat_demo/client/entity/cmd_handler.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/chat/src/__demos__/chat_demo/client/run.py" afterPath="$PROJECT_DIR$/source/chat/src/__demos__/chat_demo/client/run.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/chat/src/__demos__/chat_demo/server/__init__.py" afterPath="$PROJECT_DIR$/source/chat/src/__demos__/chat_demo/server/__init__.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/chat/src/__demos__/chat_demo/server/entity/__init__.py" afterPath="$PROJECT_DIR$/source/chat/src/__demos__/chat_demo/server/entity/__init__.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/chat/src/__demos__/chat_demo/server/run.py" afterPath="$PROJECT_DIR$/source/chat/src/__demos__/chat_demo/server/run.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/chat/src/__demos__/chat_demo/server/servers/__init__.py" afterPath="$PROJECT_DIR$/source/chat/src/__demos__/chat_demo/server/servers/__init__.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/chat/src/__demos__/chat_demo/server/servers/db.py" afterPath="$PROJECT_DIR$/source/chat/src/__demos__/chat_demo/server/servers/db.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/chat/src/__demos__/chat_demo/server/servers/gate.py" afterPath="$PROJECT_DIR$/source/chat/src/__demos__/chat_demo/server/servers/gate.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/chat/src/__demos__/chat_demo/server/servers/http.py" afterPath="$PROJECT_DIR$/source/chat/src/__demos__/chat_demo/server/servers/http.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/chat/src/__demos__/chat_demo/server/servers/manager.py" afterPath="$PROJECT_DIR$/source/chat/src/__demos__/chat_demo/server/servers/manager.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/chat/src/__demos__/chat_demo/server/servers/proxy.py" afterPath="$PROJECT_DIR$/source/chat/src/__demos__/chat_demo/server/servers/proxy.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/chat/src/__demos__/chat_demo/server/servers/sdk.py" afterPath="$PROJECT_DIR$/source/chat/src/__demos__/chat_demo/server/servers/sdk.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/chat/src/__demos__/chat_demo/server/servers/sio.py" afterPath="$PROJECT_DIR$/source/chat/src/__demos__/chat_demo/server/servers/sio.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/chat/src/__demos__/chat_demo/server/servers/ws.py" afterPath="$PROJECT_DIR$/source/chat/src/__demos__/chat_demo/server/servers/ws.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/chat/src/chat/__init__.py" afterPath="$PROJECT_DIR$/source/chat/src/chat/__init__.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/chat/src/chat/clients/__init__.py" afterPath="$PROJECT_DIR$/source/chat/src/chat/clients/__init__.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/chat/src/chat/clients/chat_client.py" afterPath="$PROJECT_DIR$/source/chat/src/chat/clients/chat_client.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/chat/src/chat/clients/http_client.py" afterPath="$PROJECT_DIR$/source/chat/src/chat/clients/http_client.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/chat/src/chat/clients/sdk_client.py" afterPath="$PROJECT_DIR$/source/chat/src/chat/clients/sdk_client.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/chat/src/chat/clients/sio_client.py" afterPath="$PROJECT_DIR$/source/chat/src/chat/clients/sio_client.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/chat/src/chat/clients/ws_client.py" afterPath="$PROJECT_DIR$/source/chat/src/chat/clients/ws_client.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/chat/src/chat/entity/__init__.py" afterPath="$PROJECT_DIR$/source/chat/src/chat/entity/__init__.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/chat/src/chat/entity/config_load.py" afterPath="$PROJECT_DIR$/source/chat/src/chat/entity/config_load.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/chat/src/chat/entity/db.py" afterPath="$PROJECT_DIR$/source/chat/src/chat/entity/db.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/chat/src/chat/entity/file_util.py" afterPath="$PROJECT_DIR$/source/chat/src/chat/entity/file_util.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/chat/src/chat/entity/g.py" afterPath="$PROJECT_DIR$/source/chat/src/chat/entity/g.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/chat/src/chat/entity/sdk.py" afterPath="$PROJECT_DIR$/source/chat/src/chat/entity/sdk.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/chat/src/chat/entity/user.py" afterPath="$PROJECT_DIR$/source/chat/src/chat/entity/user.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/chat/src/chat/servers/__init__.py" afterPath="$PROJECT_DIR$/source/chat/src/chat/servers/__init__.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/chat/src/chat/servers/db/__init__.py" afterPath="$PROJECT_DIR$/source/chat/src/chat/servers/db/__init__.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/chat/src/chat/servers/db/entity.py" afterPath="$PROJECT_DIR$/source/chat/src/chat/servers/db/entity.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/chat/src/chat/servers/db/rpc.py" afterPath="$PROJECT_DIR$/source/chat/src/chat/servers/db/rpc.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/chat/src/chat/servers/game/__init__.py" afterPath="$PROJECT_DIR$/source/chat/src/chat/servers/game/__init__.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/chat/src/chat/servers/game/connector.py" afterPath="$PROJECT_DIR$/source/chat/src/chat/servers/game/connector.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/chat/src/chat/servers/game/entity.py" afterPath="$PROJECT_DIR$/source/chat/src/chat/servers/game/entity.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/chat/src/chat/servers/game/rpc.py" afterPath="$PROJECT_DIR$/source/chat/src/chat/servers/game/rpc.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/chat/src/chat/servers/gate/__init__.py" afterPath="$PROJECT_DIR$/source/chat/src/chat/servers/gate/__init__.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/chat/src/chat/servers/gate/connector.py" afterPath="$PROJECT_DIR$/source/chat/src/chat/servers/gate/connector.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/chat/src/chat/servers/gate/entity.py" afterPath="$PROJECT_DIR$/source/chat/src/chat/servers/gate/entity.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/chat/src/chat/servers/gate/rpc.py" afterPath="$PROJECT_DIR$/source/chat/src/chat/servers/gate/rpc.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/chat/src/chat/servers/http/__init__.py" afterPath="$PROJECT_DIR$/source/chat/src/chat/servers/http/__init__.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/chat/src/chat/servers/http/connector.py" afterPath="$PROJECT_DIR$/source/chat/src/chat/servers/http/connector.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/chat/src/chat/servers/http/entity.py" afterPath="$PROJECT_DIR$/source/chat/src/chat/servers/http/entity.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/chat/src/chat/servers/http/rpc.py" afterPath="$PROJECT_DIR$/source/chat/src/chat/servers/http/rpc.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/chat/src/chat/servers/log/__init__.py" afterPath="$PROJECT_DIR$/source/chat/src/chat/servers/log/__init__.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/chat/src/chat/servers/log/entity.py" afterPath="$PROJECT_DIR$/source/chat/src/chat/servers/log/entity.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/chat/src/chat/servers/log/rpc.py" afterPath="$PROJECT_DIR$/source/chat/src/chat/servers/log/rpc.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/chat/src/chat/servers/manager/__init__.py" afterPath="$PROJECT_DIR$/source/chat/src/chat/servers/manager/__init__.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/chat/src/chat/servers/manager/connector.py" afterPath="$PROJECT_DIR$/source/chat/src/chat/servers/manager/connector.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/chat/src/chat/servers/manager/entity.py" afterPath="$PROJECT_DIR$/source/chat/src/chat/servers/manager/entity.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/chat/src/chat/servers/manager/rpc.py" afterPath="$PROJECT_DIR$/source/chat/src/chat/servers/manager/rpc.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/chat/src/chat/servers/proxy/__init__.py" afterPath="$PROJECT_DIR$/source/chat/src/chat/servers/proxy/__init__.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/chat/src/chat/servers/proxy/connector.py" afterPath="$PROJECT_DIR$/source/chat/src/chat/servers/proxy/connector.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/chat/src/chat/servers/proxy/entity.py" afterPath="$PROJECT_DIR$/source/chat/src/chat/servers/proxy/entity.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/chat/src/chat/servers/proxy/rpc.py" afterPath="$PROJECT_DIR$/source/chat/src/chat/servers/proxy/rpc.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/chat/src/chat/servers/robot/__init__.py" afterPath="$PROJECT_DIR$/source/chat/src/chat/servers/robot/__init__.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/chat/src/chat/servers/robot/entity.py" afterPath="$PROJECT_DIR$/source/chat/src/chat/servers/robot/entity.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/chat/src/chat/servers/robot/rpc.py" afterPath="$PROJECT_DIR$/source/chat/src/chat/servers/robot/rpc.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/chat/src/chat/servers/sdk/__init__.py" afterPath="$PROJECT_DIR$/source/chat/src/chat/servers/sdk/__init__.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/chat/src/chat/servers/sdk/connector.py" afterPath="$PROJECT_DIR$/source/chat/src/chat/servers/sdk/connector.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/chat/src/chat/servers/sdk/entity.py" afterPath="$PROJECT_DIR$/source/chat/src/chat/servers/sdk/entity.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/chat/src/chat/servers/sdk/rpc.py" afterPath="$PROJECT_DIR$/source/chat/src/chat/servers/sdk/rpc.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/chat/src/chat/servers/sio/__init__.py" afterPath="$PROJECT_DIR$/source/chat/src/chat/servers/sio/__init__.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/chat/src/chat/servers/sio/connector.py" afterPath="$PROJECT_DIR$/source/chat/src/chat/servers/sio/connector.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/chat/src/chat/servers/sio/entity.py" afterPath="$PROJECT_DIR$/source/chat/src/chat/servers/sio/entity.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/chat/src/chat/servers/sio/rpc.py" afterPath="$PROJECT_DIR$/source/chat/src/chat/servers/sio/rpc.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/chat/src/chat/servers/webmgr/__init__.py" afterPath="$PROJECT_DIR$/source/chat/src/chat/servers/webmgr/__init__.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/chat/src/chat/servers/webmgr/connector.py" afterPath="$PROJECT_DIR$/source/chat/src/chat/servers/webmgr/connector.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/chat/src/chat/servers/webmgr/entity.py" afterPath="$PROJECT_DIR$/source/chat/src/chat/servers/webmgr/entity.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/chat/src/chat/servers/webmgr/rpc.py" afterPath="$PROJECT_DIR$/source/chat/src/chat/servers/webmgr/rpc.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/chat/src/chat/servers/ws/__init__.py" afterPath="$PROJECT_DIR$/source/chat/src/chat/servers/ws/__init__.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/chat/src/chat/servers/ws/connector.py" afterPath="$PROJECT_DIR$/source/chat/src/chat/servers/ws/connector.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/chat/src/chat/servers/ws/entity.py" afterPath="$PROJECT_DIR$/source/chat/src/chat/servers/ws/entity.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/chat/src/chat/servers/ws/rpc.py" afterPath="$PROJECT_DIR$/source/chat/src/chat/servers/ws/rpc.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/chat/src/chat/startup.py" afterPath="$PROJECT_DIR$/source/chat/src/chat/startup.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/chat/src/chat/utils/__init__.py" afterPath="$PROJECT_DIR$/source/chat/src/chat/utils/__init__.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/config/development/server/machines.json" afterPath="$PROJECT_DIR$/source/config/development/server/machines.json" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/config/development/server/servers.json" afterPath="$PROJECT_DIR$/source/config/development/server/servers.json" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/config/development/server/startup.json" afterPath="$PROJECT_DIR$/source/config/development/server/startup.json" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/config/development/server/webmgr.json" afterPath="$PROJECT_DIR$/source/config/development/server/webmgr.json" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/config/doc/1.md" afterPath="$PROJECT_DIR$/source/config/doc/1.md" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/config/doc/2.md" afterPath="$PROJECT_DIR$/source/config/doc/2.md" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/config/production/server/machines.json" afterPath="$PROJECT_DIR$/source/config/production/server/machines.json" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/config/production/server/servers.json" afterPath="$PROJECT_DIR$/source/config/production/server/servers.json" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/config/production/server/startup.json" afterPath="$PROJECT_DIR$/source/config/production/server/startup.json" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/config/production/server/webmgr.json" afterPath="$PROJECT_DIR$/source/config/production/server/webmgr.json" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/frame/doc/1.md" afterPath="$PROJECT_DIR$/source/frame/doc/1.md" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/frame/doc/rpc.md" afterPath="$PROJECT_DIR$/source/frame/doc/rpc.md" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/frame/doc/websocket.md" afterPath="$PROJECT_DIR$/source/frame/doc/websocket.md" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/frame/src/__demos__/__init__.py" afterPath="$PROJECT_DIR$/source/frame/src/__demos__/__init__.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/frame/src/__demos__/chat/__init__.py" afterPath="$PROJECT_DIR$/source/frame/src/__demos__/chat/__init__.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/frame/src/__demos__/chat/client/__init__.py" afterPath="$PROJECT_DIR$/source/frame/src/__demos__/chat/client/__init__.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/frame/src/__demos__/chat/client/chat_client.py" afterPath="$PROJECT_DIR$/source/frame/src/__demos__/chat/client/chat_client.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/frame/src/__demos__/chat/client/cmd_handler.py" afterPath="$PROJECT_DIR$/source/frame/src/__demos__/chat/client/cmd_handler.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/frame/src/__demos__/chat/client/g.py" afterPath="$PROJECT_DIR$/source/frame/src/__demos__/chat/client/g.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/frame/src/__demos__/chat/client/run.py" afterPath="$PROJECT_DIR$/source/frame/src/__demos__/chat/client/run.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/frame/src/__demos__/chat/server/__init__.py" afterPath="$PROJECT_DIR$/source/frame/src/__demos__/chat/server/__init__.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/frame/src/__demos__/chat/server/chat_server.py" afterPath="$PROJECT_DIR$/source/frame/src/__demos__/chat/server/chat_server.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/frame/src/__demos__/chat/server/db.py" afterPath="$PROJECT_DIR$/source/frame/src/__demos__/chat/server/db.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/frame/src/__demos__/chat/server/g.py" afterPath="$PROJECT_DIR$/source/frame/src/__demos__/chat/server/g.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/frame/src/__demos__/chat/server/room.py" afterPath="$PROJECT_DIR$/source/frame/src/__demos__/chat/server/room.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/frame/src/__demos__/chat/server/run.py" afterPath="$PROJECT_DIR$/source/frame/src/__demos__/chat/server/run.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/frame/src/__demos__/chat/server/sdk.py" afterPath="$PROJECT_DIR$/source/frame/src/__demos__/chat/server/sdk.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/frame/src/__demos__/chat/server/user.py" afterPath="$PROJECT_DIR$/source/frame/src/__demos__/chat/server/user.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/frame/src/__demos__/chat_room/__init__.py" afterPath="$PROJECT_DIR$/source/frame/src/__demos__/chat_room/__init__.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/frame/src/__demos__/chat_room/client/__init__.py" afterPath="$PROJECT_DIR$/source/frame/src/__demos__/chat_room/client/__init__.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/frame/src/__demos__/chat_room/client/chat_room_client.py" afterPath="$PROJECT_DIR$/source/frame/src/__demos__/chat_room/client/chat_room_client.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/frame/src/__demos__/chat_room/client/cmd_handler.py" afterPath="$PROJECT_DIR$/source/frame/src/__demos__/chat_room/client/cmd_handler.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/frame/src/__demos__/chat_room/client/run.py" afterPath="$PROJECT_DIR$/source/frame/src/__demos__/chat_room/client/run.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/frame/src/__demos__/chat_room/server/__init__.py" afterPath="$PROJECT_DIR$/source/frame/src/__demos__/chat_room/server/__init__.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/frame/src/__demos__/chat_room/server/chat_room_server.py" afterPath="$PROJECT_DIR$/source/frame/src/__demos__/chat_room/server/chat_room_server.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/frame/src/__demos__/chat_room/server/run.py" afterPath="$PROJECT_DIR$/source/frame/src/__demos__/chat_room/server/run.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/frame/src/__demos__/echo/__init__.py" afterPath="$PROJECT_DIR$/source/frame/src/__demos__/echo/__init__.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/frame/src/__demos__/echo/client/__init__.py" afterPath="$PROJECT_DIR$/source/frame/src/__demos__/echo/client/__init__.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/frame/src/__demos__/echo/client/cmd_handler.py" afterPath="$PROJECT_DIR$/source/frame/src/__demos__/echo/client/cmd_handler.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/frame/src/__demos__/echo/client/echo_client.py" afterPath="$PROJECT_DIR$/source/frame/src/__demos__/echo/client/echo_client.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/frame/src/__demos__/echo/client/run.py" afterPath="$PROJECT_DIR$/source/frame/src/__demos__/echo/client/run.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/frame/src/__demos__/echo/server/__init__.py" afterPath="$PROJECT_DIR$/source/frame/src/__demos__/echo/server/__init__.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/frame/src/__demos__/echo/server/echo_server.py" afterPath="$PROJECT_DIR$/source/frame/src/__demos__/echo/server/echo_server.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/frame/src/__demos__/echo/server/run.py" afterPath="$PROJECT_DIR$/source/frame/src/__demos__/echo/server/run.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/frame/src/__demos__/rpc_demo/__init__.py" afterPath="$PROJECT_DIR$/source/frame/src/__demos__/rpc_demo/__init__.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/frame/src/__demos__/rpc_demo/client/__init__.py" afterPath="$PROJECT_DIR$/source/frame/src/__demos__/rpc_demo/client/__init__.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/frame/src/__demos__/rpc_demo/client/client.py" afterPath="$PROJECT_DIR$/source/frame/src/__demos__/rpc_demo/client/client.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/frame/src/__demos__/rpc_demo/server/__init__.py" afterPath="$PROJECT_DIR$/source/frame/src/__demos__/rpc_demo/server/__init__.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/frame/src/__demos__/rpc_demo/server/entity.py" afterPath="$PROJECT_DIR$/source/frame/src/__demos__/rpc_demo/server/entity.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/frame/src/__demos__/rpc_demo/server/g.py" afterPath="$PROJECT_DIR$/source/frame/src/__demos__/rpc_demo/server/g.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/frame/src/__demos__/rpc_demo/server/rpc.py" afterPath="$PROJECT_DIR$/source/frame/src/__demos__/rpc_demo/server/rpc.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/frame/src/__demos__/rpc_demo/server/server.py" afterPath="$PROJECT_DIR$/source/frame/src/__demos__/rpc_demo/server/server.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/frame/src/frame/__init__.py" afterPath="$PROJECT_DIR$/source/frame/src/frame/__init__.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/frame/src/frame/core/__init__.py" afterPath="$PROJECT_DIR$/source/frame/src/frame/core/__init__.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/frame/src/frame/core/entity.py" afterPath="$PROJECT_DIR$/source/frame/src/frame/core/entity.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/frame/src/frame/core/factories.py" afterPath="$PROJECT_DIR$/source/frame/src/frame/core/factories.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/frame/src/frame/core/http.py" afterPath="$PROJECT_DIR$/source/frame/src/frame/core/http.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/frame/src/frame/core/protocols.py" afterPath="$PROJECT_DIR$/source/frame/src/frame/core/protocols.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/frame/src/frame/core/reactor.py" afterPath="$PROJECT_DIR$/source/frame/src/frame/core/reactor.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/frame/src/frame/core/ws_entity.py" afterPath="$PROJECT_DIR$/source/frame/src/frame/core/ws_entity.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/frame/src/frame/entity/__init__.py" afterPath="$PROJECT_DIR$/source/frame/src/frame/entity/__init__.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/frame/src/frame/entity/base_client.py" afterPath="$PROJECT_DIR$/source/frame/src/frame/entity/base_client.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/frame/src/frame/entity/base_server.py" afterPath="$PROJECT_DIR$/source/frame/src/frame/entity/base_server.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/frame/src/frame/entity/cmd_handler.py" afterPath="$PROJECT_DIR$/source/frame/src/frame/entity/cmd_handler.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/frame/src/frame/entity/http_server.py" afterPath="$PROJECT_DIR$/source/frame/src/frame/entity/http_server.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/frame/src/frame/entity/log.py" afterPath="$PROJECT_DIR$/source/frame/src/frame/entity/log.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/frame/src/frame/entity/msg.py" afterPath="$PROJECT_DIR$/source/frame/src/frame/entity/msg.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/frame/src/frame/entity/rpc_mixin.py" afterPath="$PROJECT_DIR$/source/frame/src/frame/entity/rpc_mixin.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/frame/src/frame/entity/ws_client.py" afterPath="$PROJECT_DIR$/source/frame/src/frame/entity/ws_client.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/frame/src/frame/entity/ws_server.py" afterPath="$PROJECT_DIR$/source/frame/src/frame/entity/ws_server.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/frame/src/frame/servers/__init__.py" afterPath="$PROJECT_DIR$/source/frame/src/frame/servers/__init__.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/frame/src/frame/servers/tcp/__init__.py" afterPath="$PROJECT_DIR$/source/frame/src/frame/servers/tcp/__init__.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/frame/src/frame/servers/tcp/rpc.py" afterPath="$PROJECT_DIR$/source/frame/src/frame/servers/tcp/rpc.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/frame/src/frame/servers/tcp/tcp_acceptor.py" afterPath="$PROJECT_DIR$/source/frame/src/frame/servers/tcp/tcp_acceptor.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/frame/src/frame/servers/tcp/tcp_connector.py" afterPath="$PROJECT_DIR$/source/frame/src/frame/servers/tcp/tcp_connector.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/frame/src/frame/servers/tcp/tcp_entity.py" afterPath="$PROJECT_DIR$/source/frame/src/frame/servers/tcp/tcp_entity.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/frame/src/frame/servers/ws/__init__.py" afterPath="$PROJECT_DIR$/source/frame/src/frame/servers/ws/__init__.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/frame/src/frame/servers/ws/rpc.py" afterPath="$PROJECT_DIR$/source/frame/src/frame/servers/ws/rpc.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/frame/src/frame/servers/ws/ws_acceptor.py" afterPath="$PROJECT_DIR$/source/frame/src/frame/servers/ws/ws_acceptor.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/frame/src/frame/servers/ws/ws_connector.py" afterPath="$PROJECT_DIR$/source/frame/src/frame/servers/ws/ws_connector.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/frame/src/frame/servers/ws/ws_entity.py" afterPath="$PROJECT_DIR$/source/frame/src/frame/servers/ws/ws_entity.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/frame/src/frame/utils/__init__.py" afterPath="$PROJECT_DIR$/source/frame/src/frame/utils/__init__.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/scripts/webmgr.sh" afterPath="$PROJECT_DIR$/source/scripts/webmgr.sh" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/tags/__init__.py" afterPath="$PROJECT_DIR$/source/tags/__init__.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/tags/chat_twisted_and_stackless/__init__.py" afterPath="$PROJECT_DIR$/source/tags/chat_twisted_and_stackless/__init__.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/tags/chat_twisted_and_stackless/channel.py" afterPath="$PROJECT_DIR$/source/tags/chat_twisted_and_stackless/channel.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/tags/chat_twisted_and_stackless/chat_client_protocol.py" afterPath="$PROJECT_DIR$/source/tags/chat_twisted_and_stackless/chat_client_protocol.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/tags/chat_twisted_and_stackless/chat_server_protocol.py" afterPath="$PROJECT_DIR$/source/tags/chat_twisted_and_stackless/chat_server_protocol.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/tags/chat_twisted_and_stackless/client.py" afterPath="$PROJECT_DIR$/source/tags/chat_twisted_and_stackless/client.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/tags/chat_twisted_and_stackless/command_protocol.py" afterPath="$PROJECT_DIR$/source/tags/chat_twisted_and_stackless/command_protocol.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/tags/chat_twisted_and_stackless/run.py" afterPath="$PROJECT_DIR$/source/tags/chat_twisted_and_stackless/run.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/tags/chat_twisted_and_stackless/server.py" afterPath="$PROJECT_DIR$/source/tags/chat_twisted_and_stackless/server.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/tags/echo_frame/__init__.py" afterPath="$PROJECT_DIR$/source/tags/echo_frame/__init__.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/tags/echo_frame/core/__init__.py" afterPath="$PROJECT_DIR$/source/tags/echo_frame/core/__init__.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/tags/echo_frame/core/channel.py" afterPath="$PROJECT_DIR$/source/tags/echo_frame/core/channel.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/tags/echo_frame/core/entity.py" afterPath="$PROJECT_DIR$/source/tags/echo_frame/core/entity.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/tags/echo_frame/core/factory.py" afterPath="$PROJECT_DIR$/source/tags/echo_frame/core/factory.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/tags/echo_frame/core/msg.py" afterPath="$PROJECT_DIR$/source/tags/echo_frame/core/msg.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/tags/echo_frame/core/protocols.py" afterPath="$PROJECT_DIR$/source/tags/echo_frame/core/protocols.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/tags/echo_frame/core/reactor.py" afterPath="$PROJECT_DIR$/source/tags/echo_frame/core/reactor.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/tags/echo_frame/entity/__init__.py" afterPath="$PROJECT_DIR$/source/tags/echo_frame/entity/__init__.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/tags/echo_frame/entity/client/__init__.py" afterPath="$PROJECT_DIR$/source/tags/echo_frame/entity/client/__init__.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/tags/echo_frame/entity/client/chat_client.py" afterPath="$PROJECT_DIR$/source/tags/echo_frame/entity/client/chat_client.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/tags/echo_frame/entity/client/cmd_handler.py" afterPath="$PROJECT_DIR$/source/tags/echo_frame/entity/client/cmd_handler.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/tags/echo_frame/entity/client/run.py" afterPath="$PROJECT_DIR$/source/tags/echo_frame/entity/client/run.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/tags/echo_frame/entity/common/__init__.py" afterPath="$PROJECT_DIR$/source/tags/echo_frame/entity/common/__init__.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/tags/echo_frame/entity/common/room.py" afterPath="$PROJECT_DIR$/source/tags/echo_frame/entity/common/room.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/tags/echo_frame/entity/common/user.py" afterPath="$PROJECT_DIR$/source/tags/echo_frame/entity/common/user.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/tags/echo_frame/entity/server/__init__.py" afterPath="$PROJECT_DIR$/source/tags/echo_frame/entity/server/__init__.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/tags/echo_frame/entity/server/account.py" afterPath="$PROJECT_DIR$/source/tags/echo_frame/entity/server/account.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/tags/echo_frame/entity/server/chat_server.py" afterPath="$PROJECT_DIR$/source/tags/echo_frame/entity/server/chat_server.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/tags/echo_frame/entity/server/db.py" afterPath="$PROJECT_DIR$/source/tags/echo_frame/entity/server/db.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/tags/echo_frame/entity/server/run.py" afterPath="$PROJECT_DIR$/source/tags/echo_frame/entity/server/run.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/tags/echo_twisted/__init__.py" afterPath="$PROJECT_DIR$/source/tags/echo_twisted/__init__.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/tags/echo_twisted/client.py" afterPath="$PROJECT_DIR$/source/tags/echo_twisted/client.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/tags/echo_twisted/server.py" afterPath="$PROJECT_DIR$/source/tags/echo_twisted/server.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/tags/echo_twisted_and_stackless/__init__.py" afterPath="$PROJECT_DIR$/source/tags/echo_twisted_and_stackless/__init__.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/tags/echo_twisted_and_stackless/channel.py" afterPath="$PROJECT_DIR$/source/tags/echo_twisted_and_stackless/channel.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/tags/echo_twisted_and_stackless/client.py" afterPath="$PROJECT_DIR$/source/tags/echo_twisted_and_stackless/client.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/tags/echo_twisted_and_stackless/command.py" afterPath="$PROJECT_DIR$/source/tags/echo_twisted_and_stackless/command.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/tags/echo_twisted_and_stackless/run.py" afterPath="$PROJECT_DIR$/source/tags/echo_twisted_and_stackless/run.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/tags/echo_twisted_and_stackless/server.py" afterPath="$PROJECT_DIR$/source/tags/echo_twisted_and_stackless/server.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/tags/echo_with_frame/__init__.py" afterPath="$PROJECT_DIR$/source/tags/echo_with_frame/__init__.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/tags/echo_with_frame/frame/__init__.py" afterPath="$PROJECT_DIR$/source/tags/echo_with_frame/frame/__init__.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/tags/echo_with_frame/frame/core/__init__.py" afterPath="$PROJECT_DIR$/source/tags/echo_with_frame/frame/core/__init__.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/tags/echo_with_frame/frame/core/entity.py" afterPath="$PROJECT_DIR$/source/tags/echo_with_frame/frame/core/entity.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/tags/echo_with_frame/frame/core/factories.py" afterPath="$PROJECT_DIR$/source/tags/echo_with_frame/frame/core/factories.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/tags/echo_with_frame/frame/core/protocols.py" afterPath="$PROJECT_DIR$/source/tags/echo_with_frame/frame/core/protocols.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/tags/echo_with_frame/frame/core/reactor.py" afterPath="$PROJECT_DIR$/source/tags/echo_with_frame/frame/core/reactor.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/tags/echo_with_frame/frame/echo/__init__.py" afterPath="$PROJECT_DIR$/source/tags/echo_with_frame/frame/echo/__init__.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/tags/echo_with_frame/frame/echo/client/__init__.py" afterPath="$PROJECT_DIR$/source/tags/echo_with_frame/frame/echo/client/__init__.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/tags/echo_with_frame/frame/echo/client/cmd_handler.py" afterPath="$PROJECT_DIR$/source/tags/echo_with_frame/frame/echo/client/cmd_handler.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/tags/echo_with_frame/frame/echo/client/echo_client.py" afterPath="$PROJECT_DIR$/source/tags/echo_with_frame/frame/echo/client/echo_client.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/tags/echo_with_frame/frame/echo/client/run.py" afterPath="$PROJECT_DIR$/source/tags/echo_with_frame/frame/echo/client/run.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/tags/echo_with_frame/frame/echo/server/__init__.py" afterPath="$PROJECT_DIR$/source/tags/echo_with_frame/frame/echo/server/__init__.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/tags/echo_with_frame/frame/echo/server/echo_server.py" afterPath="$PROJECT_DIR$/source/tags/echo_with_frame/frame/echo/server/echo_server.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/tags/echo_with_frame/frame/echo/server/run.py" afterPath="$PROJECT_DIR$/source/tags/echo_with_frame/frame/echo/server/run.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/tags/echo_with_frame/frame/entity/__init__.py" afterPath="$PROJECT_DIR$/source/tags/echo_with_frame/frame/entity/__init__.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/tags/echo_with_frame/frame/entity/base_client.py" afterPath="$PROJECT_DIR$/source/tags/echo_with_frame/frame/entity/base_client.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/tags/echo_with_frame/frame/entity/base_server.py" afterPath="$PROJECT_DIR$/source/tags/echo_with_frame/frame/entity/base_server.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/tags/echo_with_frame/frame/entity/cmd_handler.py" afterPath="$PROJECT_DIR$/source/tags/echo_with_frame/frame/entity/cmd_handler.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/tags/test_c_and_s.py" afterPath="$PROJECT_DIR$/source/tags/test_c_and_s.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/tags/test_channel.py" afterPath="$PROJECT_DIR$/source/tags/test_channel.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/tags/test_command.py" afterPath="$PROJECT_DIR$/source/tags/test_command.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/tags/test_stackless.py" afterPath="$PROJECT_DIR$/source/tags/test_stackless.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webroot/webmgr/index.html" afterPath="$PROJECT_DIR$/source/webroot/webmgr/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="server.frame.python.iws" />
@@ -30,7 +264,7 @@
   <component name="FileEditorManager">
     <leaf>
       <file leaf-file-name="1.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/config/doc/1.md">
+        <entry file="file://$PROJECT_DIR$/source/config/doc/1.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
               <first_editor relative-caret-position="0">
@@ -42,15 +276,25 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="2.md" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/config/doc/2.md">
+      <file leaf-file-name="2.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/source/config/doc/2.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
               <first_editor relative-caret-position="15">
-                <caret line="1" column="2" lean-forward="false" selection-start-line="1" selection-start-column="2" selection-end-line="1" selection-end-column="2" />
+                <caret line="1" column="17" lean-forward="false" selection-start-line="1" selection-start-column="17" selection-end-line="1" selection-end-column="17" />
                 <folding />
               </first_editor>
               <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="compile.sh" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/scripts/compile.sh">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -167,22 +411,6 @@
               <item name="server.frame.python" type="b2602c69:ProjectViewProjectNode" />
               <item name="server.frame.python" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="server.frame.python" type="b2602c69:ProjectViewProjectNode" />
-              <item name="server.frame.python" type="462c0819:PsiDirectoryNode" />
-              <item name="config" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="server.frame.python" type="b2602c69:ProjectViewProjectNode" />
-              <item name="server.frame.python" type="462c0819:PsiDirectoryNode" />
-              <item name="config" type="462c0819:PsiDirectoryNode" />
-              <item name="doc" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="server.frame.python" type="b2602c69:ProjectViewProjectNode" />
-              <item name="server.frame.python" type="462c0819:PsiDirectoryNode" />
-              <item name="scripts" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -217,11 +445,11 @@
       <recent name="$PROJECT_DIR$/frame/src/frame/servers/tcp" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/source" />
       <recent name="$PROJECT_DIR$/config/development" />
       <recent name="$PROJECT_DIR$/config/server" />
       <recent name="$PROJECT_DIR$/config" />
       <recent name="$PROJECT_DIR$/frame/src/frame/entity" />
-      <recent name="$PROJECT_DIR$/frame/src/frame/servers/rpc" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -475,13 +703,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1498889075346</updated>
-    </task>
-    <task id="LOCAL-00043" summary="init">
-      <created>1501432684607</created>
-      <option name="number" value="00043" />
-      <option name="presentableId" value="LOCAL-00043" />
-      <option name="project" value="LOCAL" />
-      <updated>1501432684607</updated>
     </task>
     <task id="LOCAL-00044" summary="init">
       <created>1501433344183</created>
@@ -819,7 +1040,14 @@
       <option name="project" value="LOCAL" />
       <updated>1501941891780</updated>
     </task>
-    <option name="localTasksCounter" value="92" />
+    <task id="LOCAL-00092" summary="init">
+      <created>1501942038395</created>
+      <option name="number" value="00092" />
+      <option name="presentableId" value="LOCAL-00092" />
+      <option name="project" value="LOCAL" />
+      <updated>1501942038395</updated>
+    </task>
+    <option name="localTasksCounter" value="93" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -831,7 +1059,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20558375" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1704871" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1704871" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="LuaJ" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection Results" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.08629441" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -866,15 +1094,7 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/chat/src/chat/servers/log/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="43" lean-forward="false" selection-start-line="16" selection-start-column="43" selection-end-line="16" selection-end-column="43" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/chat/src/chat/servers/gate/__init__.py">
+    <entry file="file://$PROJECT_DIR$/source/chat/src/chat/servers/gate/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
           <caret line="18" column="43" lean-forward="false" selection-start-line="18" selection-start-column="43" selection-end-line="18" selection-end-column="43" />
@@ -882,7 +1102,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/chat/src/chat/servers/game/__init__.py">
+    <entry file="file://$PROJECT_DIR$/source/chat/src/chat/servers/game/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
           <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
@@ -890,7 +1110,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/chat/src/chat/servers/db/__init__.py">
+    <entry file="file://$PROJECT_DIR$/source/chat/src/chat/servers/db/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
           <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
@@ -898,7 +1118,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/chat/src/chat/servers/proxy/__init__.py">
+    <entry file="file://$PROJECT_DIR$/source/chat/src/chat/servers/proxy/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
           <caret line="11" column="7" lean-forward="false" selection-start-line="11" selection-start-column="7" selection-end-line="13" selection-end-column="13" />
@@ -906,7 +1126,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/chat/src/chat/servers/game/rpc.py">
+    <entry file="file://$PROJECT_DIR$/source/chat/src/chat/servers/game/rpc.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
           <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
@@ -914,7 +1134,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/chat/src/chat/servers/ws/__init__.py">
+    <entry file="file://$PROJECT_DIR$/source/chat/src/chat/servers/ws/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
           <caret line="17" column="11" lean-forward="false" selection-start-line="17" selection-start-column="11" selection-end-line="17" selection-end-column="11" />
@@ -922,7 +1142,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/chat/src/chat/servers/ws/entity.py">
+    <entry file="file://$PROJECT_DIR$/source/chat/src/chat/servers/ws/entity.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
           <caret line="12" column="8" lean-forward="false" selection-start-line="12" selection-start-column="8" selection-end-line="12" selection-end-column="25" />
@@ -930,7 +1150,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/chat/src/chat/servers/sio/entity.py">
+    <entry file="file://$PROJECT_DIR$/source/chat/src/chat/servers/sio/entity.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
           <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
@@ -938,7 +1158,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/chat/src/chat/servers/sdk/entity.py">
+    <entry file="file://$PROJECT_DIR$/source/chat/src/chat/servers/sdk/entity.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -946,7 +1166,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/chat/src/chat/servers/sdk/__init__.py">
+    <entry file="file://$PROJECT_DIR$/source/chat/src/chat/servers/sdk/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
           <caret line="14" column="23" lean-forward="false" selection-start-line="14" selection-start-column="23" selection-end-line="14" selection-end-column="23" />
@@ -954,7 +1174,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/chat/src/chat/servers/robot/entity.py">
+    <entry file="file://$PROJECT_DIR$/source/chat/src/chat/servers/robot/entity.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
           <caret line="14" column="25" lean-forward="false" selection-start-line="14" selection-start-column="25" selection-end-line="14" selection-end-column="25" />
@@ -962,7 +1182,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/chat/src/chat/servers/proxy/entity.py">
+    <entry file="file://$PROJECT_DIR$/source/chat/src/chat/servers/proxy/entity.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
           <caret line="14" column="25" lean-forward="false" selection-start-line="14" selection-start-column="25" selection-end-line="14" selection-end-column="25" />
@@ -970,7 +1190,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/chat/src/chat/servers/manager/entity.py">
+    <entry file="file://$PROJECT_DIR$/source/chat/src/chat/servers/manager/entity.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
           <caret line="14" column="25" lean-forward="false" selection-start-line="14" selection-start-column="25" selection-end-line="14" selection-end-column="25" />
@@ -978,7 +1198,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/chat/src/chat/servers/db/entity.py">
+    <entry file="file://$PROJECT_DIR$/source/chat/src/chat/servers/db/entity.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
           <caret line="14" column="8" lean-forward="false" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="25" />
@@ -986,7 +1206,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/chat/src/chat/servers/game/entity.py">
+    <entry file="file://$PROJECT_DIR$/source/chat/src/chat/servers/game/entity.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
           <caret line="14" column="25" lean-forward="false" selection-start-line="14" selection-start-column="25" selection-end-line="14" selection-end-column="25" />
@@ -994,7 +1214,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/chat/src/chat/servers/gate/entity.py">
+    <entry file="file://$PROJECT_DIR$/source/chat/src/chat/servers/gate/entity.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
           <caret line="17" column="25" lean-forward="false" selection-start-line="17" selection-start-column="25" selection-end-line="17" selection-end-column="25" />
@@ -1002,7 +1222,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/chat/src/chat/servers/log/entity.py">
+    <entry file="file://$PROJECT_DIR$/source/chat/src/chat/servers/log/entity.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="151">
           <caret line="14" column="25" lean-forward="false" selection-start-line="14" selection-start-column="25" selection-end-line="14" selection-end-column="25" />
@@ -1010,7 +1230,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frame/src/frame/servers/ws/ws_entity.py">
+    <entry file="file://$PROJECT_DIR$/source/frame/src/frame/servers/ws/ws_entity.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="158">
           <caret line="19" column="25" lean-forward="false" selection-start-line="19" selection-start-column="25" selection-end-line="19" selection-end-column="25" />
@@ -1018,7 +1238,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frame/src/frame/core/entity.py">
+    <entry file="file://$PROJECT_DIR$/source/frame/src/frame/core/entity.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -1026,7 +1246,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frame/src/frame/entity/ws_server.py">
+    <entry file="file://$PROJECT_DIR$/source/frame/src/frame/entity/ws_server.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -1034,7 +1254,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/webroot/webmgr/index.html">
+    <entry file="file://$PROJECT_DIR$/source/webroot/webmgr/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
           <caret line="11" column="7" lean-forward="false" selection-start-line="11" selection-start-column="7" selection-end-line="11" selection-end-column="7" />
@@ -1042,7 +1262,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/chat/src/chat/entity/config_load.py">
+    <entry file="file://$PROJECT_DIR$/source/chat/src/chat/entity/config_load.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
           <caret line="22" column="38" lean-forward="true" selection-start-line="22" selection-start-column="38" selection-end-line="22" selection-end-column="38" />
@@ -1050,7 +1270,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/chat/src/chat/servers/webmgr/entity.py">
+    <entry file="file://$PROJECT_DIR$/source/chat/src/chat/servers/webmgr/entity.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -1058,7 +1278,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/chat/src/chat/servers/http/rpc.py">
+    <entry file="file://$PROJECT_DIR$/source/chat/src/chat/servers/http/rpc.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -1066,7 +1286,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/chat/src/chat/servers/http/entity.py">
+    <entry file="file://$PROJECT_DIR$/source/chat/src/chat/servers/http/entity.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -1074,7 +1294,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/chat/src/chat/servers/http/connector.py">
+    <entry file="file://$PROJECT_DIR$/source/chat/src/chat/servers/http/connector.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -1082,7 +1302,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/chat/src/chat/servers/webmgr/rpc.py">
+    <entry file="file://$PROJECT_DIR$/source/chat/src/chat/servers/webmgr/rpc.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
           <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
@@ -1114,7 +1334,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/chat/src/chat/servers/http/__init__.py">
+    <entry file="file://$PROJECT_DIR$/source/chat/src/chat/servers/http/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="174">
           <caret line="20" column="71" lean-forward="true" selection-start-line="20" selection-start-column="71" selection-end-line="20" selection-end-column="71" />
@@ -1130,7 +1350,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/chat/src/chat/servers/webmgr/__init__.py">
+    <entry file="file://$PROJECT_DIR$/source/chat/src/chat/servers/webmgr/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="182">
           <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
@@ -1138,7 +1358,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frame/src/frame/core/http.py">
+    <entry file="file://$PROJECT_DIR$/source/frame/src/frame/core/http.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -1146,7 +1366,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frame/src/frame/core/reactor.py">
+    <entry file="file://$PROJECT_DIR$/source/frame/src/frame/core/reactor.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="426">
           <caret line="81" column="8" lean-forward="true" selection-start-line="81" selection-start-column="8" selection-end-line="81" selection-end-column="8" />
@@ -1156,7 +1376,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/webmgr.sh">
+    <entry file="file://$PROJECT_DIR$/source/scripts/webmgr.sh">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
           <caret line="2" column="0" lean-forward="true" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
@@ -1164,7 +1384,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/chat/src/chat/servers/webmgr/connector.py">
+    <entry file="file://$PROJECT_DIR$/source/chat/src/chat/servers/webmgr/connector.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
           <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
@@ -1172,7 +1392,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/chat/src/chat/startup.py">
+    <entry file="file://$PROJECT_DIR$/source/chat/src/chat/startup.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
           <caret line="19" column="0" lean-forward="true" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
@@ -1182,7 +1402,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/log/log.log">
+    <entry file="file://$PROJECT_DIR$/source/log/log.log">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -1190,7 +1410,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/log/debug.log">
+    <entry file="file://$PROJECT_DIR$/source/log/debug.log">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
           <caret line="195" column="0" lean-forward="true" selection-start-line="195" selection-start-column="0" selection-end-line="195" selection-end-column="0" />
@@ -1198,7 +1418,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/chat/doc/readme.md">
+    <entry file="file://$PROJECT_DIR$/source/chat/doc/readme.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="0">
@@ -1209,7 +1429,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/chat/doc/thinking.md">
+    <entry file="file://$PROJECT_DIR$/source/chat/doc/thinking.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="0">
@@ -1220,7 +1440,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/chat/doc/1.md">
+    <entry file="file://$PROJECT_DIR$/source/chat/doc/1.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="315">
@@ -1231,7 +1451,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/development/server/machines.json">
+    <entry file="file://$PROJECT_DIR$/source/config/development/server/machines.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
           <caret line="6" column="3" lean-forward="false" selection-start-line="6" selection-start-column="3" selection-end-line="6" selection-end-column="3" />
@@ -1239,7 +1459,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/development/server/servers.json">
+    <entry file="file://$PROJECT_DIR$/source/config/development/server/servers.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="390">
           <caret line="26" column="22" lean-forward="true" selection-start-line="26" selection-start-column="22" selection-end-line="26" selection-end-column="22" />
@@ -1247,7 +1467,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/development/server/startup.json">
+    <entry file="file://$PROJECT_DIR$/source/config/development/server/startup.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
           <caret line="4" column="0" lean-forward="true" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
@@ -1255,7 +1475,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/development/server/webmgr.json">
+    <entry file="file://$PROJECT_DIR$/source/config/development/server/webmgr.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
           <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
@@ -1263,7 +1483,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/chat/src/chat/entity/g.py">
+    <entry file="file://$PROJECT_DIR$/source/chat/src/chat/entity/g.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="385">
           <caret line="89" column="0" lean-forward="true" selection-start-line="89" selection-start-column="0" selection-end-line="89" selection-end-column="0" />
@@ -1274,7 +1494,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/doc/1.md">
+    <entry file="file://$PROJECT_DIR$/source/config/doc/1.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="0">
@@ -1285,14 +1505,22 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/doc/2.md">
+    <entry file="file://$PROJECT_DIR$/source/config/doc/2.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="15">
-            <caret line="1" column="2" lean-forward="false" selection-start-line="1" selection-start-column="2" selection-end-line="1" selection-end-column="2" />
+            <caret line="1" column="17" lean-forward="false" selection-start-line="1" selection-start-column="17" selection-end-line="1" selection-end-column="17" />
             <folding />
           </first_editor>
           <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/compile.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
