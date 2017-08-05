@@ -39,7 +39,7 @@ def init_servers():
     for s_str in s_list_str:
         # register web app
         url = u'ws://%s:%s' % (ip, port)
-        port += 1
+        # port += 1
         # logging.debug("%s %s:%s %s" % (s_str, ip, port, url))
         s = "from chat.servers.%s import init_server; init_server('%s', %d, '%s');" % (s_str, ip, port, url)
         logging.info(s)

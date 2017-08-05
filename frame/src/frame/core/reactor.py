@@ -36,7 +36,7 @@ def init_udp_client(entity, ip, port):
 
 
 def init_ws_server(entity, ip, port, url):
-    # print url
+    print ip, port, url
     reactor.listenTCP(port, BaseWebSocketServerFactory(entity, url), interface=ip)
 
     pass
