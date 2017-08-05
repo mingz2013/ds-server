@@ -6,8 +6,7 @@ __author__ = "zhaojm"
 
 from . import e
 
-e.rpc_mark("insert_something")
 
-
+@e.rpc_mark("insert_something")
 def insert_something(conn, msg):
     pass
