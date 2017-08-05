@@ -7,3 +7,7 @@ __author__ = "zhaojm"
 from flask import Flask
 
 app = Flask(__name__)
+
+
+def init_server():
+    from .rpc import *

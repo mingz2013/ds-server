@@ -5,10 +5,6 @@ __date__ = "05/08/2017"
 __author__ = "zhaojm"
 
 
-def init():
-    from frame.entity import log
-    log.init_logging()
-
 
 from frame.servers.ws.ws_entity import WSEntity
 

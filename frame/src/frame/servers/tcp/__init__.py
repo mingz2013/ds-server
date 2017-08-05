@@ -4,12 +4,6 @@
 __date__ = "30/07/2017"
 __author__ = "zhaojm"
 
-
-def init():
-    from frame.entity import log
-    log.init_logging()
-
-
 from frame.servers.tcp.tcp_entity import TcpEntity
 
 e = TcpEntity()
