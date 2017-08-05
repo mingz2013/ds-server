@@ -2,12 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e885f0e0-bca7-4d41-835b-3eb8d7b34ed8" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/compile.sh" afterPath="$PROJECT_DIR$/scripts/compile.sh" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/run.sh" afterPath="$PROJECT_DIR$/scripts/run.sh" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/chat/src/chat/startup.py" afterPath="$PROJECT_DIR$/source/chat/src/chat/startup.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/scripts/webmgr.sh" afterPath="$PROJECT_DIR$/source/scripts/webmgr.sh" />
     </list>
     <ignored path="server.frame.python.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -490,13 +485,6 @@
       <option name="presentableId" value="Default" />
       <updated>1498889075346</updated>
     </task>
-    <task id="LOCAL-00048" summary="init">
-      <created>1501445310245</created>
-      <option name="number" value="00048" />
-      <option name="presentableId" value="LOCAL-00048" />
-      <option name="project" value="LOCAL" />
-      <updated>1501445310245</updated>
-    </task>
     <task id="LOCAL-00049" summary="init">
       <created>1501447197031</created>
       <option name="number" value="00049" />
@@ -833,7 +821,14 @@
       <option name="project" value="LOCAL" />
       <updated>1501942556481</updated>
     </task>
-    <option name="localTasksCounter" value="97" />
+    <task id="LOCAL-00097" summary="init">
+      <created>1501945816743</created>
+      <option name="number" value="00097" />
+      <option name="presentableId" value="LOCAL-00097" />
+      <option name="project" value="LOCAL" />
+      <updated>1501945816744</updated>
+    </task>
+    <option name="localTasksCounter" value="98" />
     <servers />
   </component>
   <component name="ToolWindowManager">
