@@ -9,6 +9,6 @@ from frame.servers.tcp.tcp_entity import TcpEntity
 e = TcpEntity()
 
 
-def init_server():
+def init_server(ip, port):
     e.init_rpc()
-    e.init_acceptor("127.0.0.1", 8000)
+    e.init_acceptor(ip, port)

@@ -12,7 +12,7 @@ class TcpEntity(RpcMixin):
     Acceptor = TcpAcceptor
 
     def __init__(self):
-        super(TcpEntity).__init__()
+        super(TcpEntity, self).__init__()
         self._acceptor = self.Acceptor(self)
         pass
 

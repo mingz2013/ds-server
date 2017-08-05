@@ -13,16 +13,20 @@ from frame.entity import log
 
 def init_servers():
     s_list_str = ["db", "gate", "manager", "robot", "proxy", "sio", "ws"]
+
+    ip = "127.0.0.1"
+    port = 8000
+
     for s_str in s_list_str:
         # register server
-        exec "from chat.servers.%s import init_server; init_server();" % s_str
-        # print s
-        # exec s
+        exec "from chat.servers.%s import init_server; init_server(ip, port);" % s_str
+        port += 1
 
     s_list_str = ['http', 'sdk']
     for s_str in s_list_str:
         # register web app
-        exec "from chat.servers.%s import init_server; init_server();" % s_str
+        exec "from chat.servers.%s import init_server; init_server(ip, port, s_str);" % s_str
+        port += 1
 
 
 def setup_servers():
