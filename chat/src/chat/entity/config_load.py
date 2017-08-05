@@ -18,3 +18,7 @@ def load(cfg_path):
     }
 
     return config
+
+
+def load_webmgr_cfg(cfg_path):
+    return file_util.load_json(cfg_path + "server/webmgr.json")

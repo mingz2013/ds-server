@@ -17,6 +17,7 @@ from twisted.web.wsgi import WSGIResource
 from twisted.internet import reactor
 from twisted.web.proxy import ReverseProxyResource
 from twisted.web.resource import Resource
+from twisted.web.static import File
 
 
 def init_tcp_server(entity, ip, port):
@@ -55,15 +56,17 @@ def init_sio_client():
     pass
 
 
-def init_http_server(app, ip, port, route):
+def init_http_server(app, ip, port, route, static_path=None):
     # reactor.listenTCP(port, BaseHTTPFactory(entity), interface=ip)
 
-    # print ip, port
+    print ip, port, route
 
     flask_site = WSGIResource(reactor, reactor.getThreadPool(), app)
 
     root = Resource()
     root.putChild(route, flask_site)
+    if static_path:
+        root.putChild('static', File(static_path))
 
     # site_example = ReverseProxyResource('www.example.com', 80, ''.encode('utf-8'))
     # root.putChild('example1', site_example)

@@ -16,4 +16,4 @@ sys.path.append(os.path.join(source_path, "frame/src/"))
 from chat.entity import g
 
 if __name__ == '__main__':
-    g.setup_servers()
+    g.setup_webmgr()

@@ -79,3 +79,11 @@ def setup_servers():
         setup_servers_type_2()
     else:
         logging.error("unknown startup type: %s" % cfg['startup']['type'])
+
+
+def setup_webmgr():
+    log.init_logging()
+    webmgr_cfg = config_load.load_webmgr_cfg(__cfg_path)
+    init_server_from_cfg(webmgr_cfg)
+    reactor.start_reactor()
+    pass
