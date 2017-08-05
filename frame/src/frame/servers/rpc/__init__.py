@@ -12,6 +12,9 @@ def init():
 
 from frame.servers.rpc.rpc_entity import RpcEntity
 
-s = RpcEntity()
-s.init_rpc()
-s.init_server("127.0.0.1", 8000)
+e = RpcEntity()
+
+
+def init_server():
+    e.init_rpc()
+    e.start_acceptor("127.0.0.1", 8000)
