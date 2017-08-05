@@ -17,7 +17,7 @@ def init_servers():
     s_list_str = ["db", "gate", "manager", "robot", "proxy", "sio", "ws"]
     for s_str in s_list_str:
         # register server
-        exec "from chat.servers.%s.server import Server; s['%s'] = Server();" % (s_str, s_str)
+        exec "from chat.servers.%s.entity import Entity; s['%s'] = Entity();" % (s_str, s_str)
         # print s
         # exec s
 
