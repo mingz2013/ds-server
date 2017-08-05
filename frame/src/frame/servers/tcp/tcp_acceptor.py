@@ -7,8 +7,7 @@ __author__ = "zhaojm"
 
 from frame.entity.base_server import BaseServer
 
-
-from frame.servers.rpc.msg import Msg
+from frame.entity.msg import Msg
 from frame.core import reactor
 
 

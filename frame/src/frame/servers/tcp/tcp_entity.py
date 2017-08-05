@@ -5,7 +5,7 @@ __date__ = "05/08/2017"
 __author__ = "zhaojm"
 
 from frame.servers.tcp.tcp_acceptor import TcpAcceptor
-from frame.servers.rpc.rpc_mixin import RpcMixin
+from frame.entity.rpc_mixin import RpcMixin
 
 
 class TcpEntity(RpcMixin):
