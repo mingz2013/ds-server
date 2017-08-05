@@ -10,8 +10,14 @@ Created on 21/06/2017
 from frame.core import reactor
 from frame.entity import log
 import logging
+from chat.entity import config_load
 
-def init_servers():
+__cfg_path = "config/"
+
+cfg = config_load.load(__cfg_path)
+
+
+def init_servers_text():
     s_list_str = ["db", "gate", "manager", "robot", "proxy"]
 
     ip = "127.0.0.1"
@@ -45,6 +51,13 @@ def init_servers():
         logging.info(s)
         exec s
         port += 1
+
+
+def init_servers():
+    for server in cfg.get('servers'):
+        s = "from chat.servers.%s import init_server; init_server(%s);" % (server['name'], server)
+        logging.info(s)
+        exec s
 
 
 def setup_servers():

@@ -5,5 +5,5 @@ __date__ = "30/07/2017"
 __author__ = "zhaojm"
 
 
-def init_server(ip, port, url):
+def init_server(cfg):
     pass
