@@ -4,12 +4,13 @@
 __date__ = "05/08/2017"
 __author__ = "zhaojm"
 
-from frame.servers.rpc.rpc_entity import RpcEntity
+from frame.servers.tcp.tcp_entity import TcpEntity
 
 
-class Entity(RpcEntity):
+class Entity(TcpEntity):
     def __init__(self):
         super(Entity, self).__init__()
 
     def init_rpc(self):
         from .rpc import *
+

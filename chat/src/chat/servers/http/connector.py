@@ -4,8 +4,8 @@
 __date__ = "30/07/2017"
 __author__ = "zhaojm"
 
-from frame.servers.rpc.rpc_connector import RpcConnector
+from frame.servers.tcp.tcp_connector import TcpConnector
 
 
-class Connector(RpcConnector):
+class Connector(TcpConnector):
     pass

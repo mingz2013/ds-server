@@ -4,14 +4,12 @@
 __date__ = "05/08/2017"
 __author__ = "zhaojm"
 
-from frame.servers.tcp.tcp_entity import TcpEntity
-from chat.servers.gate.connector import Connector
+from frame.servers.ws.ws_entity import WSEntity
 
 
-class Entity(TcpEntity):
+class Entity(WSEntity):
     def __init__(self):
         super(Entity, self).__init__()
-        self._connector = Connector(self)
 
     def init_rpc(self):
         from .rpc import *

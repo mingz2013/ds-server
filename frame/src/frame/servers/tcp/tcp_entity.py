@@ -4,23 +4,21 @@
 __date__ = "05/08/2017"
 __author__ = "zhaojm"
 
-from frame.servers.rpc.rpc_acceptor import RpcAcceptor
-
-
+from frame.servers.tcp.tcp_acceptor import TcpAcceptor
 from frame.servers.rpc.rpc_mixin import RpcMixin
 
 
-class RpcEntity(RpcMixin):
-    Acceptor = RpcAcceptor
+class TcpEntity(RpcMixin):
+    Acceptor = TcpAcceptor
 
     def __init__(self):
-        super(RpcEntity).__init__()
-        self._acceptor = RpcAcceptor(self)
+        super(TcpEntity).__init__()
+        self._acceptor = self.Acceptor(self)
         pass
 
     def init_rpc(self):
         from rpc import *
         pass
 
-    def start_acceptor(self, ip, port):
+    def init_acceptor(self, ip, port):
         self._acceptor.init_acceptor(ip, port)

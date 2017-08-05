@@ -12,21 +12,6 @@ Created on 26/06/2017
 @author: zhaojm
 """
 
-from flask import Flask
 
-app = Flask(__name__)
-
-
-@app.route('/')
-def index():
-    return 'index'
-
-
-@app.route('/login')
-def login():
-    return "login"
-
-
-@app.route('/register')
-def register():
-    return "register"
+class Entity(object):
+    pass

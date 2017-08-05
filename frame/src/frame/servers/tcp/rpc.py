@@ -4,7 +4,7 @@
 __date__ = "30/07/2017"
 __author__ = "zhaojm"
 
-from frame.servers.rpc import e
+from frame.servers.tcp import e
 
 
 @e.rpc_mark("get_info")

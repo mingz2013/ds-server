@@ -7,14 +7,14 @@ __author__ = "zhaojm"
 
 from frame.entity.base_server import BaseServer
 
+
 from frame.servers.rpc.msg import Msg
 from frame.core import reactor
 
-class RpcAcceptor(BaseServer):
+
+class TcpAcceptor(BaseServer):
     def __init__(self, entity):
         self._entity = entity
-        super(RpcAcceptor, self).__init__()
-
 
     def on_conn_made(self, conn):
         pass
@@ -24,7 +24,6 @@ class RpcAcceptor(BaseServer):
 
     def on_msg(self, conn, msg):
         # 解析rpc协议, 调用不同的rpc接口
-
         m = Msg.from_msg(msg)
         self._entity.rpc_handle(conn, msg.cmd, m)
 
