@@ -3,6 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="e885f0e0-bca7-4d41-835b-3eb8d7b34ed8" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/chat/src/chat/entity/g.py" afterPath="$PROJECT_DIR$/chat/src/chat/entity/g.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/chat/src/chat/startup.py" afterPath="$PROJECT_DIR$/chat/src/chat/startup.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/server/startup.json" afterPath="$PROJECT_DIR$/config/server/startup.json" />
     </list>
     <ignored path="server.frame.python.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -31,11 +34,63 @@
       <file leaf-file-name="g.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/chat/src/chat/entity/g.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="67" column="0" lean-forward="true" selection-start-line="67" selection-start-column="0" selection-end-line="67" selection-end-column="0" />
+            <state relative-caret-position="196">
+              <caret line="71" column="0" lean-forward="true" selection-start-line="71" selection-start-column="0" selection-end-line="71" selection-end-column="0" />
               <folding>
                 <element signature="e#95#125#0" expanded="true" />
                 <element signature="e#297#1352#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="config_load.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/chat/src/chat/entity/config_load.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="165">
+              <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="startup.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/config/server/startup.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="15">
+              <caret line="1" column="3" lean-forward="true" selection-start-line="1" selection-start-column="3" selection-end-line="1" selection-end-column="3" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="servers.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/config/server/servers.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="660">
+              <caret line="44" column="5" lean-forward="true" selection-start-line="44" selection-start-column="5" selection-end-line="44" selection-end-column="5" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="machines.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/config/server/machines.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="startup.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/chat/src/chat/startup.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="270">
+              <caret line="18" column="12" lean-forward="false" selection-start-line="18" selection-start-column="12" selection-end-line="18" selection-end-column="12" />
+              <folding>
+                <element signature="e#71#80#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -64,7 +119,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/frame/src/frame/servers/tcp/rpc.py" />
         <option value="$PROJECT_DIR$/frame/src/frame/servers/ws/rpc.py" />
         <option value="$PROJECT_DIR$/frame/src/frame/servers/rpc/rpc_acceptor.py" />
         <option value="$PROJECT_DIR$/frame/src/frame/servers/rpc/rpc_connector.py" />
@@ -92,7 +146,6 @@
         <option value="$PROJECT_DIR$/frame/src/frame/core/reactor.py" />
         <option value="$PROJECT_DIR$/chat/src/chat/entity/file_util.py" />
         <option value="$PROJECT_DIR$/chat/src/chat/entity/config_load.py" />
-        <option value="$PROJECT_DIR$/config/server/startup.json" />
         <option value="$PROJECT_DIR$/chat/src/chat/servers/sio/__init__.py" />
         <option value="$PROJECT_DIR$/chat/src/chat/servers/robot/__init__.py" />
         <option value="$PROJECT_DIR$/chat/src/chat/servers/proxy/__init__.py" />
@@ -103,7 +156,6 @@
         <option value="$PROJECT_DIR$/chat/src/chat/servers/ws/__init__.py" />
         <option value="$PROJECT_DIR$/chat/src/chat/servers/game/__init__.py" />
         <option value="$PROJECT_DIR$/chat/src/chat/servers/db/__init__.py" />
-        <option value="$PROJECT_DIR$/chat/src/chat/entity/g.py" />
         <option value="$PROJECT_DIR$/chat/src/chat/servers/ws/entity.py" />
         <option value="$PROJECT_DIR$/chat/src/chat/servers/sdk/__init__.py" />
         <option value="$PROJECT_DIR$/chat/src/chat/servers/robot/entity.py" />
@@ -115,6 +167,9 @@
         <option value="$PROJECT_DIR$/chat/src/chat/servers/log/entity.py" />
         <option value="$PROJECT_DIR$/frame/src/frame/servers/ws/ws_entity.py" />
         <option value="$PROJECT_DIR$/chat/src/chat/servers/http/__init__.py" />
+        <option value="$PROJECT_DIR$/chat/src/chat/startup.py" />
+        <option value="$PROJECT_DIR$/config/server/startup.json" />
+        <option value="$PROJECT_DIR$/chat/src/chat/entity/g.py" />
       </list>
     </option>
   </component>
@@ -150,6 +205,43 @@
             <path>
               <item name="server.frame.python" type="b2602c69:ProjectViewProjectNode" />
               <item name="server.frame.python" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="server.frame.python" type="b2602c69:ProjectViewProjectNode" />
+              <item name="server.frame.python" type="462c0819:PsiDirectoryNode" />
+              <item name="chat" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="server.frame.python" type="b2602c69:ProjectViewProjectNode" />
+              <item name="server.frame.python" type="462c0819:PsiDirectoryNode" />
+              <item name="chat" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="server.frame.python" type="b2602c69:ProjectViewProjectNode" />
+              <item name="server.frame.python" type="462c0819:PsiDirectoryNode" />
+              <item name="chat" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="chat" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="server.frame.python" type="b2602c69:ProjectViewProjectNode" />
+              <item name="server.frame.python" type="462c0819:PsiDirectoryNode" />
+              <item name="chat" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="chat" type="462c0819:PsiDirectoryNode" />
+              <item name="entity" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="server.frame.python" type="b2602c69:ProjectViewProjectNode" />
+              <item name="server.frame.python" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="server.frame.python" type="b2602c69:ProjectViewProjectNode" />
+              <item name="server.frame.python" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
+              <item name="server" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -443,13 +535,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1498889075346</updated>
-    </task>
-    <task id="LOCAL-00033" summary="init">
-      <created>1501427401703</created>
-      <option name="number" value="00033" />
-      <option name="presentableId" value="LOCAL-00033" />
-      <option name="project" value="LOCAL" />
-      <updated>1501427401703</updated>
     </task>
     <task id="LOCAL-00034" summary="init">
       <created>1501427907007</created>
@@ -787,7 +872,14 @@
       <option name="project" value="LOCAL" />
       <updated>1501935153290</updated>
     </task>
-    <option name="localTasksCounter" value="82" />
+    <task id="LOCAL-00082" summary="init">
+      <created>1501935219475</created>
+      <option name="number" value="00082" />
+      <option name="presentableId" value="LOCAL-00082" />
+      <option name="project" value="LOCAL" />
+      <updated>1501935219475</updated>
+    </task>
+    <option name="localTasksCounter" value="83" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -834,14 +926,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/frame/src/frame/servers/ws/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/frame/src/frame/entity/base_client.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
@@ -1019,42 +1103,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/server/machines.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/server/startup.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="0" lean-forward="true" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/chat/src/chat/entity/file_util.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
           <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/chat/src/chat/entity/config_load.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/server/servers.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="446">
-          <caret line="52" column="18" lean-forward="false" selection-start-line="52" selection-start-column="18" selection-end-line="52" selection-end-column="18" />
           <folding />
         </state>
       </provider>
@@ -1243,10 +1295,52 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/chat/src/chat/entity/config_load.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chat/src/chat/startup.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="12" lean-forward="false" selection-start-line="18" selection-start-column="12" selection-end-line="18" selection-end-column="12" />
+          <folding>
+            <element signature="e#71#80#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/server/startup.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="3" lean-forward="true" selection-start-line="1" selection-start-column="3" selection-end-line="1" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/server/servers.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="660">
+          <caret line="44" column="5" lean-forward="true" selection-start-line="44" selection-start-column="5" selection-end-line="44" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/server/machines.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/chat/src/chat/entity/g.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="67" column="0" lean-forward="true" selection-start-line="67" selection-start-column="0" selection-end-line="67" selection-end-column="0" />
+        <state relative-caret-position="196">
+          <caret line="71" column="0" lean-forward="true" selection-start-line="71" selection-start-column="0" selection-end-line="71" selection-end-column="0" />
           <folding>
             <element signature="e#95#125#0" expanded="true" />
             <element signature="e#297#1352#0" expanded="false" />

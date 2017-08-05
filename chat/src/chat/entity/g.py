@@ -17,7 +17,7 @@ __cfg_path = "config/"
 cfg = config_load.load(__cfg_path)
 
 
-def init_servers_text():
+def init_servers_test():
     s_list_str = ["db", "gate", "manager", "robot", "proxy"]
 
     ip = "127.0.0.1"
@@ -53,15 +53,20 @@ def init_servers_text():
         port += 1
 
 
-def init_servers():
+def init_servers_from_cfg(cfg):
     for server in cfg.get('servers'):
         s = "from chat.servers.%s import init_server; init_server(%s);" % (server['name'], server)
         logging.info(s)
         exec s
 
 
-def setup_servers():
+def setup_servers_single():
     log.init_logging()
 
-    init_servers()
+    init_servers_from_cfg(cfg)
     reactor.start_reactor()
+
+
+def setup_servers():
+    if cfg['startup']['type'] == 1:
+        setup_servers_single()
