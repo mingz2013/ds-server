@@ -19,12 +19,20 @@ from twisted.web.proxy import ReverseProxyResource
 from twisted.web.resource import Resource
 
 
-def init_server(entity, ip, port):
+def init_tcp_server(entity, ip, port):
     reactor.listenTCP(port, BaseFactory(entity), interface=ip)
 
 
-def init_client(entity, ip, port):
+def init_tcp_client(entity, ip, port):
     reactor.connectTCP(ip, port, BaseClientFactory(entity))
+
+
+def init_udp_server(entity, ip, port):
+    pass
+
+
+def init_udp_client(entity, ip, port):
+    pass
 
 
 def init_ws_server(entity, ip, port, url):

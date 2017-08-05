@@ -23,5 +23,5 @@ if __name__ == '__main__':
     from frame.core import reactor
 
     c = BaseClient()
-    reactor.init_client(c, 'localhost', 8888)
+    reactor.init_tcp_client(c, 'localhost', 8888)
     reactor.start_reactor()

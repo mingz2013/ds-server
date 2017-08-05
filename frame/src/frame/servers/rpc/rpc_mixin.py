@@ -21,8 +21,8 @@ class RpcMixin(object):
             return decorator
         decorator(handler)
 
-    def rpc_handle(self, conn, event, args):
+    def rpc_handle(self, conn, event, msg):
         if event in self.__rpc_export:
-            return self.__rpc_export[event](conn, args)
+            return self.__rpc_export[event](conn, msg)
         else:
             print "event error", event

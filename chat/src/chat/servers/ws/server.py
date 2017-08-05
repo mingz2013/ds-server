@@ -10,6 +10,9 @@ from frame.entity.ws_server import WSServer
 
 
 class Server(WSServer):
+    def __init__(self):
+        super(Server, self).__init__()
+
     def on_connect(self, request):
         pass
 

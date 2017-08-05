@@ -8,10 +8,10 @@ from frame.entity import g
 
 
 @g.s.rpc_mark("get_info")
-def on_get_info(conn, args):
+def on_get_info(conn, msg):
     pass
 
 
 @g.s.rpc_mark("register")
-def on_register(conn, args):
+def on_register(conn, msg):
     pass

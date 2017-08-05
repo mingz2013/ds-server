@@ -7,15 +7,14 @@ __author__ = "zhaojm"
 
 from frame.entity.base_server import BaseServer
 
-from frame.entity.msg import Msg
-from frame.servers.rpc.rpc_mixin import RpcMixin
+from frame.servers.rpc.msg import Msg
 
 
-class RpcServer(BaseServer, RpcMixin):
+class RpcAcceptor(BaseServer):
+    def __init__(self, entity):
+        self._entity = entity
+        super(RpcAcceptor, self).__init__()
 
-    def __init__(self):
-        RpcMixin.__init__(self)
-        pass
 
     def on_conn_made(self, conn):
         pass
@@ -26,8 +25,5 @@ class RpcServer(BaseServer, RpcMixin):
     def on_msg(self, conn, msg):
         # 解析rpc协议, 调用不同的rpc接口
 
-        msg = Msg.from_msg(msg)
-        self.rpc_handle(conn, msg.cmd, msg)
-
-        pass
-
+        m = Msg.from_msg(msg)
+        self._entity.rpc_handle(conn, msg.cmd, m)

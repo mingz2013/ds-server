@@ -39,7 +39,7 @@ def start_servers():
         port += 1
         logging.info('%s %s:%s' % (k, ip, port))
         if k in ["db", "gate", "manager", "robot", "proxy"]:
-            reactor.init_server(v, ip, port)
+            reactor.init_tcp_server(v, ip, port)
         elif k in ["http", "sdk"]:
             reactor.init_http_server(v, ip, port, k)
         elif k in ["sio"]:
