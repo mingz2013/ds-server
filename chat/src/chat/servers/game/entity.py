@@ -12,4 +12,4 @@ class Entity(RpcEntity):
         super(Entity, self).__init__()
 
     def init_rpc(self):
-        from chat.servers.game.rpc import *
+        from .rpc import *

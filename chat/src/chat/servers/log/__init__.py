@@ -3,7 +3,7 @@
 """
 __date__ = "05/08/2017"
 __author__ = "zhaojm"
-from chat.servers.gate.entity import Entity
+from .entity import Entity
 
 e = Entity()
 
