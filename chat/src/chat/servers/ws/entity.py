@@ -8,8 +8,7 @@ from frame.servers.ws.ws_entity import WSEntity
 
 
 class Entity(WSEntity):
-    def __init__(self):
-        super(Entity, self).__init__()
 
     def init_rpc(self):
         from .rpc import *
+        pass

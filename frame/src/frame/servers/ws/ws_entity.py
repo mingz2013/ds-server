@@ -12,12 +12,12 @@ class WSEntity(RpcMixin):
     Acceptor = WSAcceptor
 
     def __init__(self):
-        super(WSEntity).__init__()
+        super(WSEntity, self).__init__()
         self._acceptor = self.Acceptor(self)
         pass
 
     def init_rpc(self):
-        from rpc import *
+        from .rpc import *
         pass
 
     def init_acceptor(self, ip, port, url):
