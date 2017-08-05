@@ -5,10 +5,11 @@ __date__ = "30/07/2017"
 __author__ = "zhaojm"
 
 from frame.entity.base_client import BaseClient
-
+from frame.core import reactor
 
 class RpcConnector(BaseClient):
-    def __init__(self):
+    def __init__(self, entity):
+        self._entity = entity
         self.conn = None
         pass
 
@@ -26,3 +27,6 @@ class RpcConnector(BaseClient):
         # 从cmd handler传过来的数据
         self.conn.sendLine(msg)
         pass
+
+    def init_connector(self, ip, port):
+        reactor.init_tcp_client(self, ip, port)
