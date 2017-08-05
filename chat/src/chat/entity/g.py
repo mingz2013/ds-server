@@ -21,7 +21,7 @@ def init_servers():
         # register server
         # logging.debug("%s %s:%s" % (s_str, ip, port))
         s = "from chat.servers.%s import init_server; init_server('%s', %d);" % (s_str, ip, port)
-        logging.debug(s)
+        logging.info(s)
         exec s
         port += 1
 
@@ -31,7 +31,7 @@ def init_servers():
         # register web app
         # logging.debug("%s %s:%s" % (s_str, ip, port))
         s = "from chat.servers.%s import init_server; init_server('%s', %d, '%s');" % (s_str, ip, port, s_str)
-        logging.debug(s)
+        logging.info(s)
         exec s
         port += 1
 
@@ -42,7 +42,7 @@ def init_servers():
         port += 1
         # logging.debug("%s %s:%s %s" % (s_str, ip, port, url))
         s = "from chat.servers.%s import init_server; init_server('%s', %d, '%s');" % (s_str, ip, port, url)
-        logging.debug(s)
+        logging.info(s)
         exec s
         port += 1
 
