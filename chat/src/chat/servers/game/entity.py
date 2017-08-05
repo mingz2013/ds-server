@@ -11,8 +11,5 @@ class Entity(RpcEntity):
     def __init__(self):
         super(Entity, self).__init__()
 
-
-if __name__ == '__main__':
-    e = Entity()
-    e.init_rpc()
-    e.start_server("127.0.0.1", 8000)
+    def init_rpc(self):
+        from chat.servers.game.rpc import *
