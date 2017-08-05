@@ -4,13 +4,6 @@
     <list default="true" id="e885f0e0-bca7-4d41-835b-3eb8d7b34ed8" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/chat/src/chat/entity/g.py" afterPath="$PROJECT_DIR$/chat/src/chat/entity/g.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/chat/src/chat/servers/http/__init__.py" afterPath="$PROJECT_DIR$/chat/src/chat/servers/http/__init__.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/chat/src/chat/servers/sdk/__init__.py" afterPath="$PROJECT_DIR$/chat/src/chat/servers/sdk/__init__.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/chat/src/chat/servers/sio/__init__.py" afterPath="$PROJECT_DIR$/chat/src/chat/servers/sio/__init__.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/chat/src/chat/servers/ws/__init__.py" afterPath="$PROJECT_DIR$/chat/src/chat/servers/ws/__init__.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frame/src/frame/servers/tcp/__init__.py" afterPath="$PROJECT_DIR$/frame/src/frame/servers/tcp/__init__.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frame/src/frame/servers/tcp/tcp_entity.py" afterPath="$PROJECT_DIR$/frame/src/frame/servers/tcp/tcp_entity.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frame/src/frame/servers/ws/__init__.py" afterPath="$PROJECT_DIR$/frame/src/frame/servers/ws/__init__.py" />
     </list>
     <ignored path="server.frame.python.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -40,7 +33,7 @@
         <entry file="file://$PROJECT_DIR$/chat/src/chat/servers/http/__init__.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="150">
-              <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="14" selection-end-column="50" />
+              <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="15" selection-end-column="50" />
               <folding />
             </state>
           </provider>
@@ -90,7 +83,7 @@
         <entry file="file://$PROJECT_DIR$/chat/src/chat/servers/sdk/__init__.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="150">
-              <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+              <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -718,13 +711,6 @@
       <option name="presentableId" value="Default" />
       <updated>1498889075346</updated>
     </task>
-    <task id="LOCAL-00024" summary="init">
-      <created>1501423214731</created>
-      <option name="number" value="00024" />
-      <option name="presentableId" value="LOCAL-00024" />
-      <option name="project" value="LOCAL" />
-      <updated>1501423214731</updated>
-    </task>
     <task id="LOCAL-00025" summary="init">
       <created>1501423309602</created>
       <option name="number" value="00025" />
@@ -1061,7 +1047,14 @@
       <option name="project" value="LOCAL" />
       <updated>1501927312605</updated>
     </task>
-    <option name="localTasksCounter" value="73" />
+    <task id="LOCAL-00073" summary="init">
+      <created>1501928005244</created>
+      <option name="number" value="00073" />
+      <option name="presentableId" value="LOCAL-00073" />
+      <option name="project" value="LOCAL" />
+      <updated>1501928005244</updated>
+    </task>
+    <option name="localTasksCounter" value="74" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1494,7 +1487,7 @@
     <entry file="file://$PROJECT_DIR$/chat/src/chat/servers/http/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
-          <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="14" selection-end-column="50" />
+          <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="15" selection-end-column="50" />
           <folding />
         </state>
       </provider>
@@ -1502,7 +1495,7 @@
     <entry file="file://$PROJECT_DIR$/chat/src/chat/servers/sdk/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
-          <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
           <folding />
         </state>
       </provider>

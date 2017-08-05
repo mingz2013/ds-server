@@ -19,13 +19,13 @@ def init_servers():
 
     for s_str in s_list_str:
         # register server
-        exec "from chat.servers.%s import init_server; init_server(ip, port);" % s_str
+        exec "from chat.servers.%s import init_server; init_server(%s, %d);" % (s_str, ip, port)
         port += 1
 
     s_list_str = ['http', 'sdk']
     for s_str in s_list_str:
         # register web app
-        exec "from chat.servers.%s import init_server; init_server(ip, port, s_str);" % s_str
+        exec "from chat.servers.%s import init_server; init_server(%s, %d, %s);" % (s_str, ip, port, s_str)
         port += 1
 
 
