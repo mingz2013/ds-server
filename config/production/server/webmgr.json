@@ -1,0 +1,8 @@
+{
+  "name": "webmgr",
+  "type": "http",
+  "ip": "127.0.0.1",
+  "port": 8020,
+  "route": "webmgr",
+  "webroot": "webroot/"
+}

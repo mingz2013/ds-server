@@ -1,0 +1,72 @@
+[
+    {
+    "name": "db",
+    "type": "tcp",
+    "ip": "127.0.0.1",
+    "port": 8000
+    },
+    {
+    "name": "game",
+    "type": "tcp",
+    "ip": "127.0.0.1",
+    "port": 8001
+    },
+    {
+    "name": "gate",
+    "type": "tcp",
+    "ip": "127.0.0.1",
+    "port": 8002
+    },
+    {
+    "name": "log",
+    "type": "tcp",
+    "ip": "127.0.0.1",
+    "port": 8004
+    },
+    {
+    "name": "manager",
+    "type": "tcp",
+    "ip": "127.0.0.1",
+    "port": 8005
+    },
+    {
+    "name": "proxy",
+    "type": "tcp",
+    "ip": "127.0.0.1",
+    "port": 8006
+    },
+    {
+    "name": "robot",
+    "type": "tcp",
+    "ip": "127.0.0.1",
+    "port": 8007
+    },
+    {
+    "name": "http",
+    "type": "http",
+    "ip": "127.0.0.1",
+    "port": 8003,
+    "route": "http"
+    },
+    {
+    "name": "sdk",
+    "type": "http",
+    "ip": "127.0.0.1",
+    "port": 8008,
+    "route": "sdk"
+    },
+    {
+    "name": "sio",
+    "type": "sio",
+    "ip": "127.0.0.1",
+    "port": 8009,
+    "url": "sio://127.0.0.1:8009"
+    },
+    {
+    "name": "ws",
+    "type": "ws",
+    "ip": "127.0.0.1",
+    "port": 8010,
+    "url": "ws://127.0.0.1:8010"
+    }
+]

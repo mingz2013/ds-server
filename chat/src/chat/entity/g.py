@@ -12,7 +12,7 @@ from frame.entity import log
 import logging
 from chat.entity import config_load
 
-__cfg_path = "config/"
+__cfg_path = "config/development/"
 
 cfg = config_load.load(__cfg_path)
 
