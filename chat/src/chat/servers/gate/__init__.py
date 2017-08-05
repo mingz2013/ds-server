@@ -11,4 +11,4 @@ e = Entity()
 
 def init_server(ip, port):
     e.init_rpc()
-    e.start_acceptor(ip, port)
+    e.init_acceptor(ip, port)
